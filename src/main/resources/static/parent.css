@@ -1,0 +1,92 @@
+
+/* 첫번째 부분*/
+.part1{
+    background-color: #071e36;
+    height: 480px;
+    display : block;
+    box-sizing: border-box;
+    display: block;
+    background-image: url(https://d2v80xjmx68n4w.cloudfront.net/assets/desktop/modules/enterprise/hero-section__bg-image@2x.png);
+}
+
+.part1-2 h1{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 0 50px 50px;
+    font-weight:600;
+}
+
+.part1-2 h2{
+    display: block;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 0px;
+    margin: 0 0 90px 50px;
+
+}
+
+.part1-4{
+    width: 238px;
+    height: 52px;
+    background-color: rgba(246, 225, 40, 0.94);
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.part1-5{
+    margin-left: 35px;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: 17px;
+    color: black;
+
+}
+
+/*두번쨰 부분*/
+
+.part2{
+
+}
+
+.part2-1{
+    float: left;
+
+}
+
+
+.part2-2{
+    float:left;
+}
+
+
+
+
+.part2-3{
+    float: left;
+
+}
+
+.part2-4{
+
+}
+
+
+/* 세번째 부분 */
+
+
+/* 네번째 부분*/
+.card1{
+
+}
+.card2{
+
+}
+.card3{
+    float: left;
+}
+.card4{
+
+}
+
+/*다섯번째 부분 */
