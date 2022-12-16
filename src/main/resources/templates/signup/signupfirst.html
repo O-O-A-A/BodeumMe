@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <title>로그인 페이지 첫 번째</title>
+
+    <link rel="stylesheet" href="../../static/signup/css/kmong_desktop_v2.css">
+    <link rel="stylesheet" href="../../static/signup/css/kmong_fonts.css">
+    <link rel="stylesheet" href="../../static/signup/css/kmong.master_desktop.css">
+
+    <style type="text/css">
+        body{background:white !important;
+            font-size:14px}
+        .font-size-h1,h1{font-size:22px}
+        .font-size-h2,h2{font-size:20px}
+        .font-size-h3,h3{font-size:18px}
+        .font-size-h4,h4{font-size:16px}
+        .font-size-h5,h5{font-size:14px}
+        .font-size-h6,h6{font-size:12px}
+        .card-font-size-default{font-size:13px !important}
+        .card-font-size-small{font-size:11px !important}
+        .panel,.panel-heading,.form-control{border-radius:0}
+        .border-radius-none{border-radius:0 !important}
+        .border-radius{border-radius:4px !important}
+        .modal-content{border-radius:0 !important;border:none !important}
+        ul{padding-left:0}li{list-style:none}
+        .MasterBodyDeskTop
+        .container{width:1170px}
+        .global-body{margin:0 !important}
+    </style>
+
+    <style type="text/css">
+        .SnsLoginBtn{
+            border-radius:4px;
+            margin-bottom:10px}
+        .SnsLoginBtn .btn-sns-signup{height:50px}
+        .SnsLoginBtn .btn-sns-signup:hover,.SnsLoginBtn .btn-sns-signup:active{
+            -webkit-filter:brightness(80%);
+            -webkit-transition:all 0.2s ease;
+            -moz-transition:all 0.2s ease;
+            -o-transition:all 0.2s ease;
+            -ms-transition:all 0.2s ease;
+            transition:all 0.2s ease
+        }
+    </style>
+    <style type="text/css">
+        .SignupPage
+        {color:#303441}
+        .SignupPage .stepper-wrapper{text-align:right}
+        .SignupPage .login-link{line-height:20px;color:#116ad4;text-decoration:underline}
+        .SignupPage .signup-form-title{font-size:30px !important;line-height:1.55;letter-spacing:-0.4px;color:#303441;margin-top:20px;margin-bottom:40px}
+        .SignupPage .sns-buttons{margin-bottom:48px}
+        .SignupPage .sns-buttons .SnsLoginBtn:last-child{margin-bottom:0}
+        .SignupPage .border-top-dashed-gray{border-top:1px dashed #e4e5ed}
+        .SignupPage .button-signup{height:50px;margin:48px 0 0 0;color:#303441}
+        .SignupPage .button-signup:hover,.SignupPage .button-signup:active{
+            filter:brightness(80%);
+            -webkit-transition:all 0.2s ease;
+            -moz-transition:all 0.2s ease;
+            -o-transition:all 0.2s ease;
+            -ms-transition:all 0.2s ease;
+            transition:all 0.2s ease
+        }
+    </style>
+    <style type="text/css">
+        .AuthHeader{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:60px;
+            margin-top:60px;
+            margin-bottom:10px
+        }
+    </style>
+    <style type="text/css">
+        .AuthCard{
+            border-radius:4px;
+            border:solid 1px #e4e5ed;
+            background-color:#fff;
+            display:flex;
+            flex-direction:column;
+            width:560px;
+            box-sizing:border-box
+        }
+        .AuthCard .border-none{border:none}
+    </style>
+</head>
+<body>
+<div class="global-body">
+    <div id="master-body">
+        <div class="MasterBodyDeskTop" common-module="[object Object]">
+            <!---->
+            <!---->
+            <div id="router-view" style="margin-top: 0px;">
+                <div class="SignupPage">
+                    <div class="container-1170">
+                        <div class="AuthHeader">
+                            <div class="NavLogo nav-logo-wrapper" logo-size="108">
+                                <a href="#" class="sendGATriggerClz cursor" style="height: 26px;">
+                                    <svg width="85" height="26" viewBox="0 0 85 26" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M77.69 4.86c3.975 0 7.197 3.215 7.197 7.18l-.002.055h.002c.073 3.477.074 5.769.003 6.874-.108 1.659-.724 3.372-1.947 4.693A7.21 7.21 0 0 1 77.593 26c-2.724 0-4.998-.984-6.653-2.921l-.05-.059 3.226-2.684c.837.997 1.938 1.48 3.478 1.48.9 0 1.67-.358 2.259-.992.515-.556.817-1.263.832-1.813v-.443a7.186 7.186 0 0 1-2.995.65c-3.975 0-7.197-3.214-7.197-7.179 0-3.964 3.222-7.178 7.197-7.178zm-32.13-.225c4.131 0 7.48 3.34 7.48 7.46 0 4.121-3.349 7.462-7.48 7.462s-7.48-3.34-7.48-7.461c0-4.12 3.349-7.461 7.48-7.461zM4.533 0v10.354L8.623 5.2h5.309l-5.337 6.726 5.572 7.065h-4.98L4.534 13.42v5.572H0V0h4.533zM29.92 4.86a6.233 6.233 0 0 1 6.233 6.234v7.897H31.96v-7.908a2.04 2.04 0 0 0-4.074-.152l-.006.152v7.908h-4.193v-7.908a2.04 2.04 0 0 0-4.075-.152l-.005.152v7.908h-4.194v-7.897a6.233 6.233 0 0 1 10.371-4.662 6.201 6.201 0 0 1 4.136-1.571zm31.847 0a6.8 6.8 0 0 1 6.8 6.8v7.331h-4.194v-7.34a2.607 2.607 0 0 0-2.441-2.602l-.165-.006a2.607 2.607 0 0 0-2.602 2.442l-.005.165v7.34l-4.193.001v-7.33a6.8 6.8 0 0 1 6.8-6.8zM45.56 8.818a3.282 3.282 0 0 0-3.287 3.279 3.282 3.282 0 0 0 3.287 3.278 3.282 3.282 0 0 0 3.287-3.278 3.282 3.282 0 0 0-3.287-3.279zm32.13.226a3 3 0 0 0-3.003 2.996 3 3 0 0 0 3.003 2.996 3 3 0 0 0 3.003-2.996 3 3 0 0 0-3.003-2.996z" fill="#212224" fill-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <section class="flex-center-center margin-bottom-100">
+                            <div class="AuthCard" style="padding: 56px 80px;">
+                                <div class="stepper-wrapper"><!----></div>
+                                <h2 class="signup-form-title">3초안에 가입하고,<br>10만원 혜택 받아가세요!</h2>
+                                <div class="sns-buttons">
+                                    <div class="SnsLoginBtn">
+                                        <a data-ga-category="" data-ga-label="" data-ga-action="" class="flex-center-center btn btn-default width-100 btn-sns-signup NGM border-none" style="background-color: rgb(99, 195, 61);">
+                                            <div class="flex-left-center">
+                                                <img src="../../images/icon_naver.png" alt="sns아이콘" class="width-30px margin-right-5">
+                                                <span style="font-size: 15px; color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);">네이버 간편 가입 하기</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="SnsLoginBtn">
+                                        <a data-ga-category="" data-ga-label="" data-ga-action="" class="flex-center-center btn btn-default width-100 btn-sns-signup NGM border-none" style="background-color: rgb(252, 232, 77);">
+                                            <div class="flex-left-center">
+                                                <img src="../../images/icon_kakao.png" alt="sns아이콘" class="width-30px margin-right-5">
+                                                <span style="font-size: 15px; color: rgb(51, 51, 51); border-color: rgb(51, 51, 51);">카카오톡 간편 가입 하기</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="SnsLoginBtn">
+                                        <a data-ga-category="" data-ga-label="" data-ga-action="" class="flex-center-center btn btn-default width-100 btn-sns-signup NGM border-none" style="background-color: rgb(24, 119, 242);">
+                                            <div class="flex-left-center">
+                                                <img src="../../images/icon_facebook.png" alt="sns아이콘" class="width-30px margin-right-5">
+                                                <span style="font-size: 15px; color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);">페이스북 간편 가입 하기</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="SnsLoginBtn">
+                                        <a data-ga-category="" data-ga-label="" data-ga-action="" class="flex-center-center btn btn-default width-100 btn-sns-signup NGM border-none" style="background-color: rgb(208, 83, 63);">
+                                            <div class="flex-left-center">
+                                                <img src="../../images/icon_google.png" alt="sns아이콘" class="width-30px margin-right-5">
+                                                <span style="font-size: 15px; color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);">구글 간편 가입 하기</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="SnsLoginBtn">
+                                        <a data-ga-category="" data-ga-label="" data-ga-action="" class="flex-center-center btn btn-default width-100 btn-sns-signup NGM border-none" style="background-color: rgb(0, 0, 0);">
+                                            <div class="flex-left-center">
+                                                <img src="../../images/icon_apple.png" alt="sns아이콘" class="width-30px margin-right-5">
+                                                <span style="font-size: 15px; color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);">애플 간편 가입 하기</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="border-top-dashed-gray">
+                                    <a class="flex-center-center btn btn-default width-100 NGM button-signup" style="background-color: rgb(255, 253, 236); border-color: rgb(250, 229, 124);">
+                                        <span style="font-size: 15px;">이메일로 가입하기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> <!---->
+            <div class="vue-portal-target"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
