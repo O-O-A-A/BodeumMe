@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>가입하기 페이지 두 번째</title>
+
+    <link rel="stylesheet" href="../../static/signup/css/kmong_desktop_v2.css">
+    <link rel="stylesheet" href="../../static/signup/css/kmong.master_desktop.css">
+
+    <style data-emotion="css-global" data-s="">
+        *{font-family:'Metro Sans',sans-serif;box-sizing:border-box;}
+        /*@font-face{
+            font-family:'Metro Sans';
+            font-style:normal;
+            font-weight:900;
+            src:url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.woff2) format('woff2'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.woff) format('woff'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.otf) format('truetype'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.eot),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.eot?#iefix) format('embedded-opentype');
+        }
+        @font-face{
+            font-family:'Metro Sans';
+            font-style:normal;
+            font-weight:700;
+            src:url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.woff2) format('woff2'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.woff) format('woff'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.otf) format('truetype'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.eot),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.eot?#iefix) format('embedded-opentype');
+        }
+        @font-face{
+            font-family:'Metro Sans';
+            font-style:normal;
+            font-weight:500;
+            src:url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.woff2) format('woff2'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.woff) format('woff'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.otf) format('truetype'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.eot),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.eot?#iefix) format('embedded-opentype');
+        }
+        @font-face{
+            font-family:'Metro Sans';
+            font-style:normal;
+            font-weight:400;
+            src:url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.woff2) format('woff2'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.woff) format('woff'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.otf) format('truetype'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.eot),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.eot?#iefix) format('embedded-opentype');
+        }
+        @font-face{
+            font-family:'Metro Sans';
+            font-style:normal;
+            font-weight:300;
+            src:url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.woff2) format('woff2'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.woff) format('woff'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.otf) format('truetype'),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.eot),
+            url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.eot?#iefix) format('embedded-opentype');
+        }*/
+        html{
+            line-height:normal;
+            -webkit-text-size-adjust:100%;
+        }
+        body{margin:0;}
+        main{display:block;}
+        h1{font-size:2em;margin:0.67em 0;}
+        hr{box-sizing:content-box;height:0;overflow:visible;}
+        a{background-color:transparent;}
+        img{border-style:none;}
+        button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:normal;margin:0;}
+        button,input{overflow:visible;}
+        button,select{text-transform:none;}
+        button,[type='button'],[type='reset'],[type='submit']{-webkit-appearance:button;}
+        button::-moz-focus-inner,[type='button']::-moz-focus-inner,[type='reset']::-moz-focus-inner,[type='submit']::-moz-focus-inner{border-style:none;padding:0;}
+        button:-moz-focusring,[type='button']:-moz-focusring,[type='reset']:-moz-focusring,[type='submit']:-moz-focusring{outline:1px dotted ButtonText;
+        }
+        [type='checkbox'],[type='radio']{box-sizing:border-box;padding:0;}
+        [type='number']::-webkit-inner-spin-button,[type='number']::-webkit-outer-spin-button{height:auto;}
+        [type='search']{-webkit-appearance:textfield;outline-offset:-2px;}[type='search']::-webkit-search-decoration{-webkit-appearance:none;}
+        ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}
+        li{list-style:none;}
+
+    </style>
+
+    <style data-emotion="css 1a9ujk8" data-s="">
+        .css-1a9ujk8{padding:56px 80px;border:1px solid #e4e5ed;width:100%;}
+    </style>
+    <style data-emotion="css j7qwjs" data-s="">
+        .css-j7qwjs{
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-flex-direction:column;
+            -ms-flex-direction:column;
+            flex-direction:column;
+        }</style>
+
+    <style data-emotion="css acorl0" data-s="">
+        .css-acorl0{
+            width:560px;
+            padding:20px 0px;
+            margin:0 auto;
+            margin-top:56px;
+            margin-bottom:40px;
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-align-items:center;
+            -webkit-box-align:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-flex-direction:column;
+            -ms-flex-direction:column;
+            flex-direction:column;
+        }
+    </style>
+
+    <style data-emotion="css 1ljdbip" data-s="">
+        .css-1ljdbip{
+            font-size:30px;
+            font-weight:normal;
+            color:#303441;
+            line-height:normal;
+            margin-bottom:40px;
+            margin-top:0;
+        }
+    </style>
+
+    <style data-emotion="css bnp71o" data-s="">
+        .css-bnp71o{color:#727585;font-size:14px;margin-top:-24px;margin-bottom:40px;line-height:normal;}
+    </style>
+
+    <style data-emotion="css 1imsxus" data-s="">
+        .css-1imsxus{margin-bottom:12px;font-size:15px;font-weight:500;color:#555969;}
+    </style>
+    <style data-emotion="css 148309r" data-s="">
+        .css-148309r{
+            padding:16px;
+            -webkit-box-pack:start;
+            -ms-flex-pack:start;
+            -webkit-justify-content:flex-start;
+            justify-content:flex-start;
+            height:fit-content;
+            border-color:#e4e5ed;
+        }
+        .css-148309r:active,.css-148309r:focus,.css-148309r:hover{box-shadow:none;}
+        .css-148309r:active span:first-of-type,.css-148309r:focus span:first-of-type,.css-148309r:hover span:first-of-type{color:#e4e5ed;}
+    </style>
+
+    <style data-emotion="css 7rtdk7" data-s="">
+        .css-7rtdk7{
+            outline:none;
+            border-width:1px;
+            border-style:solid;
+            box-sizing:border-box;
+            border-radius:4px;
+            line-height:1;
+            font-weight:500;
+            -webkit-transition:background-color 0.3s,border-color 0.3s;
+            transition:background-color 0.3s,border-color 0.3s;
+            -webkit-text-decoration:none;text-decoration:none;
+            -webkit-tap-highlight-color:transparent;
+            display:-webkit-inline-flex;
+            display:-ms-inline-flexbox;
+            display:inline-flex;
+            -webkit-align-items:center;
+            -webkit-box-align:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-box-pack:center;
+            -ms-flex-pack:center;
+            -webkit-justify-content:center;
+            justify-content:center;
+            cursor:pointer;
+            position:relative;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+            white-space:nowrap;
+            max-width:100%;
+            width:100%;
+            min-width:100%;
+            max-width:100%;
+            height:36px;
+            font-size:14px;
+            padding:0 16px;
+            min-width:64px;
+            background-color:#ffffff;
+            border-color:#fae57c;
+            color:#303441;
+            padding:16px;
+            -webkit-box-pack:start;
+            -ms-flex-pack:start;
+            -webkit-justify-content:flex-start;
+            justify-content:flex-start;
+            height:fit-content;
+            border-color:#e4e5ed;
+        }
+        .css-7rtdk7 svg{width:18px;height:18px;}
+        .css-7rtdk7:hover{
+            background-color:#fffad1;
+            border-color:#ffd400;
+        }
+
+        .css-7rtdk7:focus{box-shadow:0 0 1px 2px #fff4ab;}
+        .css-7rtdk7:active{background-color:#fff4ab;border-color:#f5c126;}
+        .css-7rtdk7:disabled{cursor:not-allowed;background-color:#e4e5ed;border-color:#e4e5ed;color:#9a9ba7;}
+        .css-7rtdk7:active,.css-7rtdk7:focus,.css-7rtdk7:hover{box-shadow:none;}
+        .css-7rtdk7:active span:first-of-type,.css-7rtdk7:focus span:first-of-type,
+        .css-7rtdk7:hover span:first-of-type{color:#e4e5ed;}
+    </style>
+    <style data-emotion="css nh621w" data-s="">
+        .css-nh621w{
+            display:inline-block;
+            color:inherit;
+            font-style:normal;
+            line-height:0;
+            text-align:center;
+            text-transform:none;
+            vertical-align:-0.125em;
+            text-rendering:optimizeLegibility;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            color:#e4e5ed;
+        }
+        .css-nh621w:hover{background-color:#fffad1;border-color:#ffd400;}
+        .css-nh621w:active{background-color:#fff4ab;border-color:#f5c126;}
+    </style>
+    <style data-emotion="css 7kp13n" data-s="">.css-7kp13n{display:inline-block;}</style>
+
+    <style data-emotion="css dlgejo" data-s="">
+        .css-dlgejo{
+            cursor:pointer;
+            -webkit-text-decoration:none;
+            text-decoration:none;
+            margin-bottom:24px;
+        }
+    </style>
+
+    <style data-emotion="css bqrqdl" data-s="">
+        .css-bqrqdl{margin-top:48px;}
+    </style>
+    <style data-emotion="css 6asoex" data-s="">
+        .css-6asoex{
+            position:absolute;
+            left:-9999px;
+            top:-9999px;
+            visibility:hidden;
+            width:1px;
+            height:1px;
+            background-color:transparent;
+            display:block;
+        }
+    </style>
+    <style data-emotion="css" data-s=""></style>
+
+</head>
+<body>
+<main class="css-acorl0 e3jolaa0">
+    <a href="#" class="css-dlgejo e3jolaa1">
+        <svg width="85" height="100%" viewBox="0 0 85 26" xmlns="http://www.w3.org/2000/svg">
+            <path d="M77.69 4.86c3.975 0 7.197 3.215 7.197 7.18l-.002.055h.002c.073 3.477.074 5.769.003 6.874-.108 1.659-.724 3.372-1.947 4.693A7.21 7.21 0 0 1 77.593
+                 26c-2.724 0-4.998-.984-6.653-2.921l-.05-.059 3.226-2.684c.837.997 1.938 1.48 3.478 1.48.9 0 1.67-.358 2.259-.992.515-.556.817-1.263.832-1.813v-.443a7.186
+                 7.186 0 0 1-2.995.65c-3.975 0-7.197-3.214-7.197-7.179 0-3.964 3.222-7.178 7.197-7.178zm-32.13-.225c4.131 0 7.48 3.34 7.48 7.46 0 4.121-3.349 7.462-7.48
+                 7.462s-7.48-3.34-7.48-7.461c0-4.12 3.349-7.461 7.48-7.461zM4.533 0v10.354L8.623 5.2h5.309l-5.337 6.726 5.572 7.065h-4.98L4.534 13.42v5.572H0V0h4.533zM29.92
+                 4.86a6.233 6.233 0 0 1 6.233 6.234v7.897H31.96v-7.908a2.04 2.04 0 0 0-4.074-.152l-.006.152v7.908h-4.193v-7.908a2.04 2.04 0 0
+                 0-4.075-.152l-.005.152v7.908h-4.194v-7.897a6.233 6.233 0 0 1 10.371-4.662 6.201 6.201 0 0 1 4.136-1.571zm31.847 0a6.8 6.8 0 0 1 6.8 6.8v7.331h-4.194v-7.34a2.607
+                 2.607 0 0 0-2.441-2.602l-.165-.006a2.607 2.607 0 0 0-2.602 2.442l-.005.165v7.34l-4.193.001v-7.33a6.8 6.8 0 0 1 6.8-6.8zM45.56 8.818a3.282 3.282 0 0 0-3.287 3.279
+                 3.282 3.282 0 0 0 3.287 3.278 3.282 3.282 0 0 0 3.287-3.278 3.282 3.282 0 0 0-3.287-3.279zm32.13.226a3 3 0 0 0-3.003 2.996 3 3 0 0 0 3.003 2.996 3 3 0 0 0
+                 3.003-2.996 3 3 0 0 0-3.003-2.996z" fill="#212224" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    <div class="css-1a9ujk8 e17yzflp0">
+        <div class="css-j7qwjs e1hbznyv0">
+            <h1 class="css-1ljdbip ey8vk260">크몽에서 어떤 서비스를<br>이용하고 싶으세요?</h1>
+            <p class="css-bnp71o e1hbznyv1">원하는 회원가입 유형을 선택하세요.<br>의뢰인으로 가입 후에도 전문가 등록이 가능합니다.</p>
+            <label class="css-0 e1hbznyv2">
+                <div class="css-1imsxus e1hbznyv3">서비스를 의뢰하고 싶다면</div>
+                <button role="button" color="yellow" class="e1hbznyv4 css-7rtdk7 eklkj752">
+                        <span class="css-0 ">
+                            <span role="img" color="#e4e5ed" rotate="0" class="css-nh621w e181xm9y1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                    <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652
+                                    5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213
+                                    C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391
+                                    L7.13322158,10.821143 Z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    <span class="css-1oteowz eklkj751">의뢰인으로 가입</span>
+                </button>
+            </label>
+            <label class="css-bqrqdl e1hbznyv2">
+                <div class="css-1imsxus e1hbznyv3">내 전문성을 판매하고 싶다면</div>
+                <button role="button" color="yellow" class="e1hbznyv4 css-7rtdk7 eklkj752">
+                        <span class="css-0 ">
+                            <span role="img" color="#e4e5ed" rotate="0" class="css-nh621w e181xm9y1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                    <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054
+                                    L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,
+                                    6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    <span class="css-1oteowz eklkj751">전문가로 가입</span>
+                </button>
+            </label>
+        </div>
+    </div>
+</main>
+</body>
+</html>
