@@ -1,0 +1,60 @@
+@font-face{
+    font-family:MetroSans;
+    font-style:normal;
+    font-weight:900;
+    src:url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),
+    url(../fonts/glyphicons-halflings-regular.woff) format('woff'),
+    url(../fonts/MetroSans/MetroSans-Black.otf) format('truetype'),
+    url(/fonts/MetroSans/MetroSans-Black.eot),
+    url(/fonts/MetroSans/MetroSans-Black.eot?#iefix) format('embedded-opentype')
+}
+@font-face{
+    font-family:MetroSans;
+    font-style:normal;
+    font-weight:700;
+    src:url(/fonts/MetroSans/MetroSans-Bold.woff2) format('woff2'),
+    url(/fonts/MetroSans/MetroSans-Bold.woff) format('woff'),
+    url(/fonts/MetroSans/MetroSans-Bold.otf) format('truetype'),
+    url(/fonts/MetroSans/MetroSans-Bold.eot),
+    url(/fonts/MetroSans/MetroSans-Bold.eot?#iefix) format('embedded-opentype')
+}
+@font-face{
+    font-family:MetroSans;
+    font-style:normal;
+    font-weight:500;
+    src:url(/fonts/MetroSans/MetroSans-Medium.woff2) format('woff2'),
+    url(/fonts/MetroSans/MetroSans-Medium.woff) format('woff'),
+    url(/fonts/MetroSans/MetroSans-Medium.otf) format('truetype'),
+    url(/fonts/MetroSans/MetroSans-Medium.eot),
+    url(/fonts/MetroSans/MetroSans-Medium.eot?#iefix) format('embedded-opentype')
+}
+@font-face{
+    font-family:MetroSans;
+    font-style:normal;
+    font-weight:400;
+    src:url(/fonts/MetroSans/MetroSans-Regular.woff2) format('woff2'),
+    url(/fonts/MetroSans/MetroSans-Regular.woff) format('woff'),
+    url(/fonts/MetroSans/MetroSans-Regular.otf) format('truetype'),
+    url(/fonts/MetroSans/MetroSans-Regular.eot),
+    url(/fonts/MetroSans/MetroSans-Regular.eot?#iefix) format('embedded-opentype')
+}
+@font-face{
+    font-family:MetroSans;
+    font-style:normal;
+    font-weight:300;
+    src:url(/fonts/MetroSans/MetroSans-Light.woff2) format('woff2'),
+    url(/fonts/MetroSans/MetroSans-Light.woff) format('woff'),
+    url(/fonts/MetroSans/MetroSans-Light.otf) format('truetype'),
+    url(/fonts/MetroSans/MetroSans-Light.eot),
+    url(/fonts/MetroSans/MetroSans-Light.eot?#iefix) format('embedded-opentype')
+}
+@font-face{
+    font-family:FontAwesome;
+    font-weight:400;
+    font-style:normal;
+    src:url(/fonts/fontawesome-webfont.eot?v=4.3.0);
+    src:url(/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format('embedded-opentype'),
+    url(/fonts/fontawesome-webfont.woff2?v=4.3.0) format('woff2'),
+    url(/fonts/fontawesome-webfont.woff?v=4.3.0) format('woff'),
+    url(/fonts/fontawesome-webfont.ttf?v=4.3.0) format('truetype'),
+    url(/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format('svg')}
