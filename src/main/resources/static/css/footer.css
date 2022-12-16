@@ -1,0 +1,22 @@
+.footer { width:100%; position:relative; background-color:#2c786c; }
+.footer .con01 { width:100%; max-width:1100px; margin:0 auto; padding:100px 0 70px 0; position:relative; overflow:hidden; }
+.footer .con01 .cs { width:100%; max-width:420px; float:left; overflow:hidden; }
+.footer .con01 .cs .text01 { display:inline-block; font-size:1.7em; color:#c0e1dc; vertical-align:top; }
+.footer .con01 .cs .text02 { display:inline-block; font-size:2.3em; color:#f8b400; margin:0 0 0 10px; vertical-align:top; }
+.footer .con01 .cs .text03 { display:inline-block; float:left;  margin:20px 0 10px 0; color:#c0e1dc; font-size:1.3em }
+.footer .con01 .cs .text04 { display:inline-block; color:#c0e1dc; font-size:0.9em; font-weight:300; line-height:1.5em; float:left; margin:16px 0 0 15px;  }
+.footer .con01 .address { width:100%; max-width:650px; float:left; overflow:hidden; line-height:1.5em; }
+.footer .con01 .address .text01 { display:inline-block; float:left; color:#c0e1dc; font-size:0.9em; font-weight:300; letter-spacing:-0.02em ; vertical-align:top;}
+.footer .con01 .address .bar01 { display:inline-block; width:1px; height:12px; background-color:#8eb5af; margin:6px 10px 0 10px; float:left; }
+.footer .con01 .logo { display:inline-block; position:absolute; right:0; }
+.footer .con01 .logo img { width:150px; }
+.footer .con01 .navigation { width:100%; overflow:hidden; float:left; border-top:1px solid #399b8c; border-bottom:1px solid #399b8c; margin:20px 0 0 0; }
+.footer .con01 .navigation .menu { width:60%; padding:15px 0 15px 0; float:left; box-sizing:border-box; }
+.footer .con01 .navigation .menu ul { width:100%; position:relative; float:left; }
+.footer .con01 .navigation .menu ul li { display:inline-block; float:left;  }
+.footer .con01 .navigation .menu ul li a { display:inline-block; float:left; color:#c0e1dc }
+.footer .con01 .navigation .menu ul li.bar01 { margin:2px 20px 0 20px; background-color:#c0e1dc; width:1px; }
+.footer .con01 .navigation .copyright { width:40%; padding:15px 0 15px 0; float:left; box-sizing:border-box; text-align:right; color:#c0e1dc; }
+
+
+.footer_mobile { width:100%; position:relative; background-color:#2c786c; display:none; }

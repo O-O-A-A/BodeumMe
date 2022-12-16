@@ -5,7 +5,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="../static/parent.css" rel="stylesheet">
+
+    <!-- 추가하는 스타일 시트 -->
+    <link href="../static/css/parent.css" rel="stylesheet">
+
+    <!-- 추가 스크립트 -->
+    <script src = "../static/js/includeHtml.js"></script>
+
 
     <meta charset="UTF-8">
     <title>부모관련 페이지</title>
@@ -16,6 +22,8 @@
 <header>
 
     <h1> <<< 헤 더 부 분>>> </h1>
+    <div includeHtml="header.html"></div>
+    <script>includeHTML()</script>
 
 </header>
 <hr>
@@ -190,6 +198,9 @@
 <footer>
 
     <h1> <<< footer 부분 >>> </h1>
+    <div includeHtml="footer.html"></div>
+    <script>includeHTML()</script>
+
 
 </footer>
 

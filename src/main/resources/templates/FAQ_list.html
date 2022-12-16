@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아이 돌봄 서비스 ~ 자주 묻는 질문</title>
+
+
+    <!-- 스타일 시트-->
+    <link rel="stylesheet" type="text/css" href="../static/css/innerstyle.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/html5_reset.min.css"><!--리셋(기본)_http://cssreset.com/ -> 2번 HTML5 Doctor CSS Reset-->
+    <link rel="stylesheet" type="text/css" href="../static/css/component.css"><!--반복 사용되는것들-->
+
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css"><!--전체 레이아웃-->
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css"><!--메인만-->
+    <link rel="stylesheet" type="text/css" href="../static/css/content.css"><!--컨텐츠만-->
+    <link rel="stylesheet" type="text/css" href="../static/css/header.css"><!--맨 위-->
+    <link rel="stylesheet" type="text/css" href="../static/css/footer.css"><!--맨 밑-->
+
+    <link rel="stylesheet" type="text/css" href="../static/css/FAQ.css">   <!-- 직접 수정 및 추가하는 스타일 -->
+    <link rel="stylesheet" type="text/css" href="../static/css/FAQ_list.css">   <!-- 직접 수정 및 추가하는 스타일 -->
+
+    <!-- 추가 스크립트 -->
+    <script src = "../static/js/includeHtml.js"></script>
+
+</head>
+
+
+<body>
+    <div id="wrap">
+
+
+        <!-- 헤더 부분-->
+        <header>
+
+            <h1> <<< 헤 더 부 분>>> </h1>
+            <div includeHtml="header.html"></div>
+            <script>includeHTML()</script>
+
+        </header>
+
+
+
+        <div class="content">
+            <!-- 주로 하는 질문 -->
+            <!-- 여기를 '질문 목록'으로 사용하려면, 이 곳에 다른 코드를 적용시켜, 필요에 따라 목록을 전개할 필요성 있음 -->
+            <div class="con04">
+                <div class="tit0401"><a href="/cscenter/notice_list.php"><span class="tit040101">자주 묻는 질문</span> </a></div>
+                <div class="con0401">
+                    <ul class="ul0401"> <!-- 여기서부터 질문 전개 필요 -->
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=20"><span class="tit040102">주요질문1 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=20"><span class="date040102">2022-11-28</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=19"><span class="tit040102">주요질문2 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=19"><span class="date040102">2022-10-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=18"><span class="tit040102">주요질문3 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=18"><span class="date040102">2022-09-29</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=17"><span class="tit040102">주요질문4 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=17"><span class="date040102">2022-08-29</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="tit040102">주요질문5 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="date040102">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="tit040102">주요질문6 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="date040102">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="tit040102">주요질문7 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="date040102">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="tit040102">주요질문8 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="date040102">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="tit040102">주요질문9 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="date040102">2022-07-25</span></a>
+                        </li>
+                        <li class="li0401">
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="tit040102">주요질문10 </span></a>
+                            <a href="/cscenter/notice_view.php?idx=16"><span class="date040102">2022-07-25</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- 만일 질문 목록이 10개 초과일 경우, 여기서부터 페이지 넘기는 기능 추가 -->
+                <div class="paginate">
+                    <div class="paging">
+                        <span class="page">
+                            <a href="#" title="처음" class="off"><<</a>
+                            <a href="#" title="이전" class="off"><</a>
+                            <a href="#" title="1" class="on">1</a>
+                            <a href="#" title="다음" class="off">></a>
+                            <a href="#" title="끝" class="off">>></a>
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <footer id="footer">
+            <!-- 연락처와 주소 -->
+            <div class="footer">
+                <div class="con01">
+                    <div class="cs">
+                        <span class="text01">세이프시터</span>
+                        <span class="text02">1644-9157</span>
+                        <span class="text03">고객센터 상담시간</span>
+                        <span class="text04">· 평일 : 오전 9시 ~ 18시<br>· 토요일(공휴일) : 오전 9시 ~ 13시<br>· 일요일 : 휴무(설,추석,크리스마스)</span>
+                    </div>
+                    <div class="address">
+                        <span class="text01">세이프시터 주식회사</span><span class="bar01"></span><span class="text01">대구시 달서구 월배로 71(진천동, 진천트윈팰리스2층 207-1호)</span><br>
+                        <span class="text01">대표 최영일</span><span class="bar01"></span><span class="text01">사업자등록번호 409-88-00559</span><span class="bar01"></span><span class="text01">통신판매업 제2021-대구달서-12호</span><br>
+                        <span class="text01">직업정보제공사업 J1400020200004</span><span class="bar01"></span><span class="text01">개인정보 관리책임자 최영일</span><br>
+                        <span class="text01">대표전화 1644-9157, 팩스 02)6919-2485</span><span class="bar01"></span><span class="text01">admin@safety-sitter.com</span>
+                    </div>
+                    <div class="logo"><img src="../images/common/logo_footer_20201124.png"></div>
+                    <div class="navigation">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="/">홈</a></li>
+                                <li class="bar01">&nbsp;</li>
+                                <li><a href="/cscenter/page0201.php">이용약관</a></li>
+                                <li class="bar01">&nbsp;</li>
+                                <li><a href="/cscenter/page0301.php">개인정보처리방침</a></li>
+                                <li class="bar01">&nbsp;</li>
+                                <li><a href="/">FAQ</a></li>
+                                <li class="bar01">&nbsp;</li>
+                                <li><a href="https://blog.naver.com/safesitter" target="_BLANK">블로그</a></li>
+                                <li class="bar01">&nbsp;</li>
+                                <!--체불사업주 명단조회-->
+
+                                <a href="https://www.moel.go.kr/info/defaulter/defaulterList.do" rel="noopener noreferrer" target="_blank"><li>체불사업주 명단</li></a>
+                            </ul>
+                        </div>
+                        <div class="copyright">Copyrightⓒ2020 safesitter. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+    <!-- wrap end -->
+
+
+</body>
+</html>
