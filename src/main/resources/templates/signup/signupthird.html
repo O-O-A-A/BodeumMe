@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>가입하기 페이지 세 번째</title>
+
+    <link rel="stylesheet" href="../../static/signup/css/kmong_desktop_v2.css">
+    <link rel="stylesheet" href="../../static/signup/css/kmong.master_desktop.css">
+    <style>
+        *{font-family:'Metro Sans',sans-serif;box-sizing:border-box;}
+    </style>
+    <style>
+        .css-acorl0{
+            width:560px;
+            padding:20px 0px;
+            margin:0 auto;
+            margin-top:56px;
+            margin-bottom:40px;
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-align-items:center;
+            -webkit-box-align:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-flex-direction:column;
+            -ms-flex-direction:column;
+            flex-direction:column;
+        }
+    </style>
+    <style>
+        .css-dlgejo{
+            cursor:pointer;
+            -webkit-text-decoration:none;
+            text-decoration:none;
+            margin-bottom:24px;
+        }
+    </style>
+    <style>
+        .css-1a9ujk8{
+            padding:56px 80px;
+            border:1px solid #e4e5ed;
+            width:100%;
+        }
+    </style>
+    <style>
+        .css-1ljdbip{
+            font-size:29px;
+            font-weight:normal;
+            color:#303441;
+            line-height:normal;
+            margin-bottom:40px;
+            margin-top:0;
+        }
+    </style>
+    <style>
+        form {
+            display: block;
+            margin-top: 0em;
+        }
+    </style>
+    <style>
+        .css-wa7cs7 {
+            position: relative;
+            padding-bottom: 16px;
+        }
+    </style>
+    <style>
+        .css-1b8vwo3 {
+            font-size: 16px;
+            color: rgb(85, 89, 105);
+            margin-bottom: 8px;
+            position: relative;
+        }
+    </style>
+    <style>
+        .css-u6qecc {
+            width: 100%;
+            border: 1px solid rgb(228, 229, 237);
+            border-radius: 4px;
+            transition: background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+            display: inline-flex;
+            flex-direction: row;
+            overflow: hidden;
+            cursor: text;
+            background-color: rgb(255, 255, 255);
+            color: rgb(48, 52, 65);
+            height: 52px;
+            font-size: 15px;
+            padding: 0px 16px;
+            min-width: 80px;
+        }
+    </style>
+    <style>
+        .css-dka9py {
+            outline: none;
+            flex: 1 1 0%;
+            width: 100%;
+            background-image: none;
+            box-sizing: border-box;
+            font-size: inherit;
+            border: none;
+            font-weight: inherit;
+            background-color: transparent;
+            text-align: left;
+            color: inherit;
+        }
+    </style>
+    <style>
+        .css-dyr6gj-container {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+        }
+    </style>
+    <style>
+        .css-85gd59-control {
+            -webkit-box-align: center;
+            align-items: center;
+            background-color: transparent;
+            border-radius: 4px;
+            cursor: default;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            position: relative;
+            transition: all 100ms ease 0s;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(228, 229, 237);
+            box-shadow: none;
+            min-height: 30px;
+            outline: 0px !important;
+        }
+    </style>
+    <style>
+        .css-1sjf13d {
+            -webkit-box-align: center;
+            align-items: center;
+            display: flex;
+            flex: 1 1 0%;
+            flex-wrap: wrap;
+            padding: 0px 16px;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-size: 15px;
+            height: 50px;
+            align-content: center;
+        }
+    </style>
+    <style>
+        .css-h0k225-placeholder {
+            color: rgb(200, 202, 210);
+            margin-left: 2px;
+            margin-right: 2px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            box-sizing: border-box;
+        }
+    </style>
+    <style>
+        .css-62g3xt-dummyInput {
+            background: 0px center;
+            border: 0px;
+            font-size: inherit;
+            outline: 0px;
+            padding: 0px;
+            width: 1px;
+            color: transparent;
+            left: -100px;
+            opacity: 0;
+            position: relative;
+            transform: scale(0);
+        }
+    </style>
+    <style>
+        .css-14s2nwk-indicatorContainer {
+            color: rgb(204, 204, 204);
+            display: flex;
+            padding: 0px 16px;
+            transition: color 150ms ease 0s;
+            box-sizing: border-box;
+        }
+    </style>
+    <style>
+        .css-z5u2sd {
+            padding: 16px;
+            border: 1px solid rgb(228, 229, 237);
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <style>
+        .css-19dxxop {
+            font-size: 15px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgb(228, 229, 237);
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        .css-1om2ydj {
+            margin-right: 8px;
+            display: inline-block;
+            background-color: rgb(228, 229, 237);
+            border-radius: 50%;
+            padding: 2px;
+            line-height: 1.15;
+        }
+    </style>
+    <style>
+        .css-1qcqzrg {
+            display: inline-block;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizelegibility;
+            -webkit-font-smoothing: antialiased;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <style>
+        .css-7kp13n {
+            display: inline-block;
+        }
+        .css-1yuhvjn {
+            margin-top: 16px;
+        }
+        .css-zh2w40 {
+            font-size: 12px;
+            color: rgb(114, 117, 133);
+            margin-bottom: 4px;
+            cursor: pointer;
+        }
+        .css-1om2ydj {
+            margin-right: 8px;
+            display: inline-block;
+            background-color: rgb(228, 229, 237);
+            border-radius: 50%;
+            padding: 2px;
+            line-height: 1.15;
+        }
+        .css-1b63ro4 {
+            color: rgb(255, 114, 98);
+        }
+        .css-klg5aa {
+            outline: none;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            border-radius: 4px;
+            line-height: 1;
+            font-weight: 500;
+            transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 100%;
+            height: 52px;
+            font-size: 16px;
+            padding: 0px 24px;
+            min-width: 80px;
+            background-color: rgb(255, 212, 0);
+            border-color: rgb(255, 212, 0);
+            color: rgb(48, 52, 65);
+        }
+        .css-klg5aa:disabled {
+            cursor: not-allowed;
+            background-color: rgb(228, 229, 237);
+            border-color: rgb(228, 229, 237);
+            color: rgb(154, 155, 167);
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="__next">
+        <main class="css-acorl0 e3jolaa0">
+            <a href="#" class="css-dlgejo e3jolaa1">
+                <svg width="85" height="100%" viewBox="0 0 85 26" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M77.69 4.86c3.975 0 7.197 3.215 7.197 7.18l-.002.055h.002c.073 3.477.074 5.769.003 6.874-.108 1.659-.724 3.372-1.947 4.693A7.21 7.21 0 0 1 77.593 26c-2.724 0-4.998-.984-6.653-2.921l-.05-.059 3.226-2.684c.837.997 1.938 1.48 3.478 1.48.9 0 1.67-.358 2.259-.992.515-.556.817-1.263.832-1.813v-.443a7.186 7.186 0 0 1-2.995.65c-3.975 0-7.197-3.214-7.197-7.179 0-3.964 3.222-7.178 7.197-7.178zm-32.13-.225c4.131 0 7.48 3.34 7.48 7.46 0 4.121-3.349 7.462-7.48 7.462s-7.48-3.34-7.48-7.461c0-4.12 3.349-7.461 7.48-7.461zM4.533 0v10.354L8.623 5.2h5.309l-5.337 6.726 5.572 7.065h-4.98L4.534 13.42v5.572H0V0h4.533zM29.92 4.86a6.233 6.233 0 0 1 6.233 6.234v7.897H31.96v-7.908a2.04 2.04 0 0 0-4.074-.152l-.006.152v7.908h-4.193v-7.908a2.04 2.04 0 0 0-4.075-.152l-.005.152v7.908h-4.194v-7.897a6.233 6.233 0 0 1 10.371-4.662 6.201 6.201 0 0 1 4.136-1.571zm31.847 0a6.8 6.8 0 0 1 6.8 6.8v7.331h-4.194v-7.34a2.607 2.607 0 0 0-2.441-2.602l-.165-.006a2.607 2.607 0 0 0-2.602 2.442l-.005.165v7.34l-4.193.001v-7.33a6.8 6.8 0 0 1 6.8-6.8zM45.56 8.818a3.282 3.282 0 0 0-3.287 3.279 3.282 3.282 0 0 0 3.287 3.278 3.282 3.282 0 0 0 3.287-3.278 3.282 3.282 0 0 0-3.287-3.279zm32.13.226a3 3 0 0 0-3.003 2.996 3 3 0 0 0 3.003 2.996 3 3 0 0 0 3.003-2.996 3 3 0 0 0-3.003-2.996z" fill="#212224" fill-rule="evenodd"></path>
+                </svg>
+            </a>
+            <div class="css-1a9ujk8 e17yzflp0">
+                <form novalidate="" class="css-1rr4qq7 e1r5v7w50">
+                    <h1 class="css-1ljdbip ey8vk260">딱 이것만 체크하면 가입완료!</h1>
+                    <div class="css-wa7cs7 ey8vk261">
+                        <div class="css-1b8vwo3 ey8vk262">이메일
+                        </div>
+                        <div class="css-u6qecc e1fnk6ig0">
+                            <input type="email" required="" placeholder="이메일을 입력해 주세요." name="email" autocomplete="email" class="css-dka9py e1fnk6ig1" value="">
+                        </div>
+                        <div data-testid="email-error" class="css-1vkm6nb e1bt41r0"></div>
+                    </div>
+                    <div class="css-14mupuy ey8vk261">
+                        <div class="css-1b8vwo3 ey8vk262">비밀번호</div>
+                        <div class="css-u6qecc e1fnk6ig0">
+                            <input type="password" required="" placeholder="비밀번호를 입력해 주세요. (8자리 이상)" name="password" autocomplete="current-password" class="css-dka9py e1fnk6ig1" value="">
+                        </div>
+                        <div data-testid="password-error" class="css-1vkm6nb e1bt41r0">
+                        </div>
+                    </div>
+                    <div class="css-wa7cs7 ey8vk261">
+                        <div class="css-u6qecc e1fnk6ig0">
+                            <input type="password" required="" placeholder="비밀번호를 한번 더 입력해 주세요." name="passwordConfirm" autocomplete="current-password" class="css-dka9py e1fnk6ig1" value="">
+                        </div>
+                        <div data-testid="password-confirm-error" class="css-1vkm6nb e1bt41r0"></div>
+                    </div>
+                    <div class="css-wa7cs7 ey8vk261">
+                        <div class="css-1b8vwo3 ey8vk262">직업</div>
+                        <div class=" css-dyr6gj-container">
+                            <span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
+                            <div class=" css-85gd59-control">
+                                <div class=" css-1sjf13d">
+                                    <div class=" css-h0k225-placeholder">직업을 선택해 주세요.</div>
+                                    <input id="react-select-11-input" readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value="">
+                                </div>
+                                <div class=" css-1wy0on6">
+                                    <span class=" css-1hyfx7x"></span>
+                                    <div class=" css-14s2nwk-indicatorContainer" aria-hidden="true">
+                                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg">
+                                            <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <input name="jobType" type="hidden" value="">
+                        </div>
+                        <div data-testid="job-type-error" class="css-1vkm6nb e1bt41r0"></div>
+                    </div>
+                    <div class="css-wa7cs7 ey8vk261">
+                        <div class="css-1b8vwo3 ey8vk262">비즈니스 분야</div>
+                        <div class=" css-dyr6gj-container">
+                            <span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
+                            <div class=" css-85gd59-control">
+                                <div class=" css-1sjf13d">
+                                    <div class=" css-h0k225-placeholder">비즈니스 분야를 선택해 주세요.</div>
+                                    <input id="react-select-12-input" readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value="">
+                                </div>
+                                <div class=" css-1wy0on6">
+                                    <span class=" css-1hyfx7x"></span>
+                                    <div class=" css-14s2nwk-indicatorContainer" aria-hidden="true">
+                                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg">
+                                            <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <input name="jobSector" type="hidden" value="">
+                        </div>
+                        <div data-testid="job-sector-error" class="css-1vkm6nb e1bt41r0">
+
+                        </div>
+                    </div>
+                    <div class="css-wa7cs7 ey8vk261"><div class="css-1b8vwo3 ey8vk262">관심사 선택 (중복 선택 가능)</div>
+                        <div class=" css-dyr6gj-container">
+                            <span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
+                            <div class=" css-85gd59-control">
+                                <div class=" css-1sjf13d"><div class=" css-h0k225-placeholder">관심사를 선택해 주세요.</div>
+                                    <input id="react-select-13-input" readonly="" tabindex="0" aria-autocomplete="list" class="css-62g3xt-dummyInput" value="">
+                                </div>
+                                <div class=" css-1wy0on6">
+                                    <span class=" css-1hyfx7x"></span>
+                                    <div class=" css-14s2nwk-indicatorContainer" aria-hidden="true">
+                                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg">
+                                            <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <input name="interestCategories" type="hidden"></div>
+                        </div>
+                        <div data-testid="interest-categories-error" class="css-1vkm6nb e1bt41r0"></div>
+                    </div>
+                    <div name="agreements" class="css-z5u2sd e18f6mc30">
+                        <div class="css-19dxxop e18f6mc31" onclick="onClickPolicy1()">
+                            <div class="css-1om2ydj e18f6mc34" id="policy1">
+                                <span role="img" color="#ffffff" rotate="0" class="css-1qcqzrg e181xm9y1">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                        <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                    </svg>
+                                </span>
+                            </div>모두 동의합니다.
+                        </div>
+                        <div class="css-1yuhvjn e18f6mc32">
+                            <div class="css-zh2w40 e18f6mc33">
+                                <div class="css-1om2ydj e18f6mc34">
+                                    <span role="img" color="#ffffff" rotate="0" class="css-1qcqzrg e181xm9y1">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                        </svg>
+                                    </span>
+                                </div>만 14세 이상입니다.
+                                <span class="css-1b63ro4 e18f6mc35">(필수)</span>
+                            </div>
+                            <div class="css-zh2w40 e18f6mc33">
+                                <div class="css-1om2ydj e18f6mc34">
+                                    <span role="img" color="#ffffff" rotate="0" class="css-1qcqzrg e181xm9y1">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a target="_blank" href="https://support.kmong.com/hc/ko/articles/900005915466" class="css-1ebg73i e13foyyg0">서비스 이용약관</a>에 동의합니다.
+                                <span class="css-1b63ro4 e18f6mc35">(필수)</span>
+                            </div>
+                            <div class="css-zh2w40 e18f6mc33">
+                                <div class="css-1om2ydj e18f6mc34">
+                                    <span role="img" color="#ffffff" rotate="0" class="css-1qcqzrg e181xm9y1">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a target="_blank" href="https://support.kmong.com/hc/ko/articles/9386067530009" class="css-1ebg73i e13foyyg0">개인정보 수집/이용</a>에 동의합니다.
+                                <span class="css-1b63ro4 e18f6mc35">(필수)</span>
+                            </div>
+                            <div class="css-zh2w40 e18f6mc33">
+                                <div class="css-1om2ydj e18f6mc34">
+                                    <span role="img" color="#ffffff" rotate="0" class="css-1qcqzrg e181xm9y1">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a target="_blank" href="https://support.kmong.com/hc/ko/articles/9386269489433" class="css-1ebg73i e13foyyg0">개인정보 제3자 제공</a>에 동의합니다.
+                                <span class="css-1b63ro4 e18f6mc35">(필수)</span>
+                            </div>
+                            <div class="css-zh2w40 e18f6mc33">
+                                <div class="css-1om2ydj e18f6mc34">
+                                    <span role="img" color="#ffffff" rotate="0" class="css-1qcqzrg e181xm9y1">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                        </svg>
+                                    </span>
+                                </div>이벤트 할인 혜택 알림 수신에 동의합니다. (선택)</div>
+                            <div class="css-zh2w40 e18f6mc33">
+                                <div class="css-1om2ydj e18f6mc34">
+                                    <span role="img" color="#ffffff" rotate="0" class="css-1qcqzrg e181xm9y1">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M7.13322158,10.821143 C6.77457526,10.3822153 6.17602724,10.3624856 5.79632715,10.7770754 C5.41662707,11.1916652 5.39955962,11.8835778 5.75820594,12.3225054 L9.30027691,16.6574524 C9.66714471,17.1064419 10.2826916,17.1152317 10.6590418,16.6768551 L18.2255456,7.86331213 C18.5934618,7.43475954 18.5911847,6.74257073 18.2204597,6.31726515 C17.8497347,5.89195957 17.2509477,5.89459179 16.8830316,6.32314438 L10.004578,14.3352391 L7.13322158,10.821143 Z"></path>
+                                        </svg>
+                                    </span>
+                                </div>장기 미접속 시 계정 활성 상태 유지합니다. (선택)
+                            </div>
+                        </div>
+                    </div>
+                    <button role="button" color="yellow" disabled="" type="submit" class="css-klg5aa eklkj752">
+                        <span class="css-1oteowz eklkj751">버튼만 누르면 가입완료!</span>
+                    </button>
+                </form>
+            </div>
+            <p class="css-e9i38g e17yzflp1">크몽은 회원님의 원활한 서비스 이용에 필요한 정보를<br>적절한 전자적 수단을 통해 제공하고 있습니다.</p>
+        </main>
+        <div id="ad-block" class="css-6asoex e18lm0v0"></div>
+    </div>
+</body>
+</html>
