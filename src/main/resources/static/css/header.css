@@ -3,15 +3,15 @@
 .header { width:100%; position:relative; border-bottom:1px solid #CCCCCC; overflow:hidden; position:fixed; top:0; z-index:10; background-color:#FFFFFFa8 }
 .header.slide { background-color:#FFFFFFFF }
 .header .top { max-width:1100px; width:100%; margin:0 auto; }
-.header .top .top_logo { max-width:220px; width:100%; float:left; text-align:center; padding:30px 20px 20px 0; box-sizing:border-box; margin:0 50px 0 0; }
+.header .top .top_logo { max-width:300px; width:100%; float:left; text-align:center; padding:30px 20px 20px 10px; box-sizing:border-box; margin:0 50px 0 0; }
 .header .top .top_logo .menu { display:none; }
-.header .top .top_logo .logo { width:100%; }
+.header .top .top_logo .logo { width:250%; }
 .header .top .top_navigation { max-width:800px; width:100%; box-sizing:border-box; float:left; }
 .header .top .top_navigation ul.menu01 { max-width:530px; width:100%; float:left; box-sizing:border-box; padding:50px 0 20px 0; }
 .header .top .top_navigation ul.menu01 li { position:relative; display:inline-block; float:left; margin:0 55px 0 0; }
 .header .top .top_navigation ul.menu02 { max-width:270px; width:100%; float:right; box-sizing:border-box; text-align:right; padding:40px 0 20px 0;   }
 .header .top .top_navigation ul.menu02 .btn01 { display:inline-block; padding:10px 20px 10px 20px; margin:0 5px 0 5px; border:0; border-radius:50px; background-color:#f8b400; color:#FFFFFF }
-.header .top .top_navigation ul.menu02 .btn02 { display:inline-block; padding:10px 20px 10px 20px; margin:0 5px 0 5px; border:0; border-radius:50px; background-color:#2c786c; color:#FFFFFF }
+.header .top .top_navigation ul.menu02 .btn02 { display:inline-block; padding:10px 20px 10px 20px; margin:0 5px 0 5px; border:0; border-radius:50px; background-color: #008fc4; color:#FFFFFF }
 .header .top .top_navigation ul.menu02 .btn03 { display:inline-block; position:absolute; right:0; top:0; }
 
 .header { width:100%; position:relative; border-bottom:1px solid #CCCCCC; overflow:hidden; position:relative; top:0; z-index:10; background-color: #ffffff; box-shadow:0px 5px 7px #DEDEDE; }
