@@ -1,0 +1,29 @@
+/* FAQ_list.html, FAQ_view.html */
+
+body {
+    line-height: 1;
+    font-size: 1em;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #3c3c3c;
+    letter-spacing: -0.05em;
+}
+div {
+    display: block;
+}
+
+a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.paginate{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.paginate .paging .page a{
+    width: 50px;
+    font-size: 25px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
