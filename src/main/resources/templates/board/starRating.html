@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>starRating</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #star_rating{
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            font-size: 30px;
+            transform: translate(-50%, -50%)
+        }
+        .rating {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateY(180deg);
+            display: flex;
+        }
+        .rating input{
+            display: none;
+        }
+        .rating label {
+            display: block;
+            cursor: pointer;
+            width: 50px;
+        }
+        .rating label:before {
+            content: '★';
+            font-family: FontAwesome, serif ;
+            position: relative;
+            display: block;
+            font-size: 50px;
+            color: rgb(228, 229, 237);
+        }
+        .rating label:after {
+            content: '★';
+            font-family: fontAwesome, serif;
+            position: absolute;
+            display: block;
+            font-size: 50px;
+            color: rgb(255, 212, 0);
+            top: 0;
+            opacity: 0;
+            transition: .5s;
+        }
+        .rating label:hover:after,
+        .rating label:hover ~ label:after,
+        .rating input:checked ~ label:after{
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div id="star" class="rating"></div>
+<span id="star_rating">별점 : 0</span>
+
+<script>
+
+    $(document).ready(function(){
+        const getStar = (i) => {
+            $("#star_rating").text(`별점 : ${5 - i}`)
+        }
+        for (let i = 0; i < 5; i++) {
+            $("#star")
+                .append(`<input type="radio" id="star${i}" name="star" onclick="getStar(${i})">
+                    <label for="star${i}"></label>`)
+        }
+    })
+
+</script>
+</body>
+</html>
