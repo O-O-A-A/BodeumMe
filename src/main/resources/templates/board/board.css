@@ -262,7 +262,29 @@ a:link, a:visited{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .icon_won {
+    width: 13px;
+    vertical-align: bottom;
+    margin: 0 3px 1px 0;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .bar0101 {
+    display: inline-block;
+    width: 1px;
+    margin: 2px 7px 0 7px;
+    background-color: #DEDEDE;
+    line-height: 0.9em;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .working_time {
+    display: inline-block;
+    font-weight: 300;
+    box-sizing: border-box;
+    color: #666666;
+    margin: 0 0 0 0;
+    padding: 0 0 0 17px;
+    background: url(../../images/common/icon_search_sphere.svg) 0 2px no-repeat;
+    background-size: 13px;
+    letter-spacing: 0;
+}
 .content .list .div_list .rlist .list_more .ul01 .li01 .bar01 {
     float: left;
     width: 100%;
@@ -309,7 +331,7 @@ a:link, a:visited{
     display: inline-block;
     width: 24px;
     height: 22px;
-    background: url(/images/common/icon_heart_off2.png) no-repeat;
+    background: url(../../images/common/icon_search_sphere.svg) no-repeat;
     background-size: 23px;
     margin: 4px 3px 4px 3px;
     box-sizing: border-box;
