@@ -1,0 +1,316 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    border: 0;
+    outline: 0;
+}
+body{
+    line-height: 1;
+    font-size: 1em;
+    /*font-family: "Noto Sans KR", sans-serif;*/
+    color: #3c3c3c;
+    letter-spacing: -0.05em;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+}
+li{
+    display: list-item;
+}
+a:link, a:visited{
+    color: #000;
+    text-decoration: none;
+}
+.content{
+    width: 100%;
+    position: relative;
+}
+.content .list{
+    width: 100%;
+    max-width: 670px;
+    min-height: 800px;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0 auto;
+    border-left: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE;
+}
+.content .list .div_list {
+    width: 100%;
+    max-width: 100%;
+    min-height: 800px;
+    padding: 30px 15px 30px 15px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #F4F4F4;
+}
+.content .list .div_list .search{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 0 0 20px 0;
+}
+.content .list .div_list .search .text01 {
+    padding: 20px 20px 20px 40px;
+    font-size: 1.1em;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+.content .list .div_list .search #area_text{
+    border-bottom: 1px solid #EAEAEA;
+}
+.content .list .div_list .search #area_text:after{
+    width: 35px;
+    height: 55px;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background: url(../../images/common/icon_search_gps.svg) 20px 25px no-repeat;
+    background-size: 13px auto;
+    opacity: 0.4;
+}
+.content .list .div_list .search #sphere_text:after{
+    width: 35px;
+    height: 55px;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: block;
+    background: url(../../images/common/icon_search_sphere.svg) 20px 25px no-repeat;
+    background-size: 13px auto;
+    opacity: 0.4;
+}
+.content .list .div_list .tit{
+    width: 100%;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0 0 10px 0;
+}
+.content .list .div_list .tit .sort01{
+    position: absolute;
+    right: 15px;
+    margin: -6px 0 0 0;
+}
+.content .list .div_list .tit .sort01 .psort{
+    padding: 5px;
+    font-size: 0.7em;
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+}
+.content .list .div_list .rlist {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.content .list .div_list .rlist .list_more{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+.content .list .div_list .rlist .list_more .ul01{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    list-style: none;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01{
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 0 20px 0;
+    border: 0;
+    border-radius: 5px;
+    line-height: 1.3em;
+    background-color: #FFFFFF;
+    text-align: left;
+    overflow: hidden;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab01{
+    float: left;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab01 .img01{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    overflow: hidden;
+    box-sizing: border-box;
+    float: left;
+    background-color: #FAFAFA;
+    border: 1px solid #EFEFEF;
+    margin: 5px 30px 0 10px;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab01 .img01.horizontal{
+    width: auto;
+    height: 105%;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab01 .img01 img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab01 .text01{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 0.75em;
+    border: 0;
+    padding: 0 5px 0 5px;
+    margin: 7px 0 0 5px;
+    text-align: center;
+    background-color: #F4F4F4;
+    border-radius: 30px;
+    color: #676767;
+    width: 70px;
+    letter-spacing: 0;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02{
+    float: left;
+    width: calc(100% - 100px);
+    display: inline-block;
+    position: relative;
+    letter-spacing: -0.03em;
+    line-height: 1em;
+    font-size: 1em;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .sphere {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    color: #2c786c;
+    font-weight: 400;
+    padding: 5px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .edit_date {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-size: 0.9em;
+    color: #9A9A9A;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .subject {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9em;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+    color: #000000;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .area {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 300;
+    box-sizing: border-box;
+    color: #797979;
+    padding: 5px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab02 .pay {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 300;
+    box-sizing: border-box;
+    color: #666666;
+    padding: 5px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content .list .div_list .rlist .list_more .ul01 .li01 .bar01 {
+    float: left;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    border-top: 1px solid #EAEAEA;
+    margin: 15px 0 15px 0;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab03 {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 0.75em;
+    color: #797979;
+    padding: 0 0 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .tab03 .text01 {
+    display: inline-block;
+    background-color: #F4F4F4;
+    padding: 1px 5px 1px 5px;
+    color: #333333;
+    margin: 0 5px 0 0;
+    font-weight: 300;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .follow01 {
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+    top: 20px;
+    z-index: 4;
+    width: 30px;
+    height: 30px;
+    background-color: #F4F4F4;
+    border: 1px solid #EFEFEF;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.content .list .div_list .rlist .list_more .ul01 .li01 .follow01 .heart01 {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    background: url(/images/common/icon_heart_off2.png) no-repeat;
+    background-size: 23px;
+    margin: 4px 3px 4px 3px;
+    box-sizing: border-box;
+}
