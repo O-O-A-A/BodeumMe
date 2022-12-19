@@ -44,3 +44,24 @@
     color: #2795e9;
 }
 
+
+.article-return-to-top a {
+    display: block;
+    padding: 15px 30px;
+    text-align: right;
+}
+
+#icon-arrow-up img {
+    width: 20px;
+    height : 20px;
+}
+
+
+.article-relatives {
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+
