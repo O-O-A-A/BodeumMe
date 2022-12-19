@@ -11,13 +11,37 @@
     <link rel="stylesheet" href="./board.css">
 </head>
 <body>
+<style>.bg_modal {display:none; top:0; position:fixed;width:100%;height:100%;background:#3d3d3d;opacity:0.3;z-index:22}</style>
+<div class="bg_modal" style="display: none;"></div>
 <div class="content">
     <div class="list">
         <div class="div_list">
             <div class="search">
+                <script src="./boardModal.js"></script>
                 <form name="search_form" method="GET">
-                    <div class="text01" id="area_text"><span class="exam01" style="color: #9A9A9A;">지역을 선택하시려면 클릭해주세요.</span></div>
-                    <div class="text01" id="sphere_text"><span class="exam01" style="color: #9A9A9A;">분야를 선택하시려면 클릭해주세요.</span></div>
+                    <input type="hidden" name="area1_search" id="psido" value=""/>
+                    <input type="hidden" name="area2_search" id="pgugun" value=""/>
+                    <input type="hidden" name="area3_search" id="pdong" value=""/>
+
+                    <input type="hidden" name="sphere1" class="psphere" id="psphere1" value=""/>
+                    <input type="hidden" name="sphere2" class="psphere" id="psphere2" value=""/>
+                    <input type="hidden" name="sphere3" class="psphere" id="psphere3" value=""/>
+                    <input type="hidden" name="sphere4" class="psphere" id="psphere4" value=""/>
+                    <input type="hidden" name="sphere5" class="psphere" id="psphere5" value=""/>
+
+                    <input type="hidden" name="week" class="pweek" id="pweek" value=""/>
+                    <input type="hidden" name="working_time" class="pworking_time" id="pworking_time" value=""/>
+                    <input type="hidden" name="pay" class="ppay" id="ppay" value=""/>
+                    <input type="hidden" name="vaccine" class="pvaccine" id="pvaccine" value=""/>
+
+                    <div class="text01" id="area_text"><span class="exam01"
+                                                             style="color: #9A9A9A;">지역을 선택하시려면 클릭해주세요.</span></div>
+                    <div class="text01" id="sphere_text"><span class="exam01"
+                                                               style="color: #9A9A9A;">분야를 선택하시려면 클릭해주세요.</span></div>
+                    <div class="layer01" id="search_layer" style="display: none;">
+
+
+                    </div>
                 </form>
             </div>
             <div class="tit">
