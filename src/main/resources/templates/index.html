@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/index.css" rel="stylesheet"/>
+    <title>kmong</title>
+    <script src="/jquery/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <section class="top">
+        <div class="topmenu">
+            <section class="topmenu_1">
+                <h1 class="topmenu_h1">프리랜서 마켓 No.1 크몽에서 원하는 전문가를 찾아보세요</h1>
+                <form class="topmenu_form">
+                    <div class="topmenu_div_1">
+                        <div class="topmenu_div_2">
+                            <span class="text">전자책</span>
+                            <span></span>
+                        </div>
+                        <script>
+                            const text = document.querySelector(".text");
+
+                            const textLoad = () => {
+                                setTimeout(()=>{
+                                    text.textContent ="전자책";
+                                }, 0);
+                                setTimeout(()=>{
+                                    text.textContent ="홈페이지";
+                                }, 2000);
+                                setTimeout(()=>{
+                                    text.textContent ="VOD";
+                                }, 4000);
+                            };
+                            textLoad();
+                            setInterval(textLoad, 6000);
+
+                            let curPos = 0; //현재 보여지는 이미지의 인덱스 번호
+                            let positionValue = 0;// 이미지 태그의 위치 값 지정할 변수
+                            const IMAGE_WIDTH = 540;
+
+                            const prevBtn = document.querySelector(".prevOn");
+                            const nextBtn = document.querySelector(".nextOn");
+                            const images = document.querySelector(".images");
+
+                            function next(){
+                                console.log("dsa");
+                                if(curPos < 6){
+                                    prevBtn.removeAttribute('disabled')
+                                    positionValue -= IMAGE_WIDTH;
+                                    images.style.transform = `translateX(${positionValue}px)`;
+                                    curPos += 1;
+                                };
+                            };
+
+                            function init(){
+                                console.log("실행됌");
+                                prevBtn.setAttribute('disabled', 'true');
+                                nextBtn.addEventListener("click", next);
+                            };
+                            init();
+                        </script>
+                    </div>
+                </form>
+                <div class="hashtag">
+                    <div class="hashtag_1">
+                        <a class="hashtag_2">#로고</a>
+                    </div>
+                    <div class="hashtag_1">
+                        <a class="hashtag_2">#블로그</a>
+                    </div>
+                    <div class="hashtag_1">
+                        <a class="hashtag_2">#상세페이지</a>
+                    </div>
+                    <div class="hashtag_1">
+                        <a class="hashtag_2">#PPT</a>
+                    </div>
+                    <div class="hashtag_1">
+                        <a class="hashtag_2">#일러스트</a>
+                    </div>
+                </div>
+            </section>
+            <section class="rsection">
+                <div>
+                    <div class="rsection_div">
+                        <div class="rsection_div1">
+                            <div class="images">
+                                <img src="../images/index/img_top_1.png"/>
+                                <img src="../images/index/img_top_2.png"/>
+                                <img src="../images/index/img_top_3.png"/>
+                                <img src="../images/index/img_top_4.png"/>
+                                <img src="../images/index/img_top_5.png"/>
+                                <img src="../images/index/img_top_6.png"/>
+                                <img src="../images/index/img_top_7.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="prevOn" type="button">&lt;</button>
+                    <button class="nextOn" type="button">&gt;</button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="categori">
+        <h1 class="service">700여 개 카테고리에서 필요한 서비스를 찾아보세요!</h1>
+        <div class="categori_b">
+            <div class="business">비즈니스</div>
+            <div>
+                <ul class="icons">
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_1.png>
+                            <span class="under_icon">디자인</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_2.png>
+                            <span class="under_icon">IT·프로그래밍</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_3.png>
+                            <span class="under_icon">영상·사진·음향</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_4.png>
+                            <span class="under_icon">마케팅</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_5.png>
+                            <span class="under_icon">번역·통역</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_6.png>
+                            <span class="under_icon">문서·글쓰기</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_7.png>
+                            <span class="under_icon">경영자문·운영지원</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_8.png>
+                            <span class="under_icon">주문제작</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_9.png>
+                            <span class="under_icon">세무·법무·노무</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="categori_b">
+            <div class="business">N잡·커리어</div>
+            <div>
+                <ul class="icons">
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_10.png>
+                            <span class="under_icon">취업·입시</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_11.png>
+                            <span class="under_icon">투잡·노하우</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_12.png>
+                            <span class="under_icon">직무역량</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="categori_b">
+            <div class="business">취미·생활</div>
+            <div>
+                <ul class="icons">
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_13.png>
+                            <span class="under_icon">운세</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_14.png>
+                            <span class="under_icon">심리상담</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_15.png>
+                            <span class="under_icon">취미</span>
+                        </a>
+                    </li>
+                    <li class="lcon_1">
+                        <a class="icon_sel">
+                            <img src=../images/index/ic_category_16.png>
+                            <span class="under_icon">생활서비스</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="categori_2">
+            <h2 class="service">크몽에서 가장 인기있어요!</h2>
+            <div class="populer_img">
+                <article class="populer">
+                    <a>
+                        <div class="populer_img_sel">
+                                    <span class="populer_1">
+                                        <img src="../images/index/ic_populer_1.jpeg" class="populer_2">
+                                    </span>
+                        </div>
+                    </a>
+                </article>
+                <article class="populer">
+                    <a>
+                        <div class="populer_img_sel">
+                                    <span class="populer_1">
+                                        <img src="../images/index/ic_populer_2.jpeg" class="populer_2">
+                                    </span>
+                        </div>
+                    </a>
+                </article>
+                <article class="populer">
+                    <a>
+                        <div class="populer_img_sel">
+                                    <span class="populer_1">
+                                        <img src="../images/index/ic_populer_3.jpeg" class="populer_2">
+                                    </span>
+                        </div>
+                    </a>
+                </article>
+                <article class="populer">
+                    <a>
+                        <div class="populer_img_sel">
+                                    <span class="populer_1">
+                                        <img src="../images/index/ic_populer_4.jpeg" class="populer_2">
+                                    </span>
+                        </div>
+                    </a>
+                </article>
+                <article class="populer">
+                    <a>
+                        <div class="populer_img_sel">
+                                    <span class="populer_1">
+                                        <img src="../images/index/ic_populer_5.jpeg" class="populer_2">
+                                    </span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+</div>
+</section>
+</section>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</body>
+</html>
