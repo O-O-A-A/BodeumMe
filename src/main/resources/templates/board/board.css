@@ -193,6 +193,9 @@ article {
     transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
     opacity: 1;
 }
+.css-ggl1ot:hover{
+    transform: scale(1.1);
+}
 .css-1q9qc6z {
     position: absolute;
     top: 8px;
@@ -309,4 +312,23 @@ article {
 }
 .css-7kp13n {
     display: inline-block;
+}
+.css-1pujofm {
+    display: inline-block;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: -2px 2px 0px 0px;
+    color: rgb(251, 132, 45);
+}
+.css-p9bq5v {
+    display: inline-block;
+    margin: 0px 4px;
+    width: 1px;
+    border-left: 1px solid rgb(228, 229, 237);
+    height: 10px;
 }
