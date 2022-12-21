@@ -1,4 +1,19 @@
 
+#main{
+    margin: 15px;
+    margin-top: 0px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 ul {
     display: block;
     list-style-type: disc;
@@ -18,74 +33,65 @@ ol, ul {
     list-style: none;
 }
 
-.content {
-    width: 100%;
-    background: url(/images/cscenter/bg_cscenter_main.jpg) center top no-repeat;
-    background-color: #f9b401;
-    background-size: 5000px auto;
-    overflow: hidden;
-    text-align: center;
+.container-divider {
+    border-top: 1px solid #a7a7a7;
+    margin-bottom: 20px;
 }
-.content .con04 {
-    display: inline-block;
-    width: 1100px;
+
+.container {
+    max-width: 1160px;
     margin: 0 auto;
-    text-align: left;
-    margin: 70px auto 0 auto;
+    padding: 0 5%;
 }
 
-
-.content .con04 .tit0401 {
-    padding: 20px 0 0 0;
-    font-weight: 500;
-    color: #000000;
-    position: relative;
-    text-align: left;
-    border-bottom: 3px solid #000000;
+.breadcrumbs {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-weight: 400;
+    color: #666666;
 }
 
-.content .con04 .tit0401 .tit040101 {
-    width: 30%;
-    display: inline-block;
-    padding: 20px;
-    color: #FFFFFF;
-    background-color: #000000;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.content .con04 .ul0401 {
-    width: 100%;
-    position: relative;
-}
-
-.content .con04 .ul0401 .li0401 {
-    width: 100%;
-    position: relative;
-    padding: 20px 0 20px 0;
+.breadcrumbs li {
+    display: inline;
+    font-weight: 400;
+    font-size: 13px;
+    max-width: 450px;
     overflow: hidden;
-    border-bottom: 1px solid #000000;
+    text-overflow: ellipsis;
+    color: rgba(102, 102, 102, 0.8);
 }
 
-
-.content .con04 .ul0401 .li0401 .tit040102 {
-    display: inline-block;
-    width: calc(100% - 100px);
-    box-sizing: border-box;
-    float: left;
-    padding: 0 0 0 20px;
+.category-container {
+    display: flex;
+    justify-content: flex-end;
 }
-.content .con04 .ul0401 .li0401 .date {
-    display: inline-block;
-    width: 100px;
-    box-sizing: border-box;
-    text-align: right;
-    padding: 0 20px 0 0;
+.category-content {
+    flex: 1;
 }
 
-
-
-.paginate .paging .page a{
-    color: black;
+.page-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
 }
+
+.page-header h1 {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0095d0;
+}
+
+.section-tree {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
