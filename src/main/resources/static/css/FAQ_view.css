@@ -64,4 +64,52 @@
     padding: 20px 0;
 }
 
+.page-header h1 {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #474646;
+}
+
+.section-tree {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-sidebar {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #666666;
+}
+
+.collapsible-sidebar {
+    flex: 1;
+    max-height: 45px;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+}
+.collapsible-sidebar[aria-expanded="true"] {
+    max-height: none;
+}
+
+.sidenav-title {
+    font-size: 15px;
+    position: relative;
+}
+.collapsible-sidebar-title {
+    margin-top: 0;
+}
+
+
+
 

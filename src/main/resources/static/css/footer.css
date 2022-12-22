@@ -1,23 +1,38 @@
-.footer { width:100%; position:relative; background-color: #008fc4; }
-.footer .con01 { width:100%; max-width:1100px; margin:0 auto; padding:100px 0 70px 0; position:relative; overflow:hidden; }
-.footer .con01 .cs { width:100%; max-width:420px; float:left; overflow:hidden; }
-.footer .con01 .cs .text01 { display:inline-block; font-size:1.7em; color: #aed6e2; vertical-align:top; }
-.footer .con01 .cs .text02 { display:inline-block; font-size:2.3em; color:#f8b400; margin:0 0 0 10px; vertical-align:top; }
-.footer .con01 .cs .text03 { display:inline-block; float:left;  margin:20px 0 10px 0; color: #aed6e2; font-size:1.3em }
-.footer .con01 .cs .text04 { display:inline-block; color: #aed6e2; font-size:0.9em; font-weight:300; line-height:1.5em; float:left; margin:16px 0 0 15px;  }
-.footer .con01 .address { width:100%; max-width:650px; float:left; overflow:hidden; line-height:1.5em; }
-.footer .con01 .address .text01 { display:inline-block; float:left; color: #aed6e2; font-size:0.9em; font-weight:300; letter-spacing:-0.02em ; vertical-align:top;}
-.footer .con01 .address .bar01 { display:inline-block; width:1px; height:12px; background-color: #8eafb5; margin:6px 10px 0 10px; float:left; }
-.footer .con01 .logo { display:inline-block; position:absolute; right:0; }
-.footer .con01 .logo img { width:160px; }
-.footer .con01 .navigation { width:100%; overflow:hidden; float:left; border-top:1px solid #01a2dc; border-bottom:1px solid #a7d4e3; margin:20px 0 0 0; }
-.footer .con01 .navigation .menu { width:60%; padding:15px 0 15px 0; float:left; box-sizing:border-box; }
-.footer .con01 .navigation .menu ul { width:100%; position:relative; float:left; }
-.footer .con01 .navigation .menu ul li { display:inline-block; float:left;  }
-.footer .con01 .navigation .menu ul li a { display:inline-block; float:left; color: #bad1d7
+.footer {
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+    padding: 30px 0;
 }
-.footer .con01 .navigation .menu ul li.bar01 { margin:2px 20px 0 20px; background-color: #aed6e2; width:1px; }
-.footer .con01 .navigation .copyright { width:40%; padding:15px 0 15px 0; float:left; box-sizing:border-box; text-align:right; color: #aed6e2; }
 
+.footer-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
 
-.footer_mobile { width:100%; position:relative; background-color: #008fc4; display:none; }
+.footer-mweb {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
