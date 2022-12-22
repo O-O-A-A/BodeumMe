@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>로그인 메인</title>
+    <style>
+        .css-qg62me {
+            position: fixed;
+            inset: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden auto;
+            text-align: center;
+            outline: none;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+        .css-k6wjm2 {
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            height: 100%;
+            max-height: 100%;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            max-width: 1024px;
+        }
+        .css-pl8523 {
+            width: 100%;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow:
+                    rgba(0, 0, 0, 0.12) 0px 3px 6px -4px,
+                    rgba(0, 0, 0, 0.08) 0px 6px 16px 0px,
+                    rgba(0, 0, 0, 0.05) 0px 9px 28px 8px;
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            text-align: left;
+            max-height: calc(100% - 128px); 
+            margin: 64px;
+        }
+        .css-1jep4ab {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+        .css-1u9286t {
+            outline: none;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            line-height: 1;
+            font-weight: 500;
+            transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+            white-space: nowrap;
+            max-width: 100%;
+            height: 42px;
+            font-size: 15px;
+            min-width: 42px;
+            padding: 0px;
+            border-radius: 21px;
+            background-color: transparent;
+            border-color: transparent;
+            color: rgb(48, 52, 65);
+        }
+        .css-1qthg6u {
+            display: flex;
+            border-radius: 8px;
+            overflow: hidden auto;
+        }
+        .css-12qwiyu {
+            width: 600px;
+            height: 656px;
+            flex: 0 0 600px;
+            overflow: hidden;
+            position: relative;
+        }
+        .css-dkqbs4 {
+            font-size: 18px;
+            z-index: 1;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            line-height: 30px;
+            margin: 0px;
+            transition: opacity 1s ease 0s;
+            opacity: 1;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .css-1uo8y46 {
+            padding: 40px;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+        }
+        .css-12m9a47 {
+            font-size: 24px;
+            color: rgb(48, 52, 65);
+            margin: 0px 0px 24px;
+            font-weight: 500;
+        }
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        .css-1rr4qq7 {
+            flex: 1 1 0%;
+        }
+        form {
+            display: block;
+            margin-top: 0em;
+        }
+
+        div {
+            display: block;
+        }
+
+        .css-wa7cs7 {
+            position: relative;
+            padding-bottom: 16px;
+        }
+
+        .css-u6qecc {
+            width: 100%;
+            border: 1px solid rgb(228, 229, 237);
+            border-radius: 4px;
+            transition: background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+            display: inline-flex;
+            flex-direction: row;
+            overflow: hidden;
+            cursor: text;
+            background-color: rgb(255, 255, 255);
+            color: rgb(48, 52, 65);
+            height: 52px;
+            font-size: 15px;
+            padding: 0px 16px;
+            min-width: 80px;
+        }
+        .css-dka9py {
+            outline: none;
+            flex: 1 1 0%;
+            width: 100%;
+            background-image: none;
+            box-sizing: border-box;
+            font-size: inherit;
+            border: none;
+            font-weight: inherit;
+            background-color: transparent;
+            text-align: left;
+            color: inherit;
+        }
+        button, input, optgroup, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: normal;
+            margin: 0;
+        }
+        .css-uyewa0 {
+            margin-top: 4px;
+            margin-bottom: -8px;
+        }
+        .css-klg5aa {
+            outline: none;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            border-radius: 4px;
+            line-height: 1;
+            font-weight: 500;
+            transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 100%;
+            height: 52px;
+            font-size: 16px;
+            padding: 0px 24px;
+            min-width: 80px;
+            background-color: rgb(255, 212, 0);
+            border-color: rgb(255, 212, 0);
+            color: rgb(48, 52, 65);
+        }
+        .css-18pqe3v {
+            font-size: 14px;
+            color: rgb(48, 52, 65);
+            cursor: pointer;
+        }
+        .css-1iylv4b {
+            margin-top: 12px;
+            display: flex;
+        }
+        .css-zdpt2t {
+            margin-left: auto;
+        }
+        .css-1y3tr5w {
+            font-size: 14px;
+            color: rgb(85, 89, 105);
+            text-decoration: none;
+        }
+        .css-i3pbo {
+            margin-bottom: 24px;
+        }
+        .css-13lhzhr {
+            margin: 0px;
+            font-size: 14px;
+            color: rgb(48, 52, 65);
+            text-align: center;
+        }
+        .css-1olaq31 {
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+        .css-12fo9sz {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        img {
+            border-style: none;
+        }
+        .css-ejtze1 {
+            height: 1px;
+            margin: 0;
+            border: none;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            background-color: rgba(0, 0, 0, 0.12);
+        }
+        .css-12n2o4t {
+            margin: 24px 0px;
+            color: rgb(48, 52, 65);
+            font-weight: 400;
+        }
+        .css-11madiy {
+            outline: none;
+            border-width: 1px;
+            border-style: solid;
+            box-sizing: border-box;
+            border-radius: 4px;
+            line-height: 1;
+            font-weight: 500;
+            transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 100%;
+            height: 52px;
+            font-size: 16px;
+            padding: 0px 24px;
+            min-width: 80px;
+            background-color: transparent;
+            border-color: rgb(17, 106, 212);
+            color: rgb(17, 106, 212);
+        }
+    </style>
+</head>
+<body>
+    <div role="dialog" tabindex="0" class="css-qg62me ei7plsv4">
+        <div class="css-k6wjm2 ei7plsv3">
+            <div id="modal-content" class="css-pl8523 ei7plsv0">
+                <div class="css-1jep4ab ei7plsv2">
+                    <button role="button" color="default" data-testid="close-button" class="css-1u9286t eklkj752">
+                        <span class="css-1oteowz eklkj751">
+                            <span role="img" color="#303441" rotate="0" class="css-5flix e181xm9y1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
+                                    <path xmlns="http://www.w3.org/2000/svg" d="M6.34314575,4.92893219 L12.000039,10.585039 L17.6568542,4.92893219 C18.0473785,4.5384079 18.6805435,4.5384079 19.0710678,4.92893219 C19.4615921,5.31945648 19.4615921,5.95262146 19.0710678,6.34314575 L13.415039,12.000039 L19.0710678,17.6568542 C19.4615921,18.0473785 19.4615921,18.6805435 19.0710678,19.0710678 C18.6805435,19.4615921 18.0473785,19.4615921 17.6568542,19.0710678 L12.000039,13.415039 L6.34314575,19.0710678 C5.95262146,19.4615921 5.31945648,19.4615921 4.92893219,19.0710678 C4.5384079,18.6805435 4.5384079,18.0473785 4.92893219,17.6568542 L10.585039,12.000039 L4.92893219,6.34314575 C4.5384079,5.95262146 4.5384079,5.31945648 4.92893219,4.92893219 C5.31945648,4.5384079 5.95262146,4.5384079 6.34314575,4.92893219 Z"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div class="css-1qthg6u eyci4q00">
+                    <div class="css-12qwiyu eyci4q01">
+                        <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                            <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27600%27%20height=%27656%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
+                            <img alt="로그인모달 배경이미지" srcset="../../images/login_image.jpeg 1x" src="../../images/login_image.jpeg" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span>
+                        <p class="css-dkqbs4 eyci4q02">
+                            <span>현재 2,426,250명의 회원이 크몽에서 활동하고 있습니다.</span>
+                            <br>
+                            <span style="font-weight: 500;">2,426,251</span>번째 크몽회원이 되어보세요 :)</p>
+                    </div>
+                    <div class="css-1uo8y46 eyci4q03">
+                        <h2 class="css-12m9a47 eyci4q04">로그인</h2>
+                        <form novalidate="" class="css-1rr4qq7 equrxy90" data-gtm-form-interact-id="0">
+                            <div class="css-wa7cs7 equrxy91">
+                                <div class="css-u6qecc e1fnk6ig0">
+                                    <input type="email" required="" placeholder="이메일을 입력해 주세요." name="email" autocomplete="username" class="css-dka9py e1fnk6ig1" value="">
+                                </div>
+                                <div class="css-uyewa0 equrxy95"></div>
+                            </div>
+                            <div class="css-wa7cs7 equrxy91">
+                                <div class="css-u6qecc e1fnk6ig0">
+                                    <input type="password" required="" placeholder="비밀번호를 입력해 주세요." name="password" autocomplete="current-password" class="css-dka9py e1fnk6ig1" value="">
+                                </div>
+                                <div class="css-uyewa0 equrxy95"></div>
+                            </div>
+                            <button role="button" color="yellow" type="submit" class="css-klg5aa eklkj752">
+                                <span class="css-1oteowz eklkj751">로그인</span>
+                            </button>
+                            <div class="css-1iylv4b equrxy92">
+                                <label color="#ffd400" class="css-18pqe3v elgfge0">
+                                    <span class="css-9ffs86 elgfge2">
+                                        <input data-testid="checkbox" type="checkbox" name="remember" class="css-l775cp " data-gtm-form-interact-field-id="0">
+                                        <span color="#ffd400" class="css-yp3xeq "></span>
+                                        <span class="css-2k2mpm elgfge1">로그인 유지</span>
+                                    </span>
+                                </label>
+                                <div class="css-zdpt2t equrxy93">
+                                    <a href="#" class="css-1y3tr5w equrxy94">아이디•비밀번호 찾기</a>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="css-i3pbo enu6cyp0">
+                            <p class="css-13lhzhr enu6cyp1">SNS계정으로 간편하게 로그인하세요.</p>
+                            <div class="css-1olaq31 enu6cyp2">
+                                <a href="/signup/naver?next_page=%2F%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D0%26utm_content%3Dmarket%26utm_group%3D0%26utm_term%3D%25ED%2581%25AC%25EB%25AA%25BD%26gclid%3DCj0KCQiA14WdBhD8ARIsANao07jjDEaKad5h5iwlugJ9hRCVfAgcfoC4ZvcGYyGWtMxv-qEmJOfJqhcaAqqpEALw_wcB" class="css-12fo9sz enu6cyp3" style="background-color: rgb(30, 200, 0);">
+                                    <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/naver_logo.png" width="32" height="32" alt="소셜 로고">
+                                </a>
+                                <a href="/signup/kakao?next_page=%2F%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D0%26utm_content%3Dmarket%26utm_group%3D0%26utm_term%3D%25ED%2581%25AC%25EB%25AA%25BD%26gclid%3DCj0KCQiA14WdBhD8ARIsANao07jjDEaKad5h5iwlugJ9hRCVfAgcfoC4ZvcGYyGWtMxv-qEmJOfJqhcaAqqpEALw_wcB" class="css-12fo9sz enu6cyp3" style="background-color: rgb(249, 224, 0);">
+                                    <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/kakao_logo.png" width="32" height="32" alt="소셜 로고">
+                                </a>
+                                <a href="/signup/facebook?next_page=%2F%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D0%26utm_content%3Dmarket%26utm_group%3D0%26utm_term%3D%25ED%2581%25AC%25EB%25AA%25BD%26gclid%3DCj0KCQiA14WdBhD8ARIsANao07jjDEaKad5h5iwlugJ9hRCVfAgcfoC4ZvcGYyGWtMxv-qEmJOfJqhcaAqqpEALw_wcB" class="css-12fo9sz enu6cyp3" style="background-color: rgb(24, 119, 242);">
+                                    <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/facebook_logo_white.png" width="32" height="32" alt="소셜 로고"></a>
+                                <a href="/signup/google?next_page=%2F%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D0%26utm_content%3Dmarket%26utm_group%3D0%26utm_term%3D%25ED%2581%25AC%25EB%25AA%25BD%26gclid%3DCj0KCQiA14WdBhD8ARIsANao07jjDEaKad5h5iwlugJ9hRCVfAgcfoC4ZvcGYyGWtMxv-qEmJOfJqhcaAqqpEALw_wcB" class="css-12fo9sz enu6cyp3" style="background-color: rgb(248, 249, 253);">
+                                    <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/google_logo.png" width="32" height="32" alt="소셜 로고"></a>
+                                <a href="/signup/apple?next_page=%2F%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D0%26utm_content%3Dmarket%26utm_group%3D0%26utm_term%3D%25ED%2581%25AC%25EB%25AA%25BD%26gclid%3DCj0KCQiA14WdBhD8ARIsANao07jjDEaKad5h5iwlugJ9hRCVfAgcfoC4ZvcGYyGWtMxv-qEmJOfJqhcaAqqpEALw_wcB" class="css-12fo9sz enu6cyp3" style="background-color: rgb(0, 0, 0);">
+                                    <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/apple_logo.png" width="20" height="24" alt="소셜 로고"></a>
+                            </div>
+                        </div>
+                        <hr orientation="horizontal" class="css-ejtze1 ecml7kn0">
+                        <div class="css-0 e8escz10">
+                            <p class="css-12n2o4t e8escz11">크몽의 회원이 되시면<br>
+                                <b>10만원 할인혜택</b>을 드립니다.
+                            </p>
+                            <a role="link" color="denim" href="/signup?next_page=%2F%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D0%26utm_content%3Dmarket%26utm_group%3D0%26utm_term%3D%25ED%2581%25AC%25EB%25AA%25BD%26gclid%3DCj0KCQiA14WdBhD8ARIsANao07jjDEaKad5h5iwlugJ9hRCVfAgcfoC4ZvcGYyGWtMxv-qEmJOfJqhcaAqqpEALw_wcB" class="css-11madiy eklkj752">
+                                <span class="css-1oteowz eklkj751">크몽 회원가입 하기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
