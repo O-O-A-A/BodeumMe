@@ -7,34 +7,34 @@ html{
     line-height: normal;
     -webkit-text-size-adjust: 100%;
 }
-a {
+.content a {
     background-color: transparent;
 }
-a:-webkit-any-link {
+.content a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
 }
-img {
+.content img {
     border-style: none;
 }
 
-img {
+.content img {
     overflow-x: hidden;
     overflow-y: hidden;
     overflow-clip-margin: content-box;
 }
-svg:not(:root) {
+.content svg:not(:root) {
     overflow-clip-margin: content-box;
     overflow: hidden;
 }
-p{
+.content p{
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-article {
+.content article {
     display: block;
 }
 .content{
