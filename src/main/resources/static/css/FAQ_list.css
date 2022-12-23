@@ -37,3 +37,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.article-list-item a {
+    color: rgba(102, 102, 102, 1);
+}
