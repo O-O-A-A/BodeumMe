@@ -29,11 +29,14 @@
 }
 
 .header1-1{
+    margin-top: 30px;
+
 
 }
 .header1-2{
     float: left;
     margin-right: 20px;
+
 
 }
 .header1-3{
@@ -43,15 +46,17 @@
     font-size: 22px;
     line-height: normal;
     font-weight: 700;
+
 }
 .header1-3 a {
     color: #303441;
+    margin-top: 5px;
+
 }
-
-
 
 .header1-4 {
     margin-left: 830px;
+    margin-top: 10px;
 }
 
 .header1-5{
@@ -117,6 +122,7 @@
     font-size: 16px;
     font-weight: 800;
     font-family: "Metro Sans", "Helvetica", "Arial", sans-serif;
+    margin-top: 20px;
 }
 
 .header2 a{
@@ -127,10 +133,6 @@
     color: #ffd400;
     text-decoration: underline;
 }
-
-
-
-
 
 
 /* 첫번째 부분*/
