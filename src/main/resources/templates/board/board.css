@@ -366,7 +366,7 @@ html{
 .content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area .star .star-svg {
     display: inline-block;
 }
-.star-color {/* 색 있는 컬러 */
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area .star-color {/* 색 있는 컬러 */
     display: inline-block;
     font-style: normal;
     line-height: 0;
@@ -378,7 +378,7 @@ html{
     margin: -2px 2px 0px 0px;
     color: rgb(251, 132, 45);
 }
-.star-count {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area .star-count {
     display: inline-block;
     margin: 0px 4px;
     width: 1px;
