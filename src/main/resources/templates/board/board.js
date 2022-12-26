@@ -1,62 +1,61 @@
 $(document).ready(function () {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 30; i++) {
         $("#boarder").append(`
-        <article class="board-article">
-            <a href="/gig/426333" class="board-link">
-                <div class="board-img">
-                    <div class="img-box">
-                        <div class="img-wrapper">
-                            <div tabindex="0" class="img-area">
-                                <img title="단순 업무관리 서비스"
-                                    alt="단순 업무관리 서비스"
-                                    src="https://d2v80xjmx68n4w.cloudfront.net/gigs/O2fKH1670643099.png"
-                                    loading="lazy"
-                                    class="title-img">
+            <article class="board-article">
+                <a href="/gig/426333" class="board-link">
+                    <div class="board-img">
+                        <div class="img-box">
+                            <div class="img-wrapper">
+                                <div tabindex="0" class="img-area">
+                                    <img title="단순 업무관리 서비스"
+                                        alt="단순 업무관리 서비스"
+                                        src="https://d2v80xjmx68n4w.cloudfront.net/gigs/O2fKH1670643099.png"
+                                        loading="lazy"
+                                        class="title-img">
+                                </div>
                             </div>
                         </div>
+                        
+                        
+    <!--                    ${heart_button()}               -->
+    
+    
+    
                     </div>
                     
-                    
-<!--                    ${heart_button()}               -->
-
-
-
-                </div>
-                
-                <div class="board-field">
-                    <div class="board-field-task-area">
-                        <span class="task">PAGE10</span>
-                    </div>
-                    <h3 class="board-field-title">단순 업무관리 서비스</h3>
-                    <div class="wage-wrapper">
-                        <div class="space-area"></div>
-                        <div class="wage-area">
-                            <img
-                                src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/img_desktop_company.png"
-                                alt="세금계산서 발행" title="세금계산서 발행" class="wage-img">
-                            <div class="wage">50,000원~</div>
+                    <div class="board-field">
+                        <div class="board-field-task-area">
+                            <span class="task">PAGE10</span>
+                        </div>
+                        <h3 class="board-field-title">단순 업무관리 서비스</h3>
+                        <div class="wage-wrapper">
+                            <div class="space-area"></div>
+                            <div class="wage-area">
+                                <img
+                                    src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/img_desktop_company.png"
+                                    alt="세금계산서 발행" title="세금계산서 발행" class="wage-img">
+                                <div class="wage">50,000원~</div>
+                            </div>
+                        </div>
+                        <div class="evaluation-area">
+                        
+                        
+                            ${star_input(0)}
+                            
+                            
+                            0.0<span class="star-count"></span>
+                            <div class="evaluation-count">0개의 평가</div>
                         </div>
                     </div>
-                    <div class="evaluation-area">
-                    
-                    
-                        ${star_input(0)}
-                        
-                        
-                        0.0<span class="star-count"></span>
-                        <div class="evaluation-count">0개의 평가</div>
-                    </div>
-                </div>
-            </a>
-        </article>
-    `)
+                </a>
+            </article>
+        `)
     }
 })
 
 /**
  *
  * */
-
 function star_input(star_kinds){
     if(star_kinds === 1){
         return `<span role="img" rotate="0" class="star-color"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="star-svg"><path d="M8.37094152,8.12482574 L2.52598096,8.59636398 L2.36821881,8.6135218 C0.881583763,8.81867772 0.513822851,10.1467426 1.72605142,11.1443161 L6.11068071,14.7526934 L4.80553251,20.0682859 L4.77348322,20.2161997 C4.50052597,21.673724 5.6402616,22.4726949 6.9887771,21.699537 L12.00271,18.8250573 L17.0166429,21.699537 L17.1506515,21.7715841 C18.4829447,22.4403279 19.5680516,21.5674348 19.1998875,20.0682859 L17.8937294,14.7526934 L22.2793686,11.1443161 L22.3984321,11.0405714 C23.4954951,10.0270601 23.0352205,8.72174778 21.479439,8.59636398 L15.6334685,8.12482574 L13.3880977,3.09014615 C12.7393731,1.6361626 11.2656405,1.63707337 10.6173223,3.09014615 L8.37094152,8.12482574 Z"></path></svg></span>`
