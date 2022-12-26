@@ -5,80 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../static/css/index.css" rel="stylesheet"/>
-    <title>kmong</title>
+    <title>BodeumMe</title>
     <script src="/jquery/jquery-3.6.1.min.js"></script>
 </head>
 <body>
+<header>
+    <div class="header1">
+        <div class="header1-1">
+            <div class="header1-2">
+                <a href="#"><img src="../images/parentsitter/header.png" width="100px" height="40px"></a>
+            </div>
+            <div class="header1-3">
+                <a href="#" >보듬미</a>
+            </div>
+            <div class="header1-4">
+                <button role="button" color="black" class="header1-5">
+                    <p>베이비시터 등록</p>
+                </button>
+                <button role="button" color="black" class="header1-6">
+                    <p>로그인</p>
+                </button>
+                <a href="#" class="header1-7">무료 회원가입</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header2">
+        <div class="header2-1">
+            <a href="#" class="header2-2">홈</a>
+        </div>
+        <div class="header2-1">
+            <a href="#" class="header2-2">부모 페이지</a>
+        </div>
+        <div class="header2-1">
+            <a href="#" class="header2-2">베이비시터 페이지</a>
+        </div>
+        <div class="header2-1">
+            <a href="#" class="header2-2">마이 페이지</a>
+        </div>
+        <div class="header2-1">
+            <a href="#" class="header2-2">커뮤니티</a>
+        </div>
+        <div class="header2-1">
+            <a href="#" class="header2-2">FAQ</a>
+        </div>
+    </div>
+</header>
 <div class="main">
     <section class="top">
         <div class="topmenu">
             <section class="topmenu_1">
-                <h1 class="topmenu_h1">프리랜서 마켓 No.1 크몽에서 원하는 전문가를 찾아보세요</h1>
+                <h1 class="topmenu_h1">아이돌봄 서비스 NO.1<br>BodeumMe 입니다!</h1>
                 <form class="topmenu_form">
                     <div class="topmenu_div_1">
                         <div class="topmenu_div_2">
                             <span class="text">전자책</span>
                             <span></span>
                         </div>
-                        <script>
-                            const text = document.querySelector(".text");
 
-                            const textLoad = () => {
-                                setTimeout(()=>{
-                                    text.textContent ="전자책";
-                                }, 0);
-                                setTimeout(()=>{
-                                    text.textContent ="홈페이지";
-                                }, 2000);
-                                setTimeout(()=>{
-                                    text.textContent ="VOD";
-                                }, 4000);
-                            };
-                            textLoad();
-                            setInterval(textLoad, 6000);
-
-                            let curPos = 0; //현재 보여지는 이미지의 인덱스 번호
-                            let positionValue = 0;// 이미지 태그의 위치 값 지정할 변수
-                            const IMAGE_WIDTH = 540;
-
-                            const prevBtn = document.querySelector(".prevOn");
-                            const nextBtn = document.querySelector(".nextOn");
-                            const images = document.querySelector(".images");
-
-                            function next(){
-                                console.log("dsa");
-                                if(curPos < 6){
-                                    prevBtn.removeAttribute('disabled')
-                                    positionValue -= IMAGE_WIDTH;
-                                    images.style.transform = `translateX(${positionValue}px)`;
-                                    curPos += 1;
-                                };
-                            };
-
-                            function init(){
-                                console.log("실행됌");
-                                prevBtn.setAttribute('disabled', 'true');
-                                nextBtn.addEventListener("click", next);
-                            };
-                            init();
-                        </script>
                     </div>
                 </form>
                 <div class="hashtag">
                     <div class="hashtag_1">
-                        <a class="hashtag_2">#로고</a>
+                        <a class="hashtag_2">#베이비시터</a>
                     </div>
                     <div class="hashtag_1">
-                        <a class="hashtag_2">#블로그</a>
+                        <a class="hashtag_2">#학습시터</a>
                     </div>
                     <div class="hashtag_1">
-                        <a class="hashtag_2">#상세페이지</a>
+                        <a class="hashtag_2">#놀이시터</a>
                     </div>
                     <div class="hashtag_1">
-                        <a class="hashtag_2">#PPT</a>
+                        <a class="hashtag_2">#등하원도우미</a>
                     </div>
                     <div class="hashtag_1">
-                        <a class="hashtag_2">#일러스트</a>
+                        <a class="hashtag_2">#가사도우미</a>
                     </div>
                 </div>
             </section>
@@ -87,10 +89,10 @@
                     <div class="rsection_div">
                         <div class="rsection_div1">
                             <div class="images">
-                                <img src="../images/index/img_top_1.png"/>
-                                <img src="../images/index/img_top_2.png"/>
-                                <img src="../images/index/img_top_3.png"/>
-                                <img src="../images/index/img_top_4.png"/>
+                                <img src="../images/index/img_top_9.png"/>
+                                <img src="../images/index/img_top_8.png"/>
+                                <img src="../images/index/img_top_10.png"/>
+                                <img src="../images/index/img_top_11.png"/>
                                 <img src="../images/index/img_top_5.png"/>
                                 <img src="../images/index/img_top_6.png"/>
                                 <img src="../images/index/img_top_7.png"/>
@@ -111,117 +113,117 @@
                 <ul class="icons">
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_1.png>
-                            <span class="under_icon">디자인</span>
+                            <img src=../images/index/ic_categori_17.png>
+                            <span class="under_icon">베이비시터</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_2.png>
-                            <span class="under_icon">IT·프로그래밍</span>
+                            <img src=../images/index/ic_categori_19.png>
+                            <span class="under_icon">스터디시터</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_3.png>
-                            <span class="under_icon">영상·사진·음향</span>
+                            <img src=../images/index/ic_categori_20.png>
+                            <span class="under_icon">놀이시터</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_4.png>
-                            <span class="under_icon">마케팅</span>
+                            <img src=../images/index/ic_categori_18.png>
+                            <span class="under_icon">등하원도우미</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_5.png>
-                            <span class="under_icon">번역·통역</span>
+                            <img src=../images/index/ic_caregori_21.png>
+                            <span class="under_icon">가사도우미</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_6.png>
-                            <span class="under_icon">문서·글쓰기</span>
+                            <img src=../images/index/ic_categori_25.png>
+                            <span class="under_icon">자격요건</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_7.png>
-                            <span class="under_icon">경영자문·운영지원</span>
+                            <img src=../images/index/ic_categori_24.png>
+                            <span class="under_icon">급여관련</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_8.png>
-                            <span class="under_icon">주문제작</span>
+                            <img src=../images/index/ic_categori_23.png>
+                            <span class="under_icon">찾아오는길</span>
                         </a>
                     </li>
                     <li class="lcon_1">
                         <a class="icon_sel">
-                            <img src=../images/index/ic_category_9.png>
-                            <span class="under_icon">세무·법무·노무</span>
+                            <img src=../images/index/ic_categori_22.png>
+                            <span class="under_icon">주의사항</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="categori_b">
-            <div class="business">N잡·커리어</div>
-            <div>
-                <ul class="icons">
-                    <li class="lcon_1">
-                        <a class="icon_sel">
-                            <img src=../images/index/ic_category_10.png>
-                            <span class="under_icon">취업·입시</span>
-                        </a>
-                    </li>
-                    <li class="lcon_1">
-                        <a class="icon_sel">
-                            <img src=../images/index/ic_category_11.png>
-                            <span class="under_icon">투잡·노하우</span>
-                        </a>
-                    </li>
-                    <li class="lcon_1">
-                        <a class="icon_sel">
-                            <img src=../images/index/ic_category_12.png>
-                            <span class="under_icon">직무역량</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="categori_b">
-            <div class="business">취미·생활</div>
-            <div>
-                <ul class="icons">
-                    <li class="lcon_1">
-                        <a class="icon_sel">
-                            <img src=../images/index/ic_category_13.png>
-                            <span class="under_icon">운세</span>
-                        </a>
-                    </li>
-                    <li class="lcon_1">
-                        <a class="icon_sel">
-                            <img src=../images/index/ic_category_14.png>
-                            <span class="under_icon">심리상담</span>
-                        </a>
-                    </li>
-                    <li class="lcon_1">
-                        <a class="icon_sel">
-                            <img src=../images/index/ic_category_15.png>
-                            <span class="under_icon">취미</span>
-                        </a>
-                    </li>
-                    <li class="lcon_1">
-                        <a class="icon_sel">
-                            <img src=../images/index/ic_category_16.png>
-                            <span class="under_icon">생활서비스</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <!--        <div class="categori_b">-->
+        <!--            <div class="business">N잡·커리어</div>-->
+        <!--            <div>-->
+        <!--                <ul class="icons">-->
+        <!--                    <li class="lcon_1">-->
+        <!--                        <a class="icon_sel">-->
+        <!--                            <img src=../images/index/ic_category_10.png>-->
+        <!--                            <span class="under_icon">취업·입시</span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                    <li class="lcon_1">-->
+        <!--                        <a class="icon_sel">-->
+        <!--                            <img src=../images/index/ic_category_11.png>-->
+        <!--                            <span class="under_icon">투잡·노하우</span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                    <li class="lcon_1">-->
+        <!--                        <a class="icon_sel">-->
+        <!--                            <img src=../images/index/ic_category_12.png>-->
+        <!--                            <span class="under_icon">직무역량</span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="categori_b">-->
+        <!--            <div class="business">취미·생활</div>-->
+        <!--            <div>-->
+        <!--                <ul class="icons">-->
+        <!--                    <li class="lcon_1">-->
+        <!--                        <a class="icon_sel">-->
+        <!--                            <img src=../images/index/ic_category_13.png>-->
+        <!--                            <span class="under_icon">운세</span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                    <li class="lcon_1">-->
+        <!--                        <a class="icon_sel">-->
+        <!--                            <img src=../images/index/ic_category_14.png>-->
+        <!--                            <span class="under_icon">심리상담</span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                    <li class="lcon_1">-->
+        <!--                        <a class="icon_sel">-->
+        <!--                            <img src=../images/index/ic_category_15.png>-->
+        <!--                            <span class="under_icon">취미</span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                    <li class="lcon_1">-->
+        <!--                        <a class="icon_sel">-->
+        <!--                            <img src=../images/index/ic_category_16.png>-->
+        <!--                            <span class="under_icon">생활서비스</span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
         <section class="categori_2">
             <h2 class="service">크몽에서 가장 인기있어요!</h2>
             <div class="populer_img">
@@ -229,7 +231,7 @@
                     <a>
                         <div class="populer_img_sel">
                                     <span class="populer_1">
-                                        <img src="../images/index/ic_populer_1.jpeg" class="populer_2">
+                                        <img src="../images/index/ic_populer_1.png" class="populer_2">
                                     </span>
                         </div>
                     </a>
@@ -238,7 +240,7 @@
                     <a>
                         <div class="populer_img_sel">
                                     <span class="populer_1">
-                                        <img src="../images/index/ic_populer_2.jpeg" class="populer_2">
+                                        <img src="../images/index/ic_populer_2.png" class="populer_2">
                                     </span>
                         </div>
                     </a>
@@ -247,7 +249,7 @@
                     <a>
                         <div class="populer_img_sel">
                                     <span class="populer_1">
-                                        <img src="../images/index/ic_populer_3.jpeg" class="populer_2">
+                                        <img src="../images/index/ic_populer_3.png" class="populer_2">
                                     </span>
                         </div>
                     </a>
@@ -256,7 +258,7 @@
                     <a>
                         <div class="populer_img_sel">
                                     <span class="populer_1">
-                                        <img src="../images/index/ic_populer_4.jpeg" class="populer_2">
+                                        <img src="../images/index/ic_populer_4.png" class="populer_2">
                                     </span>
                         </div>
                     </a>
@@ -265,7 +267,7 @@
                     <a>
                         <div class="populer_img_sel">
                                     <span class="populer_1">
-                                        <img src="../images/index/ic_populer_5.jpeg" class="populer_2">
+                                        <img src="../images/index/ic_populer_5.png" class="populer_2">
                                     </span>
                         </div>
                     </a>
@@ -274,9 +276,167 @@
 </div>
 </section>
 </section>
+<section class="section_1">
+    <div class="section_1_div1">
+        <div class="section_1_div2">
+            <div class="section_1_div3">
+                <h1 class="section_1_h1">내게 필요한 모든 서비스를<br class="section_1_br"> 만날 수 있는 BodeumMe!</h1>
+                <h2 class="section_1_h2">누적 매칭수 343만 건!<br>다양한 카테고리, 다양한 서비스에서<br>여러분에게 필요한 모든 돌보미를 만나보세요</h2>
+            </div>
+            <div class="section_1_div4">
+                <div class="section_1_div5">
+                    <iframe width="692" height="390" src="https://www.youtube.com/embed/Uo1-ZvsABlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="section_1_div6">
+            <article class="section_1_article1">
+                <h3 class="section_1_h3">빠른 커뮤니케이션</h3>
+                <h4 class="section_1_h4">실시간 채팅으로 빠르게 문의하고 거래해보세요!</h4>
+                <div class="section_1_div7">
+                            <span class="section_1_span">
+                                <img src="./img/01.png" class="section_1_img">
+                            </span>
+                </div>
+            </article>
+            <article class="section_1_article1">
+                <h3 class="section_1_h3">안전한 BodeumMe</h3>
+                <h4 class="section_1_h4">소중한 내 아이, 걱정되지 않나요?<br>홈캠 설치 서비스로<br>안전하게 보호해드려요!</h4>
+                <div class="section_1_div7">
+                            <span class="section_1_span">
+                                <img src="./img/02.png" class="section_1_img">
+                            </span>
+                </div>
+            </article>
+            <article class="section_1_article1">
+                <h3 class="section_1_h3">만족스러운 결과물</h3>
+                <h4 class="section_1_h4">평균 매칭률 90%이상!<br>분야별 전문가가<br>만족스러운 결과물을 제공합니다.</h4>
+                <div class="section_1_div7">
+                            <span class="section_1_span">
+                                <img src="./img/03.png" class="section_1_img">
+                            </span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="section_2">
+    <a class="section_2_a">
+        <div class="section_2_div1">
+                    <span class="section_2_span1">
+                        <span class="section_2_span2">
+                            <img src="./img/banner_1.png" class="section_2_img">
+                        </span>
+                    </span>
+        </div>
+    </a>
+</section>
+<section class="section_3">
+    <div class="section_3_div1">
+        <h1 class="section_3_h1">BodeumMe을 이용한 고객들의 생생 후기!</h1>
+        <h2 class="section_3_h2">202만명의 의뢰인이 98.6% 만족했습니다.</h2>
+        <section class="section_4">
+            <article class="section_4_article1">
+                <div class="section_4_div1">
+                    <div class="section_4_div2">
+                        <iframe width="375" height="210" src="https://www.youtube.com/embed/q5VMe-Ks0cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="section_4_div3">
+                    <div class="section_4_div4">여성가족부</div>
+                    |
+                    <div class="section_4_div5">아이돌봄</div>
+                </div>
+            </article>
+            <article class="section_4_article1">
+                <div class="section_4_div1">
+                    <div class="section_4_div2">
+                        <iframe width="375" height="210" src="https://www.youtube.com/embed/PG2gfs19OUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="section_4_div3">
+                    <div class="section_4_div4">지수리</div>
+                    |
+                    <div class="section_4_div5">베이비시터</div>
+                </div>
+            </article>
+            <article class="section_4_article1">
+                <div class="section_4_div1">
+                    <div class="section_4_div2">
+                        <iframe width="375" height="210" src="https://www.youtube.com/embed/F6GoP9HE7Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="section_4_div3">
+                    <div class="section_4_div4">여성가족부</div>
+                    |
+                    <div class="section_4_div5">육아퇴근</div>
+                </div>
+            </article>
+        </section>
+    </div>
+</section>
+</div>
+</section>
 <div></div>
 <div></div>
 <div></div>
 </div>
+<script>
+    const text = document.querySelector(".text");
+
+    const textLoad = () => {
+        setTimeout(()=>{
+            text.textContent ="아이돌봄";
+        }, 0);
+        setTimeout(()=>{
+            text.textContent ="베이비시터";
+        }, 3000);
+        setTimeout(()=>{
+            text.textContent ="가사도우미";
+        }, 6000);
+    };
+    textLoad();
+    setInterval(textLoad, 6000);
+
+    let curPos = 0; //현재 보여지는 이미지의 인덱스 번호
+    let positionValue = 0;// 이미지 태그의 위치 값 지정할 변수
+    const IMAGE_WIDTH = 540;
+
+    const prevBtn = document.querySelector(".prevOn");
+    const nextBtn = document.querySelector(".nextOn");
+    const images = document.querySelector(".images");
+
+    function next(){
+        if(curPos < 6){
+            positionValue -= IMAGE_WIDTH;
+            images.style.transform = `translateX(${positionValue}px)`;
+            curPos += 1;
+        }else if(curPos == 6){
+            curPos = 0;
+            positionValue = 0;
+            images.style.transform = `translateX(${positionValue}px)`;
+        };
+    };
+    function prev(){
+        if(curPos > 0){
+            positionValue += IMAGE_WIDTH;
+            images.style.transform = `translateX(${positionValue}px)`;
+            curPos -= 1;
+        }else if(curPos == 0){
+            curPos = 6;
+            positionValue -= (IMAGE_WIDTH * 6);
+            images.style.transform = `translateX(${positionValue}px)`;
+        };
+    };
+
+
+    function init(){
+        prevBtn.addEventListener("click", prev);
+        nextBtn.addEventListener("click", next);
+    };
+    init();
+
+
+</script>
 </body>
 </html>

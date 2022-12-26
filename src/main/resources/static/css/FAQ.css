@@ -6,6 +6,7 @@
 
 
 html {
+    color: #474646;
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -30,7 +31,7 @@ div {
 }
 
 a:link, a:visited {
-    color: #000;
+    color: rgba(102, 102, 102, 1);
     text-decoration: none;
 }
 
@@ -40,6 +41,7 @@ a:link, a:visited {
 }
 
 .paginate .paging .page a{
+
     width: 50px;
     font-size: 25px;
     margin-left: 12px;
@@ -154,3 +156,7 @@ input {
     width: 100%;
 }
 
+.article-footer{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

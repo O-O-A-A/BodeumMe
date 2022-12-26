@@ -8,6 +8,7 @@
     display: flex;
     justify-content: flex-end;
 }
+
 .category-content {
     flex: 1;
 }
@@ -36,4 +37,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.article-list-item a {
+    color: rgba(102, 102, 102, 1);
 }
