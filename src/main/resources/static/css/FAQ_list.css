@@ -8,6 +8,7 @@
     display: flex;
     justify-content: flex-end;
 }
+
 .category-content {
     flex: 1;
 }
