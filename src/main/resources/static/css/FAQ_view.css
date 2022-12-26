@@ -11,7 +11,6 @@
     text-align: left;
 }
 
-
 .content .con01 {
     width: 100%;
     max-width: 670px;
@@ -31,7 +30,7 @@
 
 .article-title {
     font-size: 1.4em;
-    color: #3364c5;
+    color: #1087dd;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -110,6 +109,16 @@
     margin-top: 0;
 }
 
+.article-footer{
+    margin-top: 50px;
+}
 
+.article-return-to-top{
+    font-size: large;
+}
+
+.article-return-to-top a{
+    background-color: #F9F9F9;
+}
 
 
