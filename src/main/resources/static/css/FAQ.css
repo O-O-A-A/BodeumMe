@@ -2,7 +2,6 @@
 
 *{
     box-sizing: border-box;
-
 }
 
 
@@ -157,3 +156,7 @@ input {
     width: 100%;
 }
 
+.article-footer{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
