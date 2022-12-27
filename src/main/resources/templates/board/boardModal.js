@@ -4,6 +4,9 @@ $(document).ready(function () {
         // $('.modal').fadeOut();
 
     });
+    $('.modal').on('click', function(){
+        $('.modal').fadeOut();
+    })
     $('.category-budget').on('click', function(){
         console.log("ddddddd");
     });
