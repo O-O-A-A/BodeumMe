@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 36; i++) {
         $("#boarder").append(`
             <article class="board-article">
                 <a href="/gig/426333" class="board-link">

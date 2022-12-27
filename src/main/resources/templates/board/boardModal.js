@@ -1,6 +1,11 @@
-$('.category-select').on('click', function(){
-   console.log("ddddddd");
-});
-$('.category-budget').on('click', function(){
-    console.log("ddddddd");
-});
+$(document).ready(function () {
+    $('.category-select').on('click', function(){
+       $('.modal').fadeIn();
+        // $('.modal').fadeOut();
+
+    });
+    $('.category-budget').on('click', function(){
+        console.log("ddddddd");
+    });
+
+})
