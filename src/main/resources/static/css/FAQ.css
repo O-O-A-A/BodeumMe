@@ -157,6 +157,15 @@ input {
 }
 
 .article-footer{
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
+
+.article-return-to-top{
+    font-size: large;
+}
+
+.article-return-to-top a{
+    background-color: #F9F9F9;
+}
+
