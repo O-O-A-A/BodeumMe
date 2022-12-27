@@ -58,7 +58,7 @@
 }
 
 .f4-1 p{
-    padding-top: 10px;
+   padding-bottom: 5px;
     font-weight: 500;
     text-align: center;
     font-size: 14px;
@@ -83,7 +83,7 @@
 
 .f7{
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 15px;
     line-height: 2.5;
 
     color: #555969;
@@ -108,7 +108,7 @@
 
 .f10{
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 14px;
     line-height: 2.5;
     text-align: inherit;
     color: #555969;
@@ -132,7 +132,7 @@
 
 .f13{
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 14px;
     line-height: 2.5;
     text-align: inherit;
     color: #555969;
