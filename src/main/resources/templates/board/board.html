@@ -18,6 +18,13 @@
 </head>
 <body>
 
+<!-- start of header -->
+
+<!--<header>-->
+<!--    <script src="../../static/js/includeHtml.js"></script>-->
+<!--    <div includeHtml="../header.html"></div>-->
+<!--    <script>includeHTML()</script>-->
+<!--</header>-->
  <!--start of header-->
 <style>
     /* 헤더 부분 */
@@ -182,7 +189,6 @@
  <!--end of header -->
 
 
-
 <!-- start of board -->
 
 
@@ -191,13 +197,32 @@
         <div class="box">
             <div class="board-head">
                 <a href="#" class="ad">
-                    <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/images/curated_contents/p8h87_curated_content_item_category_desktop_1038.png" alt="배너" class="ad-img">
+                    <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/images/curated_contents/p8h87_curated_content_item_category_desktop_1038.png"
+                         alt="배너" class="ad-img">
                 </a>
             </div>
             <div class="board-aside"></div>
             <div class="board-main">
                 <nav class="side-bar">
-
+                    <div class="select">
+                        <h1 class="select-name">시터 찾기</h1>
+                    </div>
+                    <div class="field">
+                        <div class="field-wrapper">
+                            <ul>
+                                <div class="field-title">UX 기획</div>
+                                <li>
+                                    <div class="field-content-box">
+                                        <a href="#" class="field-content-link">
+                                            <div class="field-content">
+                                                <span class="field-content-span">웹·모바일앱 기획</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
                 <div class="board-body">
                     <section class="route">
@@ -208,7 +233,7 @@
                     </section>
                     <section class="category">
                         <section class="category-body">
-                            <section class="category-select">
+                            <div class="category-select">
                                 <label class="category-label"
                                        aria-expanded="false">카테고리 선택
                                     <span role="img"
@@ -229,7 +254,7 @@
                                         </svg>
                                     </span>
                                 </label>
-                            </section>
+                            </div>
                             <div class="category-budget">
                                 <label class="category-label"
                                        aria-expanded="false">예산
@@ -266,15 +291,13 @@
                         <div class="contents-box" id="boarder">
 
 
-
-<!--                        board 영역-->
+                            <!--                        board 영역-->
 
 
                             <!-- board.js에서 출력 -->
 
 
-<!--                        board영역 끝    -->
-
+                            <!--                        board영역 끝    -->
 
 
                         </div>
@@ -288,9 +311,13 @@
 <!-- end of board -->
 
 
-
 <!-- start of footer -->
 
+<!--<footer>-->
+<!--    <script src="../../static/js/includeHtml.js"></script>-->
+<!--    <div includeHtml="../footer.html"></div>-->
+<!--    <script>includeHTML()</script>-->
+<!--</footer>-->
 <!--fotter 부분  -->
 
 <style>
@@ -547,11 +574,15 @@
 
  <!--end of footer-->
 
+<div class="modal" style="border: 1px solid #000; width: 100px; height: 168px; display: none" >
 
+</div>
 
 <script type="text/javascript" src="./board.js"></script>
+<script type="text/javascript" src="./boardModal.js"></script>
 <script>
 
 </script>
+
 </body>
 </html>

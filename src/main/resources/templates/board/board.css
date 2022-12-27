@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+    font-family:'Metro Sans';
+    font-style:normal;
+    font-weight: 400;
+    src:url("https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.woff2");
+}
 *{
     font-family: "Metro Sans", "Helvetica", "Arial", sans-serif;
     box-sizing: border-box;
@@ -34,8 +40,17 @@ html{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.content article {
+.content article, div {
     display: block;
+}
+.content ul{
+    margin: 0;
+    padding: 0;
+}
+.content li{
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 .content{
     width: 100%;
@@ -69,6 +84,49 @@ html{
     display: flex;
     flex-direction: column;
     flex: 0 0 214px;
+}
+.content .wrapper .box .board-main .side-bar .select{
+    border-bottom: 2px solid rgb(255, 212, 0);
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+}
+.content .wrapper .box .board-main .side-bar .select .select-name{
+    margin: 0px;
+    font-weight: 500;
+    color: rgb(48, 52, 65);
+    font-size: 22px;
+}
+.content .wrapper .box .board-main .side-bar .field .field-wrapper{
+    padding: 8px 0px;
+}
+.content .wrapper .box .board-main .side-bar .field .field-wrapper .field-title{
+    padding: 20px 0px 4px;
+    color: rgb(48, 52, 65);
+    font-size: 12px;
+    font-weight: 700;
+}
+.content .wrapper .box .board-main .side-bar .field .field-wrapper .field-content-box{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.content .wrapper .box .board-main .side-bar .field .field-wrapper .field-content-box .field-content-link{
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+.content .wrapper .box .board-main .side-bar .field .field-wrapper .field-content-box .field-content-link .field-content{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 32px;
+    color: rgb(85, 89, 105);
+}
+.content .wrapper .box .board-main .side-bar .field .field-wrapper .field-content-box .field-content-link .field-content .field-content-span{
+    position: relative;
+    flex: 1 1 0%;
+    font-size: 13px;
+    color: inherit;
 }
 .content .wrapper .box .board-main .board-body{
     display: flex;
@@ -160,7 +218,7 @@ html{
 
 
 /*=========================================================*/
-.css-j9gtx5 {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link {
     display: flex;
     width: 214px;
     max-height: 303px;
@@ -168,41 +226,41 @@ html{
     position: relative;
     text-decoration: none;
 }
-.css-go28na {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-img {
     position: relative;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-.css-1tgcat7 {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-img .img-box{
     position: relative;
     background-color: rgb(242, 243, 247);
 }
-.css-1t4fk7u {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-img .img-box .img-wrapper {
     display: flex;
     height: 160px;
 }
-.css-hnrd6i {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-img .img-box .img-wrapper .img-area {
     position: absolute;
     inset: 0px;
     display: block;
 }
-.css-ggl1ot {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-img .img-box .img-wrapper .img-area .title-img {
     display: block;
     width: 100%;
     height: 100%;
     transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
     opacity: 1;
 }
-.css-ggl1ot:hover{
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-img .img-box .img-wrapper .img-area .title-img:hover{
     transform: scale(1.1);
 }
-.css-1q9qc6z {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .heart-button-wrapper {
     position: absolute;
     top: 8px;
     right: 8px;
 }
-.css-tyn2nr {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .heart-button-wrapper .heart-button {
     transition: background-color 0.3s ease 0s;
     padding: 1px;
     border-radius: 4px;
@@ -216,7 +274,7 @@ html{
     align-items: center;
     cursor: pointer;
 }
-.css-1qcqzrg {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .heart-button-wrapper .heart-button .heart {
     display: inline-block;
     color: inherit;
     font-style: normal;
@@ -229,30 +287,24 @@ html{
     -moz-osx-font-smoothing: grayscale;
     color: #ffffff;
 }
-.css-7kp13n {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .heart-button-wrapper .heart-button .heart .heart-svg {
     display: inline-block;
 }
-.css-1sh78ou {
-    opacity: 0.3;
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    height: 16px;
-}
-.css-gxq4i8 {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field {
     padding-top: 16px;
     color: rgb(48, 52, 65);
 }
-.css-70qvj9 {
+
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .board-field-task-area {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
 }
-.css-3eiwm9 {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .board-field-task-area .task {
     color: rgb(154, 155, 167);
     font-size: 11px;
 }
-.css-hrlbrs {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .board-field-title{
     word-break: break-all;
     overflow: hidden;
     -webkit-line-clamp: 2;
@@ -265,31 +317,31 @@ html{
     line-height: 21px;
     height: 42px;
 }
-.css-gg4vpm {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .wage-wrapper {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
-.css-i9gxme {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .wage-wrapper .space-area {
     -webkit-box-flex: 1;
     flex-grow: 1;
 }
-.css-70qvj9 {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .wage-wrapper .wage-area {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
 }
-.css-mi4qyg {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .wage-wrapper .wage-area .wage-img {
     width: 23px;
     margin-right: 2px;
 }
-.css-1848xfl {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .wage-wrapper .wage-area .wage {
     font-size: 17px;
     font-weight: bold;
     color: rgb(48, 52, 65);
     height: 23px;
 }
-.css-mkpab3 {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area {
     margin-top: 4px;
     display: flex;
     -webkit-box-pack: end;
@@ -299,7 +351,7 @@ html{
     color: rgb(154, 155, 167);
     font-size: 11px;
 }
-.css-fs2uiz {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area .star {
     display: inline-block;
     font-style: normal;
     line-height: 0;
@@ -311,10 +363,10 @@ html{
     margin: -2px 2px 0px 0px;
     color: rgb(200, 202, 210);
 }
-.css-7kp13n {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area .star .star-svg {
     display: inline-block;
 }
-.css-1pujofm {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area .star-color {/* 색 있는 컬러 */
     display: inline-block;
     font-style: normal;
     line-height: 0;
@@ -326,7 +378,7 @@ html{
     margin: -2px 2px 0px 0px;
     color: rgb(251, 132, 45);
 }
-.css-p9bq5v {
+.content .wrapper .box .board-main .board-body .contents .contents-box .board-article .board-link .board-field .evaluation-area .star-count {
     display: inline-block;
     margin: 0px 4px;
     width: 1px;
