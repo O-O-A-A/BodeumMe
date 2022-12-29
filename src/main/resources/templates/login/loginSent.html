@@ -20,11 +20,17 @@
     alert('ID를 메세지로 전송합니다.'), alert('next CHAIN'), alert('SUBMITTED');
 
     // 여기서부터 문제가 있는 걸로 추정 중
-    let userName = request.getParameter("nameInput");
-    let userPhoneNumber = request.getParameter("phoneInput");
+    function sendMessage(){
 
-    conf.to = userPhoneNumber;
-    conf.text = userName+'유저 전화 번호 받음! ';
+        let userName = request.getParameter("nameInput").value;
+        let userPhoneNumber = request.getParameter("phoneInput").value;
+
+        alert("유저명 : "+userName);
+
+        conf.to = userPhoneNumber;
+        conf.text = userName+'유저 전화 번호 받음! ';
+
+    }
 
     // alert('ID를 메세지로 전송했습니다.'), alert('next CHAIN'), send(), alert('SUBMITTED');
     alert('ID를 메세지로 전송했습니다.'), alert('next CHAIN'), alert('SUBMITTED');
