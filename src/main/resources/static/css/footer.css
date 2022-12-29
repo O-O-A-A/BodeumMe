@@ -1,5 +1,5 @@
-/* fotter 부분 */
-.fotter1{
+/* footer 부분 */
+.footer1{
     padding-top: 32px;
     padding-bottom: 16px;
     width: 100%;
@@ -9,7 +9,7 @@
     display: flex;
     font-family: 'Metro Sans', sans-serif;
 }
-.f1{
+.footer1{
     padding-left: 16px;
     padding-right: 16px;
     flex: auto;
@@ -44,7 +44,7 @@
 
 }
 
-.f4-1{
+.footer-askButton{
     width: 76px;
     height: 36px;
     border-width: 1px;
@@ -57,8 +57,8 @@
     -webkit-box-pack: center;
 }
 
-.f4-1 p{
-    padding-top: 10px;
+.footer-askButton p{
+   padding-bottom: 5px;
     font-weight: 500;
     text-align: center;
     font-size: 14px;
@@ -66,14 +66,14 @@
 
 }
 
-.f5 {
-    padding-left: 5px;
-    padding-right: 5px;
+.footer-cell {
+    padding-left: 12px;
+    padding-right: 12px;
     flex: auto;
 }
 
 
-.f6{
+.footer-section{
     font-size: 16px;
     font-weight: bold;
     margin: 0 0 10px 45px;
@@ -81,9 +81,9 @@
     display: block;
 }
 
-.f7{
+.footer-links{
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 15px;
     line-height: 2.5;
 
     color: #555969;
@@ -91,54 +91,6 @@
 
 }
 
-.f8{
-    padding-left: 16px;
-    padding-right: 16px;
-    flex: auto;
-}
-
-.f9{
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 10px 18px;
-    line-height: 1.5;
-    letter-spacing: -0.34px;
-    display: block;
-}
-
-.f10{
-    font-weight: 800;
-    font-size: 1.3rem;
-    line-height: 2.5;
-    text-align: inherit;
-    color: #555969;
-    margin-bottom: 8px;
-
-}
-.f11{
-    padding-left: 16px;
-    padding-right: 16px;
-    flex: auto;
-}
-
-.f12{
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 10px 40px;
-    line-height: 1.5;
-    letter-spacing: -0.34px;
-    display: block;
-}
-
-.f13{
-    font-weight: 800;
-    font-size: 1.3rem;
-    line-height: 2.5;
-    text-align: inherit;
-    color: #555969;
-    margin-bottom: 8px;
-
-}
 
 .hr{
     height: 1px;
@@ -148,7 +100,7 @@
 }
 
 
-.fotter3{
+.footer-address{
     font-family: "Metro Sans", "Helvetica", "Arial", sans-serif;
     text-align: center;
     font-size: 14px;
@@ -159,15 +111,7 @@
 
 }
 
-.fotter4{
-    text-align: center;
-    color: #9a9ba7;
-    font-family: "Metro Sans","Helvetica","Arial",sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-
-}
-.fotter5{
+.footer-notice{
     text-align: center;
     color: #9a9ba7;
     font-family: "Metro Sans","Helvetica","Arial",sans-serif;
@@ -176,7 +120,7 @@
     margin-bottom: 20px;
 
 }
-.fotter6{
+.footer-copyright{
     text-align: center;
     color: #9a9ba7;
     font-family: "Metro Sans","Helvetica","Arial",sans-serif;
