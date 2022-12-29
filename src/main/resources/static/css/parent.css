@@ -150,7 +150,7 @@
     width: 1200px;
     height: 100%;
     background: no-repeat;
-    background-image: url("../../images/parentsitter/part1_bg.png");
+    background-image: url("../images/parentsitter/part1_bg.png");
 
     background-size: 702px 467px;
     background-position: right 100%;
@@ -222,7 +222,7 @@
 .part3-1-bg{
     height: 100%;
     background: no-repeat;
-    background-image: url("../../images/parentsitter/part3_bg.png");
+    background-image: url("../images/parentsitter/part3_bg.png");
     background-size: 1168px 670px;
     margin: 0 auto;
     padding: 80px 0;

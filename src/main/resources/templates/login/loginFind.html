@@ -5,9 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../static/signup/css/kmong_desktop_v2.css">
     <link rel="stylesheet" href="../../static/signup/css/kmong_fonts.css">
-    <link rel="stylesheet" href="../../static/signup/css/kmong.master_desktop.css">
     <title>아이디 비밀번호 찾기</title>
 
     <style>
@@ -349,68 +347,70 @@
 <script>
     let checkName = false;
     let checkPhone = false;
+    window.onload = function () {
+        $("#buttonFindPassword").click(function() {
+            $("#selectSection").removeClass("css-1lsv8i7");
+            $("#selectSection").addClass("change");
+            $("#findID").hide();
+            $("#findPassword").show();
+        })
+        $("#buttonFindID").click(function () {
+            $("#selectSection").removeClass("change");
+            $("#selectSection").addClass("css-1lsv8i7");
+            $("#findPassword").hide();
+            $("#findID").show();
+        })
+        $("#nameInput").keyup(function () {
+            let nameValue = $("#nameInput").val();
+            if(nameValue.length > 0){
+                checkName = true;
+            }
+            else{
+                checkName = false;
+            }
+            if(checkName & checkPhone){
+                $("#buttonGetID").attr("disabled", false);
+            }else{
+                $("#buttonGetID").attr("disabled", true);
+            }
+        })
+        $("#phoneInput").keyup(function () {
+            let phoneValue = $("#phoneInput").val();
+            if(phoneValue.length > 10){
+                checkPhone = true;
+            }
+            else{
+                checkPhone = false;
+            }
+            if(checkName & checkPhone){
+                $("#buttonGetID").attr("disabled", false);
+            }else{
+                $("#buttonGetID").attr("disabled", true);
+            }
+        })
+        $("#emailInput").keyup(function () {
+            let emailValue = $("#emailInput").val();
+            if(CheckEmail(emailValue)){
+                $("#buttonChangePassword").attr("disabled", false);
+            }
+            else{
+                $("#buttonChangePassword").attr("disabled", true);
+            }
+        })
 
-    $("#buttonFindPassword").click(function() {
-        $("#selectSection").removeClass("css-1lsv8i7");
-        $("#selectSection").addClass("change");
-        $("#findID").hide();
-        $("#findPassword").show();
-    })
-    $("#buttonFindID").click(function () {
-        $("#selectSection").removeClass("change");
-        $("#selectSection").addClass("css-1lsv8i7");
-        $("#findPassword").hide();
-        $("#findID").show();
-    })
-    $("#nameInput").keyup(function () {
-        let nameValue = $("#nameInput").val();
-        if(nameValue.length > 0){
-            checkName = true;
-        }
-        else{
-            checkName = false;
-        }
-        if(checkName & checkPhone){
-            $("#buttonGetID").attr("disabled", false);
-        }else{
-            $("#buttonGetID").attr("disabled", true);
-        }
-    })
-    $("#phoneInput").keyup(function () {
-        let phoneValue = $("#phoneInput").val();
-        if(phoneValue.length > 10){
-            checkPhone = true;
-        }
-        else{
-            checkPhone = false;
-        }
-        if(checkName & checkPhone){
-            $("#buttonGetID").attr("disabled", false);
-        }else{
-            $("#buttonGetID").attr("disabled", true);
-        }
-    })
-    $("#emailInput").keyup(function () {
-        let emailValue = $("#emailInput").val();
-        if(CheckEmail(emailValue)){
-            $("#buttonChangePassword").attr("disabled", false);
-        }
-        else{
-            $("#buttonChangePassword").attr("disabled", true);
-        }
-    })
-    function CheckEmail(str)
+        function CheckEmail(str)
+        {
+            const reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
 
-    {
-        const reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+            if(!reg_email.test(str)) {
+                return false;
+            }
 
-        if(!reg_email.test(str)) {
-            return false;
-        }
-
-        else {
-            return true;
+            else {
+                return true;
+            }
         }
     }
+
 </script>
 </html>
