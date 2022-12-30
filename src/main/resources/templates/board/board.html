@@ -2,6 +2,9 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>community</title>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -235,6 +238,7 @@
                     <section class="category">
                         <section class="category-body">
 
+                        <div>
 
                             <div class="category-select" data-modal="not-expand">
                                 <label class="category-label">서비스 옵션
@@ -258,8 +262,9 @@
                                 </label>
 
                             </div>
+                        </div>
 
-
+                        <div>
                             <div class="category-budget" data-modal="not-expand">
                                 <label class="category-label">시급
                                     <span role="img"
@@ -284,6 +289,7 @@
 
 
                             </div>
+                        </div>
                         </section>
 
                     </section>
@@ -585,9 +591,9 @@
 <!--end of footer-->
 
 
-<script type="text/javascript" src="./board.js"></script>
-<script type="text/javascript" src="./boardModal.js"></script>
-<script type="text/javascript" src="./boardAjax.js"></script>
+<script type="text/javascript" src="./board.js" th:inline="javascript"></script>
+<script type="text/javascript" src="./boardModal.js" th:inline="javascript"></script>
+<script type="text/javascript" src="./boardAjax.js" th:inline="javascript"></script>
 <script>
 
 </script>
