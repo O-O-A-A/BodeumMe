@@ -21,30 +21,29 @@
     alert('next CHAIN'), alert('SUBMITTED'),
 
     // 여기서부터 문제가 있는 걸로 추정 중
-        (function () {
-            alert("유저명 : "+userName);
-
-            let userName = request.getParameter("nameInput").value;
-            let userPhoneNumber = request.getParameter("phoneInput").value;
-
-            alert("유저명 : "+userName);
-
-            conf.to = userPhoneNumber;
-            conf.text = userName+'유저 전화 번호 받음! ';
-
-        })();
-    // window.onload =  function(){
-    //     alert("유저명 : "+userName);
+    //     (function () {
+    //         alert("유저명 : "+userName);
     //
-    //     let userName = request.getParameter("nameInput").value;
-    //     let userPhoneNumber = request.getParameter("phoneInput").value;
+    //         let userName = request.getParameter("nameInput").value;
+    //         let userPhoneNumber = request.getParameter("phoneInput").value;
     //
-    //     alert("유저명 : "+userName);
+    //         alert("유저명 : "+userName);
     //
-    //     conf.to = userPhoneNumber;
-    //     conf.text = userName+'유저 전화 번호 받음! ';
+    //         conf.to = userPhoneNumber;
+    //         conf.text = userName+'유저 전화 번호 받음! ';
     //
-    // }
+    //     })();
+    window.onload =  function(){
+
+        let userName = request.getParameter("nameInput").value;
+        let userPhoneNumber = request.getParameter("phoneInput").value;
+
+        alert("유저명 : "+userName);
+
+        conf.to = userPhoneNumber;
+        conf.text = userName+'유저 전화 번호 받음! ';
+
+    }
 
     // alert('ID를 메세지로 전송했습니다.'), alert('next CHAIN'), send(), alert('SUBMITTED');
     alert('ID를 메세지로 전송했습니다.'), alert('next CHAIN'), alert('SUBMITTED');
