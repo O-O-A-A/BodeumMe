@@ -20,24 +20,24 @@ function go(e){
     e.preventDefault();
     let chk_val = [];
 
-    if($('input[type=checkbox]').length) {
+    if($('input[type=checkbox]:checked').length) {
         $('input[type=checkbox]:checked').each(function (index, iVal) {
                 chk_val.push(iVal.value);
             }
         )
     }
-    else if($('input[type=radio]').length){
-        chk_val.push($('input[type=radio]:checked')[0].value)
+    if($('input[type=radio]:checked').length){
+        chk_val.push($('input[type=radio]:checked')[0]?.value)
     }
-
+    $($('.modal').siblings()[0]).data("modal","not-expand");
+    $('.modal').remove();
     location.href=`#?sort=${chk_val.join(',')}`
 }
 
 
 function do_modal(target) {
-    // $('.modal')?.previousSibling?.data("modal", "not-expand")
-    // $('.modal')?.nextSibling?.data("modal", "not-expand")
-    // $('.modal').remove();
+    $($('.modal')?.siblings()[0])?.data("modal","not-expand");
+    $('.modal')?.remove();
     if ($(target).data("modal") === "not-expand") {
         $(target.parentNode).append(what_modal[target.className])
         $(target).data("modal", "expand");

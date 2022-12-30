@@ -20,6 +20,4 @@ public class UserVO {
     private Boolean userRole;
     private String userRegistDate;
     private String userUpdateDate;
-
-
 }
