@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/board/*")
-public class BoardController {
+@RequestMapping("/post/*")
+public class PostController {
 
     @GetMapping("/list")
     public String getList() {
