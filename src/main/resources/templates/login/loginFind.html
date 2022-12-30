@@ -307,24 +307,26 @@
         <section style="position: absolute; display: block;" id="findID">
             <h2 class="css-2uz8gh ekorwg42">아이디 찾기</h2>
             <p class="css-r0xh8j ekorwg41">본인인증 받으신 정보를 입력해 주세요. 휴대폰 번호로 아이디(이메일 주소)를 보내드립니다.</p>
-            <form class="css-1nnnopv ekorwg44">
+            <form class="css-1nnnopv ekorwg44" action="loginSent.html" accept-charset="UTF-8" method="get">
                 <section>
                     <label class="css-190isgy ekorwg43">실명</label>
                     <div class="css-9pjm4v e1fnk6ig0">
-                        <input data-testid="realName" type="text" placeholder="실명을 입력해주세요." class="css-dka9py e1fnk6ig1" value="" id="nameInput"></div>
+                        <input data-testid="realName" type="text" placeholder="실명을 입력해주세요." class="css-dka9py e1fnk6ig1" value="" name="nameInput" id="nameInput"></div>
                 </section>
                 <section><label class="css-190isgy ekorwg43">휴대폰 번호</label>
                     <div class="css-9pjm4v e1fnk6ig0">
-                        <input data-testid="mobile" type="text" placeholder="휴대폰 번호를 입력해 주세요." class="css-dka9py e1fnk6ig1" value="" id="phoneInput">
+                        <input data-testid="mobile" type="text" placeholder="휴대폰 번호를 입력해 주세요." class="css-dka9py e1fnk6ig1" value="" name="phoneInput" id="phoneInput">
                     </div>
                 </section>
                 <div class="css-k008qs ekorwg45">
+
                     <button role="button" color="yellow" disabled="" type="submit" class="css-klg5aa eklkj752" id="buttonGetID">
                         <span class="css-1oteowz eklkj751">아이디(이메일 주소) 받기</span>
                     </button>
                 </div>
             </form>
         </section>
+
         <section style="position: absolute; display: none;" id="findPassword">
             <h2 class="css-2uz8gh ekorwg42">비밀번호 찾기</h2>
             <p class="css-r0xh8j ekorwg41">가입 시 등록하신 이메일 주소를 입력해 주세요. 비밀번호 재설정 링크를 보내드립니다.</p>

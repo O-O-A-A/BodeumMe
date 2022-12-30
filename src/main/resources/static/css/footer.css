@@ -128,3 +128,136 @@
     font-size: 10px;
     line-height: 1.66;
 }
+
+/*.foot*/
+
+/*.foot .footer1{*/
+/*    padding-top: 32px;*/
+/*    padding-bottom: 16px;*/
+/*    width: 100%;*/
+/*    max-width: 1200px;*/
+/*    justify-content: space-between;*/
+/*    margin: 0 auto;*/
+/*    display: flex;*/
+/*    font-family: 'Metro Sans', sans-serif;*/
+/*}*/
+/*.foot .footer1{*/
+/*    padding-left: 16px;*/
+/*    padding-right: 16px;*/
+/*    flex: auto;*/
+/*}*/
+
+/*.foot .f2{*/
+/*    font-size: 16px;*/
+/*    font-weight: bold;*/
+/*    margin: 0 0 8px 0;*/
+/*    line-height: 1.5;*/
+/*    letter-spacing: -0.34px;*/
+/*    display: block;*/
+
+/*}*/
+
+/*.foot .f3{*/
+/*    font-size: 13px;*/
+/*    font-weight: bold;*/
+/*    line-height: 2;*/
+/*    letter-spacing: -0.28px;*/
+/*    color: #9a9ba7;*/
+/*    display: block;*/
+
+/*}*/
+
+/*.foot .f4{*/
+/*    font-size: 13px;*/
+/*    font-weight: bold;*/
+/*    line-height: 2;*/
+/*    letter-spacing: -0.28px;*/
+/*    color: #9a9ba7;*/
+
+/*}*/
+
+/*.foot .footer-askButton{*/
+/*    width: 76px;*/
+/*    height: 36px;*/
+/*    border-width: 1px;*/
+/*    border-style: solid;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 4px;*/
+/*    line-height: 1;*/
+/*    font-weight: 500;*/
+/*    align-items: center;*/
+/*    -webkit-box-pack: center;*/
+/*}*/
+
+/*.foot .footer-askButton p{*/
+/*    padding-bottom: 5px;*/
+/*    font-weight: 500;*/
+/*    text-align: center;*/
+/*    font-size: 14px;*/
+/*    color: #303441;;*/
+
+/*}*/
+
+/*.foot .footer-cell {*/
+/*    padding-left: 12px;*/
+/*    padding-right: 12px;*/
+/*    flex: auto;*/
+/*}*/
+
+
+/*.foot .footer-section{*/
+/*    font-size: 16px;*/
+/*    font-weight: bold;*/
+/*    margin: 0 0 10px 45px;*/
+/*    line-height: 1.5;*/
+/*    display: block;*/
+/*}*/
+
+/*.foot .footer-links{*/
+/*    font-weight: 800;*/
+/*    font-size: 15px;*/
+/*    line-height: 2.5;*/
+
+/*    color: #555969;*/
+/*    margin-bottom: 8px;*/
+
+/*}*/
+
+
+/*.foot .hr{*/
+/*    height: 1px;*/
+/*    border: none;*/
+/*    background-color: rgba(0, 0, 0, 0.12);*/
+
+/*}*/
+
+
+/*.foot .footer-address{*/
+/*    font-family: "Metro Sans", "Helvetica", "Arial", sans-serif;*/
+/*    text-align: center;*/
+/*    font-size: 14px;*/
+/*    line-height: 2;*/
+/*    color: #303441;*/
+/*    font-weight: 700;*/
+/*    margin-bottom: 20px;*/
+
+/*}*/
+
+/*.foot .footer-notice{*/
+/*    text-align: center;*/
+/*    color: #9a9ba7;*/
+/*    font-family: "Metro Sans","Helvetica","Arial",sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-size: 12px;*/
+/*    margin-bottom: 20px;*/
+
+/*}*/
+
+/*.foot .footer-copyright{*/
+/*    text-align: center;*/
+/*    color: #9a9ba7;*/
+/*    font-family: "Metro Sans","Helvetica","Arial",sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 10px;*/
+/*    line-height: 1.66;*/
+/*}*/
