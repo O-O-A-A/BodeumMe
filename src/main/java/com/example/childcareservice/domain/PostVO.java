@@ -1,4 +1,4 @@
-package com.example.childcareservice.model;
+package com.example.childcareservice.domain;
 
 import lombok.Builder;
 import lombok.Getter;
