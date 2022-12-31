@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -8,7 +8,9 @@
 
     <title>가입하기 페이지 두 번째</title>
 
-    <link rel="stylesheet" href="../../static/css/signup_fonts.css">
+    <link href="../static/css/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="/signup/css/kmong_desktop_v2.css">
+    <link rel="stylesheet" href="/signup/css/kmong.master_desktop.css">
 
     <style data-emotion="css-global" data-s="">
         *{font-family:'Metro Sans',sans-serif;box-sizing:border-box;}
@@ -38,10 +40,10 @@
 
     </style>
 
-    <style>
+    <style data-emotion="css 1a9ujk8" data-s="">
         .css-1a9ujk8{padding:56px 80px;border:1px solid #e4e5ed;width:100%;}
     </style>
-    <style>
+    <style data-emotion="css j7qwjs" data-s="">
         .css-j7qwjs{
             display:-webkit-box;
             display:-webkit-flex;
@@ -52,7 +54,7 @@
             flex-direction:column;
         }</style>
 
-    <style>
+    <style data-emotion="css acorl0" data-s="">
         .css-acorl0{
             width:560px;
             padding:20px 0px;
@@ -73,7 +75,7 @@
         }
     </style>
 
-    <style>
+    <style data-emotion="css 1ljdbip" data-s="">
         .css-1ljdbip{
             font-size:30px;
             font-weight:normal;
@@ -84,14 +86,14 @@
         }
     </style>
 
-    <style>
+    <style data-emotion="css bnp71o" data-s="">
         .css-bnp71o{color:#727585;font-size:14px;margin-top:-24px;margin-bottom:40px;line-height:normal;}
     </style>
 
-    <style>
+    <style data-emotion="css 1imsxus" data-s="">
         .css-1imsxus{margin-bottom:12px;font-size:15px;font-weight:500;color:#555969;}
     </style>
-    <style>
+    <style data-emotion="css 148309r" data-s="">
         .css-148309r{
             padding:16px;
             -webkit-box-pack:start;
@@ -104,7 +106,7 @@
         .css-148309r:active span:first-of-type,.css-148309r:focus span:first-of-type,.css-148309r:hover span:first-of-type{color:#e4e5ed;}
     </style>
 
-    <style>
+    <style data-emotion="css 7rtdk7" data-s="">
         .css-7rtdk7{
             outline:none;
             border-width:1px;
@@ -167,7 +169,7 @@
         .css-7rtdk7:active span:first-of-type,.css-7rtdk7:focus span:first-of-type,
         .css-7rtdk7:hover span:first-of-type{color:#e4e5ed;}
     </style>
-    <style>
+    <style data-emotion="css nh621w" data-s="">
         .css-nh621w{
             display:inline-block;
             color:inherit;
@@ -186,7 +188,7 @@
     </style>
     <style data-emotion="css 7kp13n" data-s="">.css-7kp13n{display:inline-block;}</style>
 
-    <style>
+    <style data-emotion="css dlgejo" data-s="">
         .css-dlgejo{
             cursor:pointer;
             -webkit-text-decoration:none;
@@ -195,10 +197,10 @@
         }
     </style>
 
-    <style>
+    <style data-emotion="css bqrqdl" data-s="">
         .css-bqrqdl{margin-top:48px;}
     </style>
-    <style>
+    <style data-emotion="css 6asoex" data-s="">
         .css-6asoex{
             position:absolute;
             left:-9999px;
@@ -213,31 +215,41 @@
             color: rgb(255, 212, 0);
         }
     </style>
-
+    <style data-emotion="css" data-s=""></style>
+    <link rel="stylesheet" href="/signup/css/kmong_fonts.css">
 
 </head>
 <body>
 <main class="css-acorl0 e3jolaa0">
-    <a href="#" class="css-dlgejo e3jolaa1">
-        <svg width="85" height="100%" viewBox="0 0 85 26" xmlns="http://www.w3.org/2000/svg">
-            <path d="M77.69 4.86c3.975 0 7.197 3.215 7.197 7.18l-.002.055h.002c.073 3.477.074 5.769.003 6.874-.108 1.659-.724 3.372-1.947 4.693A7.21 7.21 0 0 1 77.593
-                 26c-2.724 0-4.998-.984-6.653-2.921l-.05-.059 3.226-2.684c.837.997 1.938 1.48 3.478 1.48.9 0 1.67-.358 2.259-.992.515-.556.817-1.263.832-1.813v-.443a7.186
-                 7.186 0 0 1-2.995.65c-3.975 0-7.197-3.214-7.197-7.179 0-3.964 3.222-7.178 7.197-7.178zm-32.13-.225c4.131 0 7.48 3.34 7.48 7.46 0 4.121-3.349 7.462-7.48
-                 7.462s-7.48-3.34-7.48-7.461c0-4.12 3.349-7.461 7.48-7.461zM4.533 0v10.354L8.623 5.2h5.309l-5.337 6.726 5.572 7.065h-4.98L4.534 13.42v5.572H0V0h4.533zM29.92
-                 4.86a6.233 6.233 0 0 1 6.233 6.234v7.897H31.96v-7.908a2.04 2.04 0 0 0-4.074-.152l-.006.152v7.908h-4.193v-7.908a2.04 2.04 0 0
-                 0-4.075-.152l-.005.152v7.908h-4.194v-7.897a6.233 6.233 0 0 1 10.371-4.662 6.201 6.201 0 0 1 4.136-1.571zm31.847 0a6.8 6.8 0 0 1 6.8 6.8v7.331h-4.194v-7.34a2.607
-                 2.607 0 0 0-2.441-2.602l-.165-.006a2.607 2.607 0 0 0-2.602 2.442l-.005.165v7.34l-4.193.001v-7.33a6.8 6.8 0 0 1 6.8-6.8zM45.56 8.818a3.282 3.282 0 0 0-3.287 3.279
-                 3.282 3.282 0 0 0 3.287 3.278 3.282 3.282 0 0 0 3.287-3.278 3.282 3.282 0 0 0-3.287-3.279zm32.13.226a3 3 0 0 0-3.003 2.996 3 3 0 0 0 3.003 2.996 3 3 0 0 0
-                 3.003-2.996 3 3 0 0 0-3.003-2.996z" fill="#212224" fill-rule="evenodd"></path>
-        </svg>
-    </a>
+    <!--
+     <a href="#" class="css-dlgejo e3jolaa1">
+         <svg width="85" height="100%" viewBox="0 0 85 26" xmlns="http://www.w3.org/2000/svg">
+             <path d="M77.69 4.86c3.975 0 7.197 3.215 7.197 7.18l-.002.055h.002c.073 3.477.074 5.769.003 6.874-.108 1.659-.724 3.372-1.947 4.693A7.21 7.21 0 0 1 77.593
+                  26c-2.724 0-4.998-.984-6.653-2.921l-.05-.059 3.226-2.684c.837.997 1.938 1.48 3.478 1.48.9 0 1.67-.358 2.259-.992.515-.556.817-1.263.832-1.813v-.443a7.186
+                  7.186 0 0 1-2.995.65c-3.975 0-7.197-3.214-7.197-7.179 0-3.964 3.222-7.178 7.197-7.178zm-32.13-.225c4.131 0 7.48 3.34 7.48 7.46 0 4.121-3.349 7.462-7.48
+                  7.462s-7.48-3.34-7.48-7.461c0-4.12 3.349-7.461 7.48-7.461zM4.533 0v10.354L8.623 5.2h5.309l-5.337 6.726 5.572 7.065h-4.98L4.534 13.42v5.572H0V0h4.533zM29.92
+                  4.86a6.233 6.233 0 0 1 6.233 6.234v7.897H31.96v-7.908a2.04 2.04 0 0 0-4.074-.152l-.006.152v7.908h-4.193v-7.908a2.04 2.04 0 0
+                  0-4.075-.152l-.005.152v7.908h-4.194v-7.897a6.233 6.233 0 0 1 10.371-4.662 6.201 6.201 0 0 1 4.136-1.571zm31.847 0a6.8 6.8 0 0 1 6.8 6.8v7.331h-4.194v-7.34a2.607
+                  2.607 0 0 0-2.441-2.602l-.165-.006a2.607 2.607 0 0 0-2.602 2.442l-.005.165v7.34l-4.193.001v-7.33a6.8 6.8 0 0 1 6.8-6.8zM45.56 8.818a3.282 3.282 0 0 0-3.287 3.279
+                  3.282 3.282 0 0 0 3.287 3.278 3.282 3.282 0 0 0 3.287-3.278 3.282 3.282 0 0 0-3.287-3.279zm32.13.226a3 3 0 0 0-3.003 2.996 3 3 0 0 0 3.003 2.996 3 3 0 0 0
+                  3.003-2.996 3 3 0 0 0-3.003-2.996z" fill="#212224" fill-rule="evenodd"></path>
+         </svg>
+     </a>
+     -->
+
+    <!--
+    <div class="header1-2">
+        <a href="#"><img src="/images/parentsitter/header.png" width="170px" height="40px"></a>
+    </div>
+    -->
+
     <div class="css-1a9ujk8 e17yzflp0">
         <div class="css-j7qwjs e1hbznyv0">
-            <h1 class="css-1ljdbip ey8vk260">크몽에서 어떤 서비스를<br>이용하고 싶으세요?</h1>
-            <p class="css-bnp71o e1hbznyv1">원하는 회원가입 유형을 선택하세요.<br>의뢰인으로 가입 후에도 전문가 등록이 가능합니다.</p>
+            <h1 class="css-1ljdbip ey8vk260">보듬미에서 어떤 서비스를<br>이용하고 싶으세요?</h1>
+            <p class="css-bnp71o e1hbznyv1">원하는 회원가입 유형을 선택하세요.</p>
             <label class="css-0 e1hbznyv2">
-                <div class="css-1imsxus e1hbznyv3">서비스를 의뢰하고 싶다면</div>
-                <button role="button" color="yellow" class="e1hbznyv4 css-7rtdk7 eklkj752">
+                <div class="css-1imsxus e1hbznyv3">부모님으로 회원가입 하고싶으시다면</div>
+                <button role="button" color="yellow" class="e1hbznyv4 css-7rtdk7 eklkj752" id="parent">
                         <span class="css-0">
                             <span role="img" rotate="0" class="css-nh621w e181xm9y1">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
@@ -249,12 +261,12 @@
                                 </svg>
                             </span>
                         </span>
-                    <span class="css-1oteowz eklkj751">의뢰인으로 가입</span>
+                    <span class="css-1oteowz eklkj751">부모회원으로 가입</span>
                 </button>
             </label>
             <label class="css-bqrqdl e1hbznyv2">
-                <div class="css-1imsxus e1hbznyv3">내 전문성을 판매하고 싶다면</div>
-                <button role="button" color="yellow" class="e1hbznyv4 css-7rtdk7 eklkj752">
+                <div class="css-1imsxus e1hbznyv3">베이비시터로 회원가입을 하고싶으시다면</div>
+                <button role="button" color="yellow" class="e1hbznyv4 css-7rtdk7 eklkj752" id="baby-sitter">
                         <span class="css-0 ">
                             <span role="img" rotate="0" class="css-nh621w e181xm9y1">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0">
@@ -265,11 +277,26 @@
                                 </svg>
                             </span>
                         </span>
-                    <span class="css-1oteowz eklkj751">전문가로 가입</span>
+                    <span class="css-1oteowz eklkj751">베이비시터 회원으로 가입</span>
                 </button>
             </label>
         </div>
     </div>
+    <form th:action="@{/user/join2}" name="next">
+        <input type="hidden" name="userRole">
+    </form>
 </main>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script th:inline="javascript">
+    $("button#parent").on("click", function(){
+        $("input[name='userRole']").val("0");
+        $(document.next).submit();
+    })
+
+    $("button#baby-sitter").on("click", function(){
+        $("input[name='userRole']").val("1");
+        $(document.next).submit();
+    })
+</script>
 </html>
