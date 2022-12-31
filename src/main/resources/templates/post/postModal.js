@@ -1,7 +1,5 @@
 $(document).ready(function () {
     $('.category-select,.category-budget').on('click', function(){do_modal(this)});
-    // $('.category-budget').on('click', function(){do_modal(this)} );
-
 })
 
 
