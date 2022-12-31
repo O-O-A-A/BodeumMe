@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.childcareservice.mapper.PostMapper">
+    <select id="selectAll" resultType="postRequestDTO">
+        select POST_TITLE,
+               POST_CONTENTS,
+               POST_WORK_TYPE,
+               POST_CAREER,
+               POST_PAYMENT,
+               POST_AVAILABLE_REGION,
+               POST_AVAILABLE_DAYS,
+               POST_AVAILABLE_TIME
+        FROM TBL_POST
+    </select>
+</mapper>

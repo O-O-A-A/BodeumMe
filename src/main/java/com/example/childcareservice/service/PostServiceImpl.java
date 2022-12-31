@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-@Qualifier("post") @Primary
+@Primary
 @Slf4j
 public class PostServiceImpl implements PostService {
 

@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 public class domainTest {
 
 
-    @Test
-    public void memberTest(){
-        MemberDTO memberDTO = new MemberDTO("aaa@naver.com", "testPassword");
-        log.info(memberDTO.getId());
-        log.info(memberDTO.getPassword());
-    }
+//    @Test
+//    public void memberTest(){
+//        MemberDTO memberDTO = new MemberDTO("aaa@naver.com", "testPassword");
+//        log.info(memberDTO.getId());
+//        log.info(memberDTO.getPassword());
+//    }
 }
