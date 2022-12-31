@@ -29,6 +29,10 @@ function go(e){
     if($('input[type=radio]:checked').length){
         chk_val.push($('input[type=radio]:checked')[0]?.value)
     }
+    if(chk_val.length === 0){
+        alert("1개 이상 체크해 주세요");
+        return;
+    }
     $($('.modal').siblings()[0]).data("modal","not-expand");
     $('.modal').remove();
     location.href=`#?sort=${chk_val.join(',')}`
@@ -36,9 +40,9 @@ function go(e){
 
 
 function do_modal(target) {
-    $($('.modal')?.siblings()[0])?.data("modal","not-expand");
-    $('.modal')?.remove();
     if ($(target).data("modal") === "not-expand") {
+        $($('.modal')?.siblings()[0])?.data("modal","not-expand");
+        $('.modal')?.remove();
         $(target.parentNode).append(what_modal[target.className])
         $(target).data("modal", "expand");
     } else {
