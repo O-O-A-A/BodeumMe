@@ -9,270 +9,283 @@
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../static/css/babysitter.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/login.css">
     <meta charset="UTF-8">
     <title>베이비시터 관련 페이지</title>
 </head>
 <body>
-<!-- 헤더 부분-->
-<header>
-    <div class="header1">
-        <div class="header1-1">
-            <div class="header1-2">
-                <a href="#"><img src="../static/images/parentsitter/header.png" width="100px" height="40px"></a>
+<div id="mainWindow">
+    <!-- 헤더 부분-->
+    <header>
+        <div class="header1">
+            <div class="header1-1">
+                <div class="header1-2">
+                    <a href="#"><img src="../static/images/parentsitter/header.png" width="100px" height="40px"></a>
+                </div>
+                <div class="header1-3">
+                    <a href="#" >보듬미</a>
+                </div>
+                <div class="header1-4">
+                    <button role="button" color="black" class="header1-5">
+                        <p>베이비시터 등록</p>
+                    </button>
+                    <button role="button" color="black" class="header1-6" id="loginButton">
+                        <p>로그인</p>
+                    </button>
+                    <a href="#" class="header1-7">무료 회원가입</a>
+
+                </div>
             </div>
-            <div class="header1-3">
-                <a href="#" >보듬미</a>
+        </div>
+
+        <div class="header2">
+            <div class="header2-1">
+                <a href="#" class="header2-2">홈</a>
             </div>
-            <div class="header1-4">
-                <button role="button" color="black" class="header1-5">
-                    <p>베이비시터 등록</p>
-                </button>
-                <button role="button" color="black" class="header1-6">
-                    <p>로그인</p>
-                </button>
-                <a href="#" class="header1-7">무료 회원가입</a>
+            <div class="header2-1">
+                <a href="#" class="header2-2">부모 페이지</a>
+            </div>
+            <div class="header2-1">
+                <a href="#" class="header2-2">베이비시터 페이지</a>
+            </div>
+            <div class="header2-1">
+                <a href="#" class="header2-2">마이 페이지</a>
+            </div>
+            <div class="header2-1">
+                <a href="#" class="header2-2">커뮤니티</a>
+            </div>
+            <div class="header2-1">
+                <a href="#" class="header2-2">FAQ</a>
+            </div>
+        </div>
+
+        <hr class="hr">
+
+    </header>
+
+
+    <main>
+        <div class="babysitter">
+            <div class="part1">
+                <div class="part1-1">
+                    <h2>베이비 시터로 등록하고<br>수익을 창출해보세요!</h2>
+                    <p>아이들을 좋아하는 분이라면 <br>누구나 베이비시터가 될 수 있습니다.<br>당신의 도움이 필요한 가정,보듬미에 모여 있어요.</p>
+                    <div class="part1-2">
+                        <div class="part1-3" >
+                            <a role="link"  href="#">
+                                <span class="part1-4">베이비시터 등록하기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="part1-5">
+                    <img src="../static/images/parentsitter/babysitter1.png" width="600" height="400">
+                </div>
 
             </div>
         </div>
-    </div>
-
-    <div class="header2">
-        <div class="header2-1">
-            <a href="#" class="header2-2">홈</a>
-        </div>
-        <div class="header2-1">
-            <a href="#" class="header2-2">부모 페이지</a>
-        </div>
-        <div class="header2-1">
-            <a href="#" class="header2-2">베이비시터 페이지</a>
-        </div>
-        <div class="header2-1">
-            <a href="#" class="header2-2">마이 페이지</a>
-        </div>
-        <div class="header2-1">
-            <a href="#" class="header2-2">커뮤니티</a>
-        </div>
-        <div class="header2-1">
-            <a href="#" class="header2-2">FAQ</a>
-        </div>
-    </div>
-
-    <hr class="hr">
-
-</header>
 
 
-<main>
-    <div class="babysitter">
-        <div class="part1">
-            <div class="part1-1">
-                <h2>베이비 시터로 등록하고<br>수익을 창출해보세요!</h2>
-                <p>아이들을 좋아하는 분이라면 <br>누구나 베이비시터가 될 수 있습니다.<br>당신의 도움이 필요한 가정,보듬미에 모여 있어요.</p>
-                <div class="part1-2">
-                    <div class="part1-3" >
-                        <a role="link"  href="#">
-                            <span class="part1-4">베이비시터 등록하기</span>
+
+        <section class="part2">
+            <div class="part2-1">
+                <div class="part2-2">
+                    <h2>How it Works</h2>
+                    <div class="part2-3">
+
+                        <div class="part2-4">
+                            <div class="part2-5">
+                                <img src="../static/images/parentsitter/babysitter2.png" width="60px" height="60px">
+                            </div>
+                            <div class="part22-5">
+                                <h3>베이비시터 등록</h3>
+                            </div>
+
+                            <div class="part222-5">
+                                베이비시터를 등록해주세요.
+                            </div>
+                        </div>
+
+                        <div class="part2-6">
+                            <div class="part2-7">
+                                <img src="../static/images/parentsitter/babysitter3.png" width="60px" height="60px">
+                            </div>
+                            <h3>서비스 등록</h3>
+                            <div>제공하고자 하는 서비스를 <br>카테고리에 맞추어 등록하세요.</div>
+                        </div>
+
+                        <div class="part2-8">
+                            <div class="part2-9">
+                                <img src="../static/images/parentsitter/babysitter4.png" width="60px" height="60px">
+                            </div>
+                            <h3>의뢰인과 대화</h3>
+                            <div>유선을 통해 의뢰인과<br>커뮤니케이션 하세요.</div>
+                        </div>
+
+                        <div class="part2-10">
+                            <div class="part2-11">
+                                <img src="../static/images/parentsitter/babysitter5.png" width="60px" height="60px">
+                            </div>
+                            <h3>계약</h3>
+                            <div>의뢰인 선택 후,매니저를 통한 계약&직접 계약이 가능합니다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="part3">
+            <div class="part3-1">
+                <h2 class="part3-2">보듬미와 함께하면 좋은 이유</h2>
+
+                <div class="part3-3">
+                    <div class="part3-4">
+                        <div class="part3-5">1</div>
+                        <div class="part3-6">보듬미에서 의뢰인을 만나세요</div>
+                        <div class="part3-7">어렵게 의뢰인을 찾아다니지 않으셔도 돼요.<br>아이돌봄이 필요하신 많은 부모님들께서<br>보듬미의 의뢰인입니다.</div>
+                    </div>
+
+                    <div class="part3-8">
+                        <div class="part3-9">2</div>
+                        <div class="part3-10">안전하게 계약하세요</div>
+                        <div class="part3-11">전문 매니저와 고객센터를 통해<br>안전하고 쉽게<br>의뢰인과 거래할 수 있습니다.</div>
+                    </div>
+
+                    <div class="part3-12">
+                        <div class="part3-13">3</div>
+                        <div class="part3-14">복잡한 계약과 마케팅, 신경 쓰지 마세요</div>
+                        <div class="part3-15">시터님이 활동에 집중할 수 있도록<br>계약의 편의성과 간편한 시스템으로<br>보듬미가 해드립니다.</div>
+                    </div>
+
+                    <div class="part3-16">
+                        <div class="part3-17">4</div>
+                        <div class="part3-18">건강하고 오래 일할 수 있는<br>좋은 환경을 만들기 위해 노력합니다</div>
+                        <div class="part3-19">아이들을 사랑하고 케어해주시는<br>베이비시터의 삶을 응원합니다.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="part5">
+            <h2>자주 묻는 질문</h2>
+            <p>추가로 질문 있으시면 고객센터로 문의 주세요.</p>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <h4 class="panel-title">Q. 아이돌봄이 저에게 잘 맞는지 미리 알 수 없을까요?</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </a>
                     </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">저희 보듬미의 회원이면, 누구나 전담 매니저 선생님과 상담 및 적성점사를 통하여 확인해 보실수 있습니다</div>
+                    </div>
                 </div>
-            </div>
-            <div class="part1-5">
-                <img src="../static/images/parentsitter/babysitter1.png" width="600" height="400">
-            </div>
-
-        </div>
-    </div>
-
-
-
-    <section class="part2">
-        <div class="part2-1">
-            <div class="part2-2">
-                <h2>How it Works</h2>
-                <div class="part2-3">
-
-                    <div class="part2-4">
-                        <div class="part2-5">
-                            <img src="../static/images/parentsitter/babysitter2.png" width="60px" height="60px">
-                        </div>
-                        <div class="part22-5">
-                            <h3>베이비시터 등록</h3>
-                        </div>
-
-                        <div class="part222-5">
-                            베이비시터를 등록해주세요.
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <h4 class="panel-title">
+                                Q. 부모에게 인터뷰 지원 이후 어떻게 하면 되나요? </h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
                     </div>
-
-                    <div class="part2-6">
-                        <div class="part2-7">
-                            <img src="../static/images/parentsitter/babysitter3.png" width="60px" height="60px">
-                        </div>
-                        <h3>서비스 등록</h3>
-                        <div>제공하고자 하는 서비스를 <br>카테고리에 맞추어 등록하세요.</div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">지원을 하게 되면 전담 매니저님께서 먼저 확인후,부모님과 유선 연락 및 채팅으로 연락하여 돔봄 조건이나 일정을 조율할 수 있어요.</div>
                     </div>
-
-                    <div class="part2-8">
-                        <div class="part2-9">
-                            <img src="../static/images/parentsitter/babysitter4.png" width="60px" height="60px">
-                        </div>
-                        <h3>의뢰인과 대화</h3>
-                        <div>유선을 통해 의뢰인과<br>커뮤니케이션 하세요.</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <h4 class="panel-title">Q. 돌봄비는 어떻게 정산 받나요? </h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
                     </div>
-
-                    <div class="part2-10">
-                        <div class="part2-11">
-                            <img src="../static/images/parentsitter/babysitter5.png" width="60px" height="60px">
-                        </div>
-                        <h3>계약</h3>
-                        <div>의뢰인 선택 후,매니저를 통한 계약&직접 계약이 가능합니다.</div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">등록 및 전담 매니저님께 알려주신 입금계좌로 편하게 돌봄비는 정산 받을수 있어요.<br>
+                            하지만, 첫달에는 중계수수료비 명목으로 약 10%가 공제 될 수 있음을 미리 알려드립니다.</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
+    </main>
 
-
-    <section class="part3">
-        <div class="part3-1">
-            <h2 class="part3-2">보듬미와 함께하면 좋은 이유</h2>
-
-            <div class="part3-3">
-                <div class="part3-4">
-                    <div class="part3-5">1</div>
-                    <div class="part3-6">보듬미에서 의뢰인을 만나세요</div>
-                    <div class="part3-7">어렵게 의뢰인을 찾아다니지 않으셔도 돼요.<br>아이돌봄이 필요하신 많은 부모님들께서<br>보듬미의 의뢰인입니다.</div>
-                </div>
-
-                <div class="part3-8">
-                    <div class="part3-9">2</div>
-                    <div class="part3-10">안전하게 계약하세요</div>
-                    <div class="part3-11">전문 매니저와 고객센터를 통해<br>안전하고 쉽게<br>의뢰인과 거래할 수 있습니다.</div>
-                </div>
-
-                <div class="part3-12">
-                    <div class="part3-13">3</div>
-                    <div class="part3-14">복잡한 계약과 마케팅, 신경 쓰지 마세요</div>
-                    <div class="part3-15">시터님이 활동에 집중할 수 있도록<br>계약의 편의성과 간편한 시스템으로<br>보듬미가 해드립니다.</div>
-                </div>
-
-                <div class="part3-16">
-                    <div class="part3-17">4</div>
-                    <div class="part3-18">건강하고 오래 일할 수 있는<br>좋은 환경을 만들기 위해 노력합니다</div>
-                    <div class="part3-19">아이들을 사랑하고 케어해주시는<br>베이비시터의 삶을 응원합니다.</div>
+    <!--footer 부분  -->
+    <footer>
+        <div class="footer1">
+            <div class="footer-left">
+                <p class="f2">고객센터</p>
+                <p class="f3">10:30~18:00 (점심시간 13:00 ~ 14:00)</p>
+                <p class="f4">주말, 공휴일 휴무</p>
+                <div class="footer-askButton">
+                    <a role="link" href="#" target="_blank"><p>1:1문의</p></a>
                 </div>
             </div>
+
+            <div class="footer-cell">
+                <p class="footer-section">보듬미</p>
+                <ul class="footer-links">
+                    <li>보듬미 메인</li>
+                    <li>부모 페이지</li>
+                    <li>베이비시터 페이지</li>
+                </ul>
+            </div>
+
+            <div class="footer-cell">
+                <p class="footer-section">보듬미 회원</p>
+                <ul class="footer-links">
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>마이페이지</li>
+                </ul>
+            </div>
+
+            <div class="footer-cell">
+                <p class="footer-section">지원</p>
+                <ul class="footer-links">
+                    <li>커뮤니티</a></li>
+                    <li>FAQ</a></li>
+
+                </ul>
+            </div>
+
         </div>
-    </section>
 
-    <div class="part5">
-        <h2>자주 묻는 질문</h2>
-        <p>추가로 질문 있으시면 고객센터로 문의 주세요.</p>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                        <h4 class="panel-title">Q. 아이돌봄이 저에게 잘 맞는지 미리 알 수 없을까요?</h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse in">
-                    <div class="panel-body">저희 보듬미의 회원이면, 누구나 전담 매니저 선생님과 상담 및 적성점사를 통하여 확인해 보실수 있습니다</div>
-                </div>
+        <hr class="hr">
+
+        <div class="footer2">
+            <div class="footer-address"> (주)보듬미 || 서울시 강남구 태헤란로00,13층 || 대표:보듬미 || 개인정보관리책임자: 홍길동 || 사업자등록번호:123-45-67898
+                <br>
+                통신판매업신고 : 2022-서울강남-2134 유료직업소개사업등록번호 : 제2022-123456-12-3-00012호 고객센터 : 5959-7979help@Bodeumme.com
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                        <h4 class="panel-title">
-                            Q. 부모에게 인터뷰 지원 이후 어떻게 하면 되나요? </h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse">
-                    <div class="panel-body">지원을 하게 되면 전담 매니저님께서 먼저 확인후,부모님과 유선 연락 및 채팅으로 연락하여 돔봄 조건이나 일정을 조율할 수 있어요.</div>
-                </div>
+            <div class="footer-notice">
+                <p>(주)보듬미는 의뢰인와 시터간의 계약에 관한 의무와 책임은 각각 개인에게 있습니다.</p>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                        <h4 class="panel-title">Q. 돌봄비는 어떻게 정산 받나요? </h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse">
-                    <div class="panel-body">등록 및 전담 매니저님께 알려주신 입금계좌로 편하게 돌봄비는 정산 받을수 있어요.<br>
-                        하지만, 첫달에는 중계수수료비 명목으로 약 10%가 공제 될 수 있음을 미리 알려드립니다.</div>
-                </div>
+            <div class="footer-notice">
+                <p>보듬미의 중계서비스/거래 정보, 콘텐츠,UI등에 대한 무단복제,전송,배포스크래핑 등의 행위는 저작권법, 콘텐츠산업진흥 등 관련법령에 의하여 엄격히 금지됩니다.</p>
             </div>
-        </div>
-    </div>
-
-
-</main>
-
-
-<!--footer 부분  -->
-<footer>
-    <div class="footer1">
-        <div class="footer-left">
-            <p class="f2">고객센터</p>
-            <p class="f3">10:30~18:00 (점심시간 13:00 ~ 14:00)</p>
-            <p class="f4">주말, 공휴일 휴무</p>
-            <div class="footer-askButton">
-                <a role="link" href="#" target="_blank"><p>1:1문의</p></a>
+            <div class="footer-copyright">
+                <p>Copyright&copy2022 BodeumMe Inc. Allrights reserved</p>
             </div>
         </div>
-
-        <div class="footer-cell">
-            <p class="footer-section">보듬미</p>
-            <ul class="footer-links">
-                <li>보듬미 메인</li>
-                <li>부모 페이지</li>
-                <li>베이비시터 페이지</li>
-            </ul>
-        </div>
-
-        <div class="footer-cell">
-            <p class="footer-section">보듬미 회원</p>
-            <ul class="footer-links">
-                <li>로그인</li>
-                <li>회원가입</li>
-                <li>마이페이지</li>
-            </ul>
-        </div>
-
-        <div class="footer-cell">
-            <p class="footer-section">지원</p>
-            <ul class="footer-links">
-                <li>커뮤니티</a></li>
-                <li>FAQ</a></li>
-
-            </ul>
-        </div>
-
-    </div>
-
-    <hr class="hr">
-
-    <div class="footer2">
-        <div class="footer-address"> (주)보듬미 || 서울시 강남구 태헤란로00,13층 || 대표:보듬미 || 개인정보관리책임자: 홍길동 || 사업자등록번호:123-45-67898
-            <br>
-            통신판매업신고 : 2022-서울강남-2134 유료직업소개사업등록번호 : 제2022-123456-12-3-00012호 고객센터 : 5959-7979help@Bodeumme.com
-        </div>
-        <div class="footer-notice">
-            <p>(주)보듬미는 의뢰인와 시터간의 계약에 관한 의무와 책임은 각각 개인에게 있습니다.</p>
-        </div>
-        <div class="footer-notice">
-            <p>보듬미의 중계서비스/거래 정보, 콘텐츠,UI등에 대한 무단복제,전송,배포스크래핑 등의 행위는 저작권법, 콘텐츠산업진흥 등 관련법령에 의하여 엄격히 금지됩니다.</p>
-        </div>
-        <div class="footer-copyright">
-            <p>Copyright&copy2022 BodeumMe Inc. Allrights reserved</p>
-        </div>
-    </div>
-</footer>
-
-
-
+    </footer>
+</div>
+</div>
+</div>
 </body>
+<script>
+    let toggleLogin = false;
+    window.onload = function () {
+        $("#login").hide();
+        if(!toggleLogin){
+            $("#login").hide();
+        }
+        $('#loginButton').click(function () {
+            $("#login").css("display", "block");
+        })
+        $("#closeButton").click(function () {
+            $("#login").hide();
+        })
+    }
+</script>
 </html>

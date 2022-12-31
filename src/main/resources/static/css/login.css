@@ -1,0 +1,321 @@
+.css-1t3qegi {
+    inset: 0px;
+    display: flex;
+    z-index: -1;
+    position: fixed;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+}
+.css-qg62me {
+    position: fixed;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden auto;
+    text-align: center;
+    outline: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.css-k6wjm2 {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 1024px;
+}
+.css-pl8523 {
+    width: 100%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow:
+            rgba(0, 0, 0, 0.12) 0px 3px 6px -4px,
+            rgba(0, 0, 0, 0.08) 0px 6px 16px 0px,
+            rgba(0, 0, 0, 0.05) 0px 9px 28px 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    text-align: left;
+    max-height: calc(100% - 128px);
+    margin: 64px;
+}
+.css-1jep4ab {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+.css-1u9286t {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    line-height: 1;
+    font-weight: 500;
+    transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    white-space: nowrap;
+    max-width: 100%;
+    height: 42px;
+    font-size: 15px;
+    min-width: 42px;
+    padding: 0px;
+    border-radius: 21px;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(48, 52, 65);
+}
+.css-1qthg6u {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden auto;
+}
+.css-12qwiyu {
+    width: 600px;
+    height: 656px;
+    flex: 0 0 600px;
+    overflow: hidden;
+    position: relative;
+}
+.css-dkqbs4 {
+    font-size: 18px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    line-height: 30px;
+    margin: 0px;
+    transition: opacity 1s ease 0s;
+    opacity: 1;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.css-1uo8y46 {
+    padding: 40px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.css-12m9a47 {
+    font-size: 24px;
+    color: rgb(48, 52, 65);
+    margin: 0px 0px 24px;
+    font-weight: 500;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.css-1rr4qq7 {
+    flex: 1 1 0%;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+div {
+    display: block;
+}
+
+.css-wa7cs7 {
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.css-u6qecc {
+    width: 100%;
+    border: 1px solid rgb(228, 229, 237);
+    border-radius: 4px;
+    transition: background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    display: inline-flex;
+    flex-direction: row;
+    overflow: hidden;
+    cursor: text;
+    background-color: rgb(255, 255, 255);
+    color: rgb(48, 52, 65);
+    height: 52px;
+    font-size: 15px;
+    padding: 0px 16px;
+    min-width: 80px;
+}
+.css-dka9py {
+    outline: none;
+    flex: 1 1 0%;
+    width: 100%;
+    background-image: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    border: none;
+    font-weight: inherit;
+    background-color: transparent;
+    text-align: left;
+    color: inherit;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+.css-uyewa0 {
+    margin-top: 4px;
+    margin-bottom: -8px;
+}
+.css-klg5aa {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 1;
+    font-weight: 500;
+    transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    height: 52px;
+    font-size: 16px;
+    padding: 0px 24px;
+    min-width: 80px;
+    background-color: rgb(255, 212, 0);
+    border-color: rgb(255, 212, 0);
+    color: rgb(48, 52, 65);
+}
+.css-18pqe3v {
+    font-size: 14px;
+    color: rgb(48, 52, 65);
+    cursor: pointer;
+}
+.css-1iylv4b {
+    margin-top: 12px;
+    display: flex;
+}
+.css-zdpt2t {
+    margin-left: auto;
+}
+.css-1y3tr5w {
+    font-size: 14px;
+    color: rgb(85, 89, 105);
+    text-decoration: none;
+}
+.css-i3pbo {
+    margin-bottom: 24px;
+}
+.css-13lhzhr {
+    margin: 0px;
+    font-size: 14px;
+    color: rgb(48, 52, 65);
+    text-align: center;
+}
+.css-1olaq31 {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.css-12fo9sz {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+img {
+    border-style: none;
+}
+.css-ejtze1 {
+    height: 1px;
+    margin: 0;
+    border: none;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+.css-12n2o4t {
+    margin: 24px 0px;
+    color: rgb(48, 52, 65);
+    font-weight: 400;
+}
+.css-11madiy {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 1;
+    font-weight: 500;
+    transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+    height: 52px;
+    font-size: 16px;
+    padding: 0px 24px;
+    min-width: 80px;
+    background-color: transparent;
+    border-color: rgb(17, 106, 212);
+    color: rgb(17, 106, 212);
+}
