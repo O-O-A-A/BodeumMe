@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.childcareservice.mapper.LoginMapper">
     <select id="select" resultType="memberDTO" parameterType="map">
-        SELECT USER_NUMBER, USER_ID, USER_PASSWORD
+        SELECT USER_NUMBER, USER_ID, USER_PASSWORD, USER_NAME, USER_ADDRESS, USER_GENDER, USER_PHONE_NUMBER, USER_EMAIL, USER_ROLE, USER_SALT
         FROM TBL_USER
         WHERE USER_ID = #{id} AND USER_PASSWORD = #{password}
     </select>
