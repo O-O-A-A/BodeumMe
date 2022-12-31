@@ -3,5 +3,7 @@
 <configuration>
     <typeAliases>
         <typeAlias type="com.example.childcareservice.domain.MemberDTO" alias="memberDTO"/>
+        <typeAlias type="com.example.childcareservice.dto.PostRequestDTO" alias="postRequestDTO"/>
+        <typeAlias type="com.example.childcareservice.domain.PostVO" alias="postVO"/>
     </typeAliases>
 </configuration>

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     for (let i = 0; i < 36; i++) {
         $("#boarder").append(`
             <article class="board-article">
