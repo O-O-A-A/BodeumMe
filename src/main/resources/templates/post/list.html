@@ -591,11 +591,13 @@
 <!--end of footer-->
 
 
+<script th:inline="javascript">
+    const post = [[${post}]]
+</script>
+<script type="text/javascript" th:src="@{../../static/js/post/post.js}" ></script>
 <script type="text/javascript" src="../../static/js/post/post.js" th:inline="javascript"></script>
 <script type="text/javascript" src="../../static/js/post/postModal.js" th:inline="javascript"></script>
 <script type="text/javascript" src="../../static/js/post/postAjax.js" th:inline="javascript"></script>
-<script th:inline="javascript">
-</script>
 
 </body>
 </html>

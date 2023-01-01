@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -25,7 +26,8 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public List<PostRequestDTO> getList(String sort) {
+    public List<PostRequestDTO> getList(String[] sort) {
+//        log.info("정렬 조건" + Arrays.toString(sort));
         return postDAO.findAllByOrderBySort(sort);
     }
 }

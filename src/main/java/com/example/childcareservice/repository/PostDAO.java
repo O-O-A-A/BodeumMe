@@ -13,6 +13,6 @@ public class PostDAO {
     private final PostMapper postMapper;
 
     public List<PostRequestDTO>findAll(){return postMapper.selectAll();}
-    public List<PostRequestDTO>findAllByOrderBySort(String sort){return postMapper.sortAll(sort);}
+    public List<PostRequestDTO>findAllByOrderBySort(String[] sort){return postMapper.sortAll(sort);}
 
 }

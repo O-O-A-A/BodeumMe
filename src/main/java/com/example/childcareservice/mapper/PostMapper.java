@@ -9,6 +9,6 @@ import java.util.List;
 public interface PostMapper {
 
     public List<PostRequestDTO> selectAll();
-    public List<PostRequestDTO> sortAll(String sort);
+    public List<PostRequestDTO> sortAll(String[] sort);
 
 }

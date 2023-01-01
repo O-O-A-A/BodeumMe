@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface PostService {
     public List<PostRequestDTO> getList();
-    public List<PostRequestDTO> getList(String sort);
+    public List<PostRequestDTO> getList(String[] sort);
 
 }

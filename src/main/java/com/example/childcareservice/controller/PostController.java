@@ -8,18 +8,27 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 @Controller
 @RequestMapping("/post/*")
 @RequiredArgsConstructor
+@Slf4j
 public class PostController {
 
     private final PostService postService;
 
     @GetMapping("/list")
-    public String getList(Model model) {
+    public void getList(Model model) {
         model.addAttribute("post", postService.getList());
-        return "/post/post";
     }
 
+    @GetMapping("/sort")
+    public String sort(String[] sort, Model model){
+//        log.info("정렬 조건" + Arrays.toString(sort));
+        model.addAttribute("sortPost", postService.getList(sort));
+        return "/post/list";
+    }
 
 }

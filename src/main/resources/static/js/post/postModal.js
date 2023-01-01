@@ -33,7 +33,7 @@ function go(e){
     }
     $($('.modal').siblings()[0]).data("modal","not-expand");
     $('.modal').remove();
-    location.href=`#?sort=${chk_val.join(',')}`
+    location.href=`/post/sort?sort=${chk_val.join(',')}`
 }
 
 

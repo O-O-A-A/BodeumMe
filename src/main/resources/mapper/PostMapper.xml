@@ -12,4 +12,16 @@
                POST_AVAILABLE_TIME
         FROM TBL_POST
     </select>
+    
+    <select id="sortAll" resultType="postRequestDTO">
+        select POST_TITLE,
+               POST_CONTENTS,
+               POST_WORK_TYPE,
+               POST_CAREER,
+               POST_PAYMENT,
+               POST_AVAILABLE_REGION,
+               POST_AVAILABLE_DAYS,
+               POST_AVAILABLE_TIME
+        FROM TBL_POST
+    </select>
 </mapper>

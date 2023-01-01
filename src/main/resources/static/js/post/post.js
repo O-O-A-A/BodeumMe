@@ -1,7 +1,10 @@
+/*<![CDATA[*/
 $(document).ready(function () {
-
+    // console.log(/*[[${post}]]*/)
+    // console.log(post)
     for (let i = 0; i < 36; i++) {
         $("#boarder").append(`
+            
             <article class="board-article">
                 <a href="/gig/426333" class="board-link">
                     <div class="board-img">
@@ -127,3 +130,6 @@ function heart_button(){
     
     `
 }
+
+
+/*]]>*/
