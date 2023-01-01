@@ -16,24 +16,23 @@ function check(){
 
 function go(e){
     e.preventDefault();
-    let chk_val = [];
-
     if($('input[type=checkbox]:checked').length) {
+        input_category = [];
         $('input[type=checkbox]:checked').each(function (index, iVal) {
-                chk_val.push(iVal.value);
+            input_category.push(iVal.value);
             }
         )
     }
     if($('input[type=radio]:checked').length){
-        chk_val.push($('input[type=radio]:checked')[0]?.value)
+        input_budget = $('input[type=radio]:checked')[0]?.value;
     }
-    if(chk_val.length === 0){
+    if(input_category.length === 0 ){
         alert("1개 이상 체크해 주세요");
         return;
     }
     $($('.modal').siblings()[0]).data("modal","not-expand");
     $('.modal').remove();
-    location.href=`/post/sort?sort=${chk_val.join(',')}`
+    location.href=`/post/sort?category=${input_category.join(',')}&budget=${input_budget}`
 }
 
 

@@ -25,9 +25,13 @@ public class PostController {
     }
 
     @GetMapping("/sort")
-    public String sort(String[] sort, Model model){
-//        log.info("정렬 조건" + Arrays.toString(sort));
-        model.addAttribute("sortPost", postService.getList(sort));
+    public String sort(String[] category, String budget, Model model){
+        log.info("정렬 조건" + Arrays.toString(category));
+        log.info("정렬 조건" + budget);
+
+        model.addAttribute("sortPost", postService.getList(category));
+        model.addAttribute("category", category);
+        model.addAttribute("budget", budget);
         return "/post/list";
     }
 

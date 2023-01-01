@@ -592,7 +592,10 @@
 
 
 <script th:inline="javascript">
-    const post = [[${post}]]
+    const post = [[${post}]];
+    const sort_post = [[${sortPost}]];
+    let input_category = [[${category}]];
+    let input_budget = [[${budget}]] === null ? 999_999_999 : [[${budget}]];
 </script>
 <script type="text/javascript" th:src="@{../../static/js/post/post.js}" ></script>
 <script type="text/javascript" src="../../static/js/post/post.js" th:inline="javascript"></script>
