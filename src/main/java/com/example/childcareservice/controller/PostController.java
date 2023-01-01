@@ -3,6 +3,7 @@ package com.example.childcareservice.controller;
 import com.example.childcareservice.service.PostService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,11 +26,11 @@ public class PostController {
     }
 
     @GetMapping("/sort")
-    public String sort(String[] category, String budget, Model model){
+    public String sort(@Param("category")String[] category, @Param("budget") String budget, Model model){
         log.info("정렬 조건" + Arrays.toString(category));
         log.info("정렬 조건" + budget);
 
-        model.addAttribute("sortPost", postService.getList(category));
+        model.addAttribute("post", postService.getList(category, budget));
         model.addAttribute("category", category);
         model.addAttribute("budget", budget);
         return "/post/list";
