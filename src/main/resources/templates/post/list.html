@@ -238,14 +238,14 @@
                     <section class="category">
                         <section class="category-body">
 
-                        <div>
+                            <div>
 
-                            <div class="category-select" data-modal="not-expand">
-                                <label class="category-label">서비스 옵션
-                                    <span role="img"
-                                          color="#c8cad2"
-                                          rotate="0"
-                                          class="category-label-svg-area">
+                                <div class="category-select" data-modal="not-expand">
+                                    <label class="category-label">서비스 옵션
+                                        <span role="img"
+                                              color="#c8cad2"
+                                              rotate="0"
+                                              class="category-label-svg-area">
                                         <svg
                                                 width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
                                                 aria-hidden="true"
@@ -259,18 +259,18 @@
                                         </path>
                                         </svg>
                                     </span>
-                                </label>
+                                    </label>
 
+                                </div>
                             </div>
-                        </div>
 
-                        <div>
-                            <div class="category-budget" data-modal="not-expand">
-                                <label class="category-label">시급
-                                    <span role="img"
-                                          color="#c8cad2"
-                                          rotate="0"
-                                          class="category-label-svg-area">
+                            <div>
+                                <div class="category-budget" data-modal="not-expand">
+                                    <label class="category-label">시급
+                                        <span role="img"
+                                              color="#c8cad2"
+                                              rotate="0"
+                                              class="category-label-svg-area">
                                         <svg
                                                 width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
                                                 aria-hidden="true"
@@ -284,20 +284,17 @@
                                             </path>
                                         </svg>
                                     </span>
-                                </label>
+                                    </label>
 
 
-
+                                </div>
                             </div>
-                        </div>
                         </section>
 
                     </section>
                     <div class="count">
                         <p class="count-box">
-                            <span>
-                                ?개의 서비스
-                            </span>
+                            <span th:text="${post.size} + '개의 서비스'"></span>
                         </p>
                     </div>
                     <div class="contents">
@@ -593,10 +590,12 @@
 
 <script th:inline="javascript">
     const post = [[${post}]];
-    let input_category = [[${category}]];
+
+    // ['베이비시터', '육아+가사', '등하원도우미', '학습시터', '놀이시터', '입주베이비시터', '산후도우미','가사도우미','청소도우미','입주가사도우미','음식도우미']
+    let input_category = [[${category}]] === null ? [] : [[${category}]];
     let input_budget = [[${budget}]] === null ? 999_999_999 : [[${budget}]];
 </script>
-<script type="text/javascript" th:src="@{../../static/js/post/post.js}" ></script>
+<script type="text/javascript" th:src="@{../../static/js/post/post.js}"></script>
 <script type="text/javascript" src="../../static/js/post/post.js" th:inline="javascript"></script>
 <script type="text/javascript" src="../../static/js/post/postModal.js" th:inline="javascript"></script>
 <script type="text/javascript" src="../../static/js/post/postAjax.js" th:inline="javascript"></script>
