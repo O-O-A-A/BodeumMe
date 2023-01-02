@@ -27,14 +27,12 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<PostRequestDTO> getList(String[] category, String budget) {
+        log.info("category 길이 : " + category.length);
         log.info("정렬 조건 " + Arrays.toString(category) + " , " + budget);
 //        return   postDAO.findAllByCategory(category);
         boolean length = category.length == 0;
-        boolean equal = budget.equals("999999999");
-        if (length && !equal) {
+        if (length) {
             return postDAO.findAllByBudget(budget);
-        } else if (!length && equal) {
-            return postDAO.findAllByCategory(category);
         }
         HashMap<String, Object> categories = new HashMap<>();
         categories.put("category", category);

@@ -14,7 +14,6 @@ public class PostDAO {
     private final PostMapper postMapper;
 
     public List<PostRequestDTO>findAll(){return postMapper.selectAll();}
-    public List<PostRequestDTO>findAllByCategory(String[] category){return postMapper.selectAllByCategory(category);}
     public List<PostRequestDTO>findAllByBudget(String budget){return postMapper.selectAllByBudget(budget);}
     public List<PostRequestDTO>findAllByCategoryBudget(HashMap<String, Object> category){return postMapper.selectAllByCategoryBudget(category);}
 

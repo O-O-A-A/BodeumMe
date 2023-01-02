@@ -13,21 +13,6 @@
         FROM TBL_POST
     </select>
 
-    <select id="selectAllByCategory" resultType="postRequestDTO">
-        select POST_TITLE,
-        POST_CONTENTS,
-        POST_WORK_TYPE,
-        POST_CAREER,
-        POST_PAYMENT,
-        POST_AVAILABLE_REGION,
-        POST_AVAILABLE_DAYS,
-        POST_AVAILABLE_TIME
-        FROM TBL_POST
-        WHERE POST_WORK_TYPE IN
-        <foreach collection="array" item="category" open="(" close=")" separator=",">
-            #{category}
-        </foreach>
-    </select>
     <select id="selectAllByBudget" resultType="postRequestDTO">
         select POST_TITLE,
         POST_CONTENTS,
