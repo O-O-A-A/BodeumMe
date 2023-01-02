@@ -23,73 +23,74 @@
 <body>
 <h3>전송완료화면</h3>
 
+
+</body>
+
 <script>
     alert('ID를 메세지로 전송합니다.');
     alert('next CHAIN'), alert('SUBMITTED'),
 
-    // 여기서부터 문제가 있는 걸로 추정 중
-    //     (function () {
-    //         alert("유저명 : "+userName);
-    //
-    //         let userName = request.getParameter("nameInput").value;
-    //         let userPhoneNumber = request.getParameter("phoneInput").value;
-    //
-    //         alert("유저명 : "+userName);
-    //
-    //         conf.to = userPhoneNumber;
-    //         conf.text = userName+'유저 전화 번호 받음! ';
-    //
-    //     })();
-    window.onload =  function(){
+        // 여기서부터 문제가 있는 걸로 추정 중
+        //     (function () {
+        //         alert("유저명 : "+userName);
+        //
+        //         let userName = request.getParameter("nameInput").value;
+        //         let userPhoneNumber = request.getParameter("phoneInput").value;
+        //
+        //         alert("유저명 : "+userName);
+        //
+        //         conf.to = userPhoneNumber;
+        //         conf.text = userName+'유저 전화 번호 받음! ';
+        //
+        //     })();
+        window.onload =  function(){
 
-        let userName = 'Caeruleus'
-        let userPhoneNumber = '01093578607'
+            let userName = 'Caeruleus'
+            let userPhoneNumber = '01093578607'
 
-        alert("유저명 : "+userName);
+            alert("유저명 : "+userName);
 
-        let userConf = require(conf);
+            let userConf = require(conf);
 
-        const { config, Group } = require('coolsms-node-sdk')
+            alert("유저명 : "+userName);
 
+            const { config, Group } = require('coolsms-node-sdk')
 
-        // let userName = request.getParameter("nameInput").value;
-        // let userPhoneNumber = request.getParameter("phoneInput").value;
+            // let userName = request.getParameter("nameInput").value;
+            // let userPhoneNumber = request.getParameter("phoneInput").value;
 
-        alert("유저명 : "+userName);
+            alert("유저명 : "+userName);
 
-        userConf.to = userPhoneNumber;
-        userConf.text = userName+'유저 전화 번호 받음! ';
+            userConf.to = userPhoneNumber;
+            userConf.text = userName+'유저 전화 번호 받음! ';
 
-        alert("메세지 : "+userConf.text);
+            alert("메세지 : "+userConf.text);
 
-        config.init({
-            apiKey: userConf.apiKey,
-            apiSecret: userConf.apiSecret
-        })
-        send({
-            text: `${userConf.text} from JavaScript`,
-            type: userConf.type,
-            to: userConf.to,
-            from: userConf.from
-        })
+            config.init({
+                apiKey: userConf.apiKey,
+                apiSecret: userConf.apiSecret
+            })
+            send({
+                text: `${userConf.text} from JavaScript`,
+                type: userConf.type,
+                to: userConf.to,
+                from: userConf.from
+            })
 
-
-
-        async function send (message, agent = {}) {
-            try {
-                console.log(await Group.sendSimpleMessage(message, agent))
-            } catch (e) {
-                console.log(e)
+            async function send (message, agent = {}) {
+                try {
+                    console.log(await Group.sendSimpleMessage(message, agent))
+                } catch (e) {
+                    console.log(e)
+                }
             }
+
+
         }
-
-
-    }
 
     // alert('ID를 메세지로 전송했습니다.'), alert('next CHAIN'), send(), alert('SUBMITTED');
     alert('ID를 메세지로 전송했습니다.'), alert('next CHAIN'), alert('SUBMITTED');
 
 </script>
 
-</body>
 </html>
