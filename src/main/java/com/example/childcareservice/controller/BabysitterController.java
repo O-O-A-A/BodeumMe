@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Slf4j
-@RequestMapping("/FAQ/*")
+@RequestMapping("/*")
 @Controller
 @RequiredArgsConstructor
-public class FAQController {
-    @GetMapping("/FAQ_list")
+public class BabysitterController {
+    @GetMapping("/babysitter")
     public String FAQListPage(){
-        return "/FAQ/FAQ_list";
+        return "/babysitter";
     }
 
 }
