@@ -506,7 +506,7 @@
                                 <a href="#" class="css-12fo9sz enu6cyp3" style="background-color: rgb(30, 200, 0);">
                                     <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/naver_logo.png" width="32" height="32" alt="소셜 로고">
                                 </a>
-                                <a href="#" class="css-12fo9sz enu6cyp3" style="background-color: rgb(249, 224, 0);">
+                                <a href="https://kauth.kakao.com/oauth/authorize?client_id=840a4c55c721f681aeaf5e213356d7c6&redirect_uri=http://localhost:10000/kakao&response_type=code" class="css-12fo9sz enu6cyp3" style="background-color: rgb(249, 224, 0);">
                                     <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/kakao_logo.png" width="32" height="32" alt="소셜 로고">
                                 </a>
                                 <a href="#" class="css-12fo9sz enu6cyp3" style="background-color: rgb(24, 119, 242);">
@@ -711,8 +711,10 @@
 
     /*<![CDATA[*/
     let memberInfo = [[${session.MemberInfo}]];
+    let kakaoInfo = [[${session.token}]]
     console.log("session check : " + memberInfo);
-    if(memberInfo == null){
+    console.log("kakao check : " + kakaoInfo);
+    if(memberInfo == null && kakaoInfo == null){
         $(".header1-4-1").show();
         $(".header1-4-2").hide();
     }else{
