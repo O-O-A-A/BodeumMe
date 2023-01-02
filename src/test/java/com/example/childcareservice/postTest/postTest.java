@@ -34,4 +34,17 @@ public class postTest {
         assertThat(((List<PostRequestDTO>)mockMvc.perform(MockMvcRequestBuilders.get("/post/list"))
                 .andReturn().getModelAndView().getModelMap().get("post")).get(0).getPostTitle()).isEqualTo("구인");
     }
+
+    @Test
+    public void getListByCategoryBudgetTest() throws Exception{
+//        assertThat(((List<PostRequestDTO>)mockMvc.perform(MockMvcRequestBuilders.get("/post/sort?budget=10000"))
+//                .andReturn().getModelAndView().getModelMap().get("post")).size()).isEqualTo(0);
+
+//        assertThat(((List<PostRequestDTO>)mockMvc.perform(MockMvcRequestBuilders.get("/post/sort?category=가사,가사22&budget=10000"))
+//                .andReturn().getModelAndView().getModelMap().get("post")).size()).isEqualTo(0);
+
+        assertThat(((List<PostRequestDTO>)mockMvc.perform(MockMvcRequestBuilders.get("/post/sort?category=가사,가사22&budget=10000"))
+                .andReturn().getModelAndView().getModelMap().get("post")).size()).isEqualTo(0);
+
+    }
 }

@@ -1,12 +1,14 @@
 $(document).ready(function () {
-    $('.category-select,.category-budget').on('click', function(){do_modal(this)});
+    $('.category-select,.category-budget').on('click', function () {
+        do_modal(this)
+    });
 })
 
 
-function check(){
+function check() {
     $('input[type=checkbox]').on("click", function () {
         let count = $('input:checked[type="checkbox"]').length;
-        if(count > 5){
+        if (count > 5) {
             $(this).prop("checked", false);
             alert("5개 까지만 선택할 수 있습니다.");
         }
@@ -14,32 +16,31 @@ function check(){
 }
 
 
-function go(e){
+function go(e) {
     e.preventDefault();
-    let chk_val = [];
-
-    if($('input[type=checkbox]:checked').length) {
+    if ($('input[type=checkbox]:checked').length) {
+        input_category = [];
         $('input[type=checkbox]:checked').each(function (index, iVal) {
-                chk_val.push(iVal.value);
+                input_category.push(iVal.value);
             }
         )
     }
-    if($('input[type=radio]:checked').length){
-        chk_val.push($('input[type=radio]:checked')[0]?.value)
+    if ($('input[type=radio]:checked').length) {
+        input_budget = $('input[type=radio]:checked')[0]?.value;
     }
-    if(chk_val.length === 0){
+    if (input_category.length === 0 && input_budget === 999_999_999) {
         alert("1개 이상 체크해 주세요");
         return;
     }
-    $($('.modal').siblings()[0]).data("modal","not-expand");
+    $($('.modal').siblings()[0]).data("modal", "not-expand");
     $('.modal').remove();
-    location.href=`#?sort=${chk_val.join(',')}`
+    location.href = `/post/sort?category=${input_category.join(',')}&budget=${input_budget}`
 }
 
 
 function do_modal(target) {
     if ($(target).data("modal") === "not-expand") {
-        $($('.modal')?.siblings()[0])?.data("modal","not-expand");
+        $($('.modal')?.siblings()[0])?.data("modal", "not-expand");
         $('.modal')?.remove();
         $(target.parentNode).append(what_modal[target.className])
         $(target).data("modal", "expand");
@@ -71,7 +72,6 @@ const budget =
         <li class="li"><label for="pay-13000">13000 이하</label><input type="radio" id="pay-13000" name="pay" class="pay-13000" value="13000"></li>
         <li class="li"><label for="pay-14000">14000 이하</label><input type="radio" id="pay-14000" name="pay" class="pay-14000" value="14000"></li>
         <li class="li"><label for="pay-150000">15000 이하</label><input type="radio" id="pay-150000" name="pay" class="pay-150000" value="15000"></li>
-        <li class="li"><label for="pay-over-15000">15000</label><input type="radio" id="pay-over-15000" name="pay" class="pay-over-15000" value="15000~"></li>
     `
 
 const modal = what =>
@@ -89,4 +89,4 @@ const modal = what =>
     </div>
     `
 
-const what_modal = {'category-select' : modal(select), 'category-budget' : modal(budget) };
+const what_modal = {'category-select': modal(select), 'category-budget': modal(budget)};

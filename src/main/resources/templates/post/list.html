@@ -591,11 +591,15 @@
 <!--end of footer-->
 
 
+<script th:inline="javascript">
+    const post = [[${post}]];
+    let input_category = [[${category}]];
+    let input_budget = [[${budget}]] === null ? 999_999_999 : [[${budget}]];
+</script>
+<script type="text/javascript" th:src="@{../../static/js/post/post.js}" ></script>
 <script type="text/javascript" src="../../static/js/post/post.js" th:inline="javascript"></script>
 <script type="text/javascript" src="../../static/js/post/postModal.js" th:inline="javascript"></script>
 <script type="text/javascript" src="../../static/js/post/postAjax.js" th:inline="javascript"></script>
-<script th:inline="javascript">
-</script>
 
 </body>
 </html>
