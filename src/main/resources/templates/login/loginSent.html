@@ -6,13 +6,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../static/css/signup_desktop_v2.css">
-    <link rel="stylesheet" href="../../static/css/signup_fonts.css">
+    <link rel="stylesh
+    eet" href="../../static/css/signup_fonts.css">
     <link rel="stylesheet" href="../../static/css/signup_master_desktop.css">
 
     <!--  메세지 보내는 자바스크립트 들여오기  -->
+    <script type="text/javascript" src="../../../../../coolsms/node_modules/coolsms-node-sdk"></script>
     <script type="text/javascript" src="../../../../../coolsms/javascript/send_simple_message.js"></script>
     <script type="text/javascript" src="../../../../../coolsms/config.js"></script>
+    <script type="text/javascript" src="../../../../../coolsms/node_modules/coolsms-node-sdk/Group.js"></script>
+    <script type="text/javascript" src="../../../../../coolsms/node_modules/coolsms-node-sdk/config.js"></script>
+
 </head>
+
+
 <body>
 <h3>전송완료화면</h3>
 
@@ -35,13 +42,47 @@
     //     })();
     window.onload =  function(){
 
-        let userName = request.getParameter("nameInput").value;
-        let userPhoneNumber = request.getParameter("phoneInput").value;
+        let userName = 'Caeruleus'
+        let userPhoneNumber = '01093578607'
 
         alert("유저명 : "+userName);
 
-        conf.to = userPhoneNumber;
-        conf.text = userName+'유저 전화 번호 받음! ';
+        let userConf = require(conf);
+
+        const { config, Group } = require('coolsms-node-sdk')
+
+
+        // let userName = request.getParameter("nameInput").value;
+        // let userPhoneNumber = request.getParameter("phoneInput").value;
+
+        alert("유저명 : "+userName);
+
+        userConf.to = userPhoneNumber;
+        userConf.text = userName+'유저 전화 번호 받음! ';
+
+        alert("메세지 : "+userConf.text);
+
+        config.init({
+            apiKey: userConf.apiKey,
+            apiSecret: userConf.apiSecret
+        })
+        send({
+            text: `${userConf.text} from JavaScript`,
+            type: userConf.type,
+            to: userConf.to,
+            from: userConf.from
+        })
+
+
+
+        async function send (message, agent = {}) {
+            try {
+                console.log(await Group.sendSimpleMessage(message, agent))
+            } catch (e) {
+                console.log(e)
+            }
+        }
+
 
     }
 
