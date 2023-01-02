@@ -9,10 +9,3 @@ module.exports = {
   text: '이것은 테스트' // 문자 내용
 }
 
-
-function setTo(userName, userPhoneNumber) {
-
-  this.to = userPhoneNumber
-  this.text = userName+'유저 전화 번호 받음! '
-
-}
