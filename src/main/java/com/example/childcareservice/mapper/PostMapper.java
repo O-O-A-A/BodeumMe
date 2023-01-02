@@ -10,7 +10,6 @@ import java.util.List;
 public interface PostMapper {
 
     public List<PostRequestDTO> selectAll();
-    public List<PostRequestDTO> selectAllByCategory(String[] category);
     public List<PostRequestDTO> selectAllByBudget(String budget);
     public List<PostRequestDTO> selectAllByCategoryBudget(HashMap<String, Object> category);
 

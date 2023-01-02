@@ -28,7 +28,7 @@ function go(e) {
     if ($('input[type=radio]:checked').length) {
         input_budget = $('input[type=radio]:checked')[0]?.value;
     }
-    if (input_category.length === 0 && input_budget === 999_999_999) {
+    if (input_category.length === 0 && input_budget === 999999999) {
         alert("1개 이상 체크해 주세요");
         return;
     }
@@ -66,6 +66,7 @@ const select =
     `
 const budget =
     `
+        <li class="li"><label for="pay-999999999">전체</label><input type="radio" id="pay-999999999" name="pay" class="pay-999999999" value="999999999" checked></li>
         <li class="li"><label for="pay-10000">10000 이하</label><input type="radio" id="pay-10000" name="pay" class="pay-10000" value="10000"></li>
         <li class="li"><label for="pay-11000">11000 이하</label><input type="radio" id="pay-11000" name="pay" class="pay-11000" value="11000"></li>
         <li class="li"><label for="pay-12000">12000 이하</label><input type="radio" id="pay-12000" name="pay" class="pay-12000" value="12000"></li>

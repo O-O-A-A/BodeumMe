@@ -233,7 +233,15 @@
                         <div class="route-content">
 
                         </div>
-                        <a href="#" class="route-link">홈</a>
+                        <a href="/" class="route-link">홈</a>
+                        <th:block th:if="${category != null}">
+                            <div style="color: rgb(200, 202, 210); font-size: 13px;">&gt;</div>
+                            <div class="route-link" th:text="${#strings.arrayJoin(category,' , ')}"></div>
+                        </th:block>
+                        <th:block th:if="${budget != null} and ${budget != '999999999'}">
+                            <div style="color: rgb(200, 202, 210); font-size: 13px;">&gt; </div>
+                            <div class="route-link" th:text="'시급 ' + ${budget} + '원 이하'"></div>
+                        </th:block>
                     </section>
                     <section class="category">
                         <section class="category-body">
@@ -311,9 +319,146 @@
 
 
                         </div>
+                        <style>
+                            .page-div{
+                                margin-top: 48px;
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                            }
+                            .page-ul{
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                padding: 0px;
+                            }
+                            .page-order{
+                                display: inline-flex;
+                                padding: 0px 1px;
+                            }
+                            .page-button{
+                                opacity: 0.3;
+                                background: none;
+                                outline: none;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                line-height: 1;
+                                font-weight: 500;
+                                transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+                                text-decoration: none;
+                                -webkit-tap-highlight-color: transparent;
+                                display: inline-flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                position: relative;
+                                user-select: none;
+                                white-space: nowrap;
+                                max-width: 100%;
+                                font-size: 14px;
+                                padding: 0px;
+                                background-color: rgb(255, 255, 255);
+                                color: rgb(154, 155, 167);
+                                border: none;
+                                min-width: 36px;
+                                height: 36px;
+                            }
+                            .number-button {
+                                outline: none;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                line-height: 1;
+                                font-weight: 500;
+                                transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+                                text-decoration: none;
+                                -webkit-tap-highlight-color: transparent;
+                                display: inline-flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                position: relative;
+                                user-select: none;
+                                white-space: nowrap;
+                                max-width: 100%;
+                                font-size: 12px;
+                                padding: 0px 8px;
+                                background-color: rgb(255, 255, 255);
+                                border: none;
+                                min-width: 36px;
+                                height: 36px;
+                                color: rgb(48, 52, 65);
+                            }
+                            .page-button-contents{
+                                display: inline-block;
+                                color: inherit;
+                                font-style: normal;
+                                line-height: 0;
+                                text-align: center;
+                                text-transform: none;
+                                vertical-align: -0.125em;
+                                text-rendering: optimizeLegibility;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                            }
+                            .page-img{
+                                display: inline-block;
+                            }
+                        </style>
+                        <div class="page-div">
+                            <ul class="page-ul">
+                                <li class="page-order">
+                                    <button class="page-button" color="default" role="button" disabled>
+                            <span class="page-button-wrapper">
+                                <span role="img" rotate="0" class="page-button-contents">
+                                    <svg class="page-img" width="24" height="24" viewBox="0 0 24 24 " fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+                                        <path xmlns="http://www.w3.org/2000/svg" d="M9.41421356,12 L15.7071068,5.70710678 C16.0976311,5.31658249 16.0976311,4.68341751 15.7071068,4.29289322 C15.3165825,3.90236893 14.6834175,3.90236893 14.2928932,4.29289322 L7.29289322,11.2928932 C6.90236893,11.6834175 6.90236893,12.3165825 7.29289322,12.7071068 L14.2928932,19.7071068 C14.6834175,20.0976311 15.3165825,20.0976311 15.7071068,19.7071068 C16.0976311,19.3165825 16.0976311,18.6834175 15.7071068,18.2928932 L9.41421356,12 Z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                                    </button>
+                                </li>
+                                <li class="page-order">
+                                    <button role="button" color="default" class="page-button number-button">
+                                        <span class="page-button-wrapper">1</span>
+                                    </button>
+                                </li>
+                                <li class="page-order">
+                                    <button role="button" color="default" class="page-button number-button">
+                                        <span class="page-button-wrapper">2</span>
+                                    </button>
+                                </li>
+                                <li class="page-order">
+                                    <button role="button" color="default" class="page-button number-button">
+                                        <span class="page-button-wrapper">3</span>
+                                    </button>
+                                </li>
+
+                                <li class="page-order">
+                                    <button class="page-button" color="default" role="button">
+                            <span class="page-button-wrapper">
+                                <span role="img" rotate="0" class="page-button-contents">
+                                    <svg class="page-img" width="24" height="24" viewBox="0 0 24 24 " fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" style="color: rgb(48, 52, 65);">
+                                        <path xmlns="http://www.w3.org/2000/svg" d="M9.41421356,12 L15.7071068,5.70710678 C16.0976311,5.31658249 16.0976311,4.68341751 15.7071068,4.29289322 C15.3165825,3.90236893 14.6834175,3.90236893 14.2928932,4.29289322 L7.29289322,11.2928932 C6.90236893,11.6834175 6.90236893,12.3165825 7.29289322,12.7071068 L14.2928932,19.7071068 C14.6834175,20.0976311 15.3165825,20.0976311 15.7071068,19.7071068 C16.0976311,19.3165825 16.0976311,18.6834175 15.7071068,18.2928932 L9.41421356,12 Z" transform="translate(11.500000, 12.000000) scale(-1, 1) translate(-11.500000, -12.000000) "></path>
+                                    </svg>
+                                </span>
+                            </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
+
             </div>
+
+
         </div>
     </div>
 </div>
@@ -593,7 +738,7 @@
 
     // ['베이비시터', '육아+가사', '등하원도우미', '학습시터', '놀이시터', '입주베이비시터', '산후도우미','가사도우미','청소도우미','입주가사도우미','음식도우미']
     let input_category = [[${category}]] === null ? [] : [[${category}]];
-    let input_budget = [[${budget}]] === null ? 999_999_999 : [[${budget}]];
+    let input_budget = [[${budget}]] === null ? 999999999 : [[${budget}]];
 </script>
 <script type="text/javascript" th:src="@{../../static/js/post/post.js}"></script>
 <script type="text/javascript" src="../../static/js/post/post.js" th:inline="javascript"></script>
