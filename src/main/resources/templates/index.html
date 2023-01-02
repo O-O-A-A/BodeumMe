@@ -34,14 +34,64 @@
                 <a href="#" >보듬미</a>
             </div>
             <div class="header1-4">
-                <button role="button" color="black" class="header1-5">
-                    <p>베이비시터 등록</p>
-                </button>
-                <button role="button" color="black" class="header1-6" id="loginButton">
-                    <p>로그인</p>
-                </button>
-                <a href="#" class="header1-7">무료 회원가입</a>
-
+                <div class="header1-4-1">
+                    <button role="button" color="black" class="header1-5">
+                        <p>베이비시터 등록</p>
+                    </button>
+                    <button role="button" color="black" class="header1-6" id="loginButton">
+                        <p>로그인</p>
+                    </button>
+                    <a href="#" class="header1-7">무료 회원가입</a>
+                </div>
+                <div class="header1-4-2" style="display: none">
+                    <div class="css-u4p24i e1tf0g4t0">
+                        <a role="link" color="default" href="#" class="css-7m00jk eklkj752" aria-expanded="false">
+                            <span class="css-1oteowz eklkj751">메시지</span>
+                        </a>
+                        <a role="link" color="default" href="#" class="css-ex1ale eklkj752">
+                            <span class="css-1oteowz eklkj751">마이크몽</span>
+                        </a>
+                        <div class="css-0 e1s2fvn00" id="subMenu">
+                            <a role="link" color="default" href="#" class="css-1u9286t eklkj752" aria-expanded="false">
+                            <span class="css-1oteowz eklkj751">
+                                <div size="32" shape="0" role="article" class="css-1dp4wuh e1cdqjir2">
+                                    <img src="https://kmong.com/img/tools/main_user_gray.png" alt="avatar" shape="0" loading="lazy" class="css-on9gcz e1cdqjir1">
+                                </div>
+                            </span>
+                            </a>
+                            <div data-tippy-root="" id="tippy12" style="z-index: 9999; position: absolute; margin: 0px;">
+                                <div class="tippy-box css-gmeyir ev1l7v90" data-state="visible" tabindex="-1" data-animation="shift-away" role="tooltip" data-placement="bottom-end" style="max-width: 350px; transition-duration: 300ms;">
+                                    <div class="tippy-content" data-state="visible" style="transition-duration: 300ms;">
+                                        <div>
+                                            <div class="css-k8m365 e1s2fvn02">
+                                                <div class="css-1eyxldl e1s2fvn03">
+                                                    <a href="" class="css-1rkl8l0 e1s2fvn04">프로필 관리</a>
+                                                </div>
+                                                <div class="css-1eyxldl e1s2fvn03">
+                                                    <div class="css-16i0vkt e1s2fvn05">전문가 등록</div>
+                                                </div>
+                                                <div class="css-1eyxldl e1s2fvn03">
+                                                    <a href="" class="css-1rkl8l0 e1s2fvn04">친구초대</a>
+                                                </div>
+                                                <div class="css-1eyxldl e1s2fvn03">
+                                                    <a href="" class="css-1rkl8l0 e1s2fvn04">나의 찜목록</a>
+                                                </div>
+                                                <div tabindex="0" class="css-1eyxldl e1s2fvn03" aria-expanded="false">
+                                                    <div class="css-16i0vkt e1s2fvn05">계정 설정
+                                                        <span class="css-1ece98g e1s2fvn06">&gt;</span>
+                                                    </div>
+                                                </div>
+                                                <div class="css-1eyxldl e1s2fvn03">
+                                                    <div class="css-16i0vkt e1s2fvn05" id="logoutButton">로그아웃</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -425,23 +475,27 @@
                         <form novalidate="" class="css-1rr4qq7 equrxy90" data-gtm-form-interact-id="0" id="loginForm" action="/login/main" method="post">
                             <div class="css-wa7cs7 equrxy91">
                                 <div class="css-u6qecc e1fnk6ig0">
-                                    <input type="email" required="" placeholder="이메일을 입력해 주세요." name="email" autocomplete="username" class="css-dka9py e1fnk6ig1" value="">
+                                    <input type="email" required="" placeholder="이메일을 입력해 주세요." name="email" autocomplete="username" class="css-dka9py e1fnk6ig1" value="" id="idInput">
                                 </div>
-                                <div class="css-uyewa0 equrxy95"></div>
+                                <div class="css-uyewa0 equrxy95" id="noId">
+                                    <p id="noIdText" style="color: rgb(255, 64, 43); margin: 0px 0px"></p>
+                                </div>
                             </div>
                             <div class="css-wa7cs7 equrxy91">
                                 <div class="css-u6qecc e1fnk6ig0">
-                                    <input type="password" required="" placeholder="비밀번호를 입력해 주세요." name="password" autocomplete="current-password" class="css-dka9py e1fnk6ig1" value="">
+                                    <input type="password" required="" placeholder="비밀번호를 입력해 주세요." name="password" autocomplete="current-password" class="css-dka9py e1fnk6ig1" value="" id="pwInput">
                                 </div>
-                                <div class="css-uyewa0 equrxy95"></div>
+                                <div class="css-uyewa0 equrxy95" id="noPassword">
+                                    <p id="noPwText" style="color: rgb(255, 64, 43); margin: 0px 0px"></p>
+                                </div>
                             </div>
-                            <button role="button" color="yellow" class="css-klg5aa eklkj752" id="tryLoginButton" type="submit">
+                            <button role="button" color="yellow" class="css-klg5aa eklkj752" id="tryLoginButton">
                                 <span class="css-1oteowz eklkj751">로그인</span>
                             </button>
                             <div class="css-1iylv4b equrxy92">
                                 <label color="#ffd400" class="css-18pqe3v elgfge0">
                                     <span class="css-9ffs86 elgfge2">
-                                        <input data-testid="checkbox" type="checkbox" name="remember" class="css-l775cp " data-gtm-form-interact-field-id="0">
+                                        <input data-testid="checkbox" type="checkbox" name="remember" class="css-l775cp " data-gtm-form-interact-field-id="0" id="remember">
                                         <span color="#ffd400" class="css-yp3xeq "></span>
                                         <span class="css-2k2mpm elgfge1">로그인 유지</span>
                                     </span>
@@ -603,21 +657,74 @@
 </body>
 <script th:inline="javascript">
     let toggleLogin = false;
-    window.onload = function () {
+    $("#login").hide();
+    if(!toggleLogin){
         $("#login").hide();
-        if(!toggleLogin){
-            $("#login").hide();
+    }
+    $('#loginButton').click(function () {
+        $("#login").css("display", "block");
+    })
+    $("#closeButton").click(function () {
+        $("#login").hide();
+    })
+    $("#logoutButton").click(function () {
+        window.location.href="/logout";
+    })
+    $("#tryLoginButton").click(function (e) {
+        e.preventDefault();
+        let email = $("#idInput").val();
+        console.log(email);
+        let pw = $("#pwInput").val();
+        console.log(pw);
+        let remember = $("#remember").is(':checked');
+
+        if( email != '' && pw != ''){
+            $.ajax({
+                data: {
+                    email: email,
+                    password: pw,
+                    checkbox: remember
+                },
+                url: "/login/main",
+                method : "post",
+                success: function (data) {
+                    console.log("data check : " + data);
+                    if(data == "true"){
+                        window.location.href="/main";
+                    }else if(data == "false"){
+                        $("#noIdText").text('아이디를 다시 입력해 주세요');
+                        $("#noPwText").text('비밀번호를 다시 입력해 주세요');
+                    }
+                }
+
+            })
+        }else{
+            if(email == ''){
+                $("#noIdText").text('아이디를 입력해 주세요');
+            }else{
+                $("#noIdText").text('');
+            }
+            if(pw == ''){
+                $("#noPwText").text('비밀번호를 입력해 주세요');
+            }else{
+                $("#noPwText").text('');
+            }
         }
-        $('#loginButton').click(function () {
-            $("#login").css("display", "block");
-        })
-        $("#closeButton").click(function () {
-            $("#login").hide();
-        })
-        /*<![CDATA[*/
-        let memberInfo = [[${session.MemberInfo}]];
-        console.log(memberInfo);
-        /*]]*/
+
+
+    })
+
+    /*<![CDATA[*/
+    let memberInfo = [[${session.MemberInfo}]];
+    console.log("session check : " + memberInfo);
+    if(memberInfo == null){
+        $(".header1-4-1").show();
+        $(".header1-4-2").hide();
+    }else{
+        $(".header1-4-1").hide();
+        $(".header1-4-2").show();
+    }
+    window.onload = function () {
     }
 </script>
 </html>

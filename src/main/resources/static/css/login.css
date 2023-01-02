@@ -319,3 +319,169 @@ img {
     border-color: rgb(17, 106, 212);
     color: rgb(17, 106, 212);
 }
+.css-u4p24i {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.css-7m00jk {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 1;
+    font-weight: 500;
+    transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    white-space: nowrap;
+    max-width: 100%;
+    height: 42px;
+    font-size: 15px;
+    padding: 0px 22px;
+    min-width: 64px;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(48, 52, 65);
+    margin-right: 4px;
+}
+.css-ex1ale {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 1;
+    font-weight: 500;
+    transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    white-space: nowrap;
+    max-width: 100%;
+    height: 42px;
+    font-size: 15px;
+    padding: 0px 22px;
+    min-width: 64px;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(48, 52, 65);
+    margin-right: 16px;
+}
+.css-1u9286t {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    line-height: 1;
+    font-weight: 500;
+    transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    white-space: nowrap;
+    max-width: 100%;
+    height: 42px;
+    font-size: 15px;
+    min-width: 42px;
+    padding: 0px;
+    border-radius: 21px;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(48, 52, 65);
+}
+.css-1dp4wuh {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(228, 229, 237);
+    position: relative;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 50%;
+}
+.css-on9gcz {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease 0s;
+    border-radius: 50%;
+    opacity: 1;
+}
+.css-gmeyir {
+    position: relative;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    outline: 0;
+    transition-property: transform,visibility,opacity;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    background-color: #f2f3f7;
+}
+.css-k8m365 {
+    width: 136px;
+    padding: 6px 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+.css-1eyxldl {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s ease 0s;
+}
+.css-1rkl8l0 {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 16px;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(48, 52, 65);
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.css-16i0vkt {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 16px;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(48, 52, 65);
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+#subMenu:hover > #tippy12{
+    visibility: visible;
+}
+#tippy12{
+    visibility: hidden;
+}
