@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 public class LoginFindController {
     @GetMapping("/loginFind")
-    public String FAQViewPage00(){ return "/login/loginFind"; }
+    public String LoginFind(){ return "/login/loginFind"; }
+
+    @GetMapping("/loginPasswordFind")
+    public String LoginPasswordFind(){ return "/login/loginPasswordFind"; }
 
 }
